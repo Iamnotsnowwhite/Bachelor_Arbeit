@@ -1,0 +1,1314 @@
+cellosaurus_id,cell_line_name,DepMap_ID,disease,disease_combined,disease_cleaned,disease_sutype,disease_sub_subtype,culture_type,culture_medium,gender,source,cellosaurus_derived_from_site,cellosaurus_disease,tissue
+CVCL_0031,MCF-7,ACH-000019,breast,breast,Breast,ERpos, ,Adherent,MEM + 10% FBS + 0.01mg/ml Insulin (Bovine),Female,ATCC,Pleural effusion,Invasive breast carcinoma of no special type,Breast
+CVCL_0069,SK-MEL-2,ACH-001190,skin,skin,Skin,melanoma, ,Adherent,MEM + 10% FBS,Male,ATCC,"Thigh, skin",Melanoma,Skin
+CVCL_0007,U-937,ACH-000406,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Acute monoblastic/monocytic leukemia,Blood
+CVCL_0012,LP-1,ACH-000204,multiple_myeloma,multiple_myeloma,Blood, , ,Semi-adherent,IMDM + 10% FBS,Female,HSRRB,Peripheral blood,Multiple myeloma,Blood
+CVCL_0022,U-87MG ATCC,,,glioblastoma,Brain,,,,,,,,Glioblastoma,Brain
+CVCL_0023,A-549,ACH-000681,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,DMEM + 10% FBS,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_0026,Capan-2,ACH-000107,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_0027,Hep-G2,ACH-000739,liver,liver,Liver, , ,Adherent,MEM + 10% FBS,Male,ATCC,Liver,Hepatoblastoma,Liver
+CVCL_0028,AN3-CA,ACH-000940,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,ATCC,Lymph node,Type I endometrial adenocarcinoma,Uterus
+CVCL_0029,EFO-21,ACH-000308,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,RPMI + 20% FBS + 1mM Sodium pyruvate + 0.1mM NEAA,Female,DSMZ,Ascites,Ovarian serous cystadenocarcinoma,Ovary
+CVCL_0033,SK-BR-3,ACH-000017,breast,breast,Breast,HER2Amp, ,Semi-adherent,McCoy's 5A + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_0035,PC-3,ACH-000090,prostate,prostate,Prostate, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Bone,Prostate carcinoma,Prostate
+CVCL_0036,RT-4,ACH-000242,urinary_tract,urinary_tract,Bladder, , ,,,Male,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_0039,SK-MEL-30,ACH-000810,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,DSMZ,,Cutaneous melanoma,Skin
+CVCL_0040,WM115,ACH-000304,skin,skin,Skin,melanoma, ,Adherent,MEM + 10% FBS,Female,ATCC,"Right anterior leg, skin",Melanoma,Skin
+CVCL_0041,Rh30,ACH-000833,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,Adherent,RPMI + 10% FBS,Male,DSMZ,Bone marrow,Alveolar rhabdomyosarcoma,Muscle
+CVCL_0042,U2OS,ACH-000364,bone,bone,Bone,osteosarcoma, ,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,"Bone, tibia",Osteosarcoma,Bone
+CVCL_0060,NCI-H1299,ACH-000510,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung large cell carcinoma,Lung
+CVCL_0065,Jurkat,ACH-000995,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_0076,SNU-16,ACH-000581,gastric,gastric,Stomach, , ,,,Female,ATCC,Ascites,Gastric adenocarcinoma,Stomach
+CVCL_0077,SNU-398,ACH-000221,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0079,697,ACH-000070,leukemia,leukemia,Blood,B-cell_ALL, ,Suspension,RPMI + 20% heat inactivated FBS,Male,DSMZ,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(1,Blood
+CVCL_0080,A-673,ACH-000052,bone,bone,Bone,Ewing_sarcoma, ,Adherent,DMEM + 10% FBS,Female,ATCC,Muscle,Ewing sarcoma,Bone
+CVCL_0090,SNU-182,ACH-000483,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0099,SNU-1,ACH-000932,gastric,gastric,Stomach, , ,Suspension,RPMI + 10% FBS,Male,ATCC,Stomach,Gastric adenocarcinoma,Stomach
+CVCL_0105,DU145,ACH-000979,prostate,prostate,Prostate, , ,,,Male,ATCC,Brain,Prostate carcinoma,Prostate
+CVCL_0110,1321N1,ACH-001000,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,,,Male,ECACC,Brain,Astrocytoma,Brain
+CVCL_0126,5637,ACH-000905,urinary_tract,urinary_tract,Bladder, , ,Light Adherent or Suspension ,RPMI + 10% FBS,Male,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_0131,A-172,ACH-000558,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Male,ATCC,Brain,Glioblastoma,Brain
+CVCL_0132,A-375,ACH-000219,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Female,ATCC,"Leg, skin",Amelanotic melanoma,Skin
+CVCL_0134,A2780,ACH-000657,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,Adherent,RPMI + 10% FBS,Female,ECACC,Ovary,Endometrioid carcinoma of ovary,Ovary
+CVCL_0152,AsPC-1,ACH-000222,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Female,ATCC,Ascites,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_0153,B-CPAP,ACH-000456,thyroid,thyroid,Thyroid, , ,,,Female,DSMZ,Thyroid gland,Thyroid carcinoma,Thyroid
+CVCL_0178,BT-20,ACH-000536,breast,breast,Breast,TNBC, ,,,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_0179,BT-474,ACH-000927,breast,breast,Breast,TPBC, ,,,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_0186,BxPC-3,ACH-000535,pancreas,pancreas,Pancreas, , ,,,Female,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_0218,COLO 205,ACH-001039,colorectal,colorectal,Colon, , ,,,Male,ATCC,Ascites,Colon adenocarcinoma,Colon
+CVCL_0235,Caki-2,ACH-000234,kidney,kidney,Kidney, , ,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,Kidney,Papillary renal cell carcinoma,Kidney
+CVCL_0236,Calu-6,ACH-000264,lung,lung,Lung,lung_NSC, ,Adherent,MEM + 10% FBS,Female,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_0250,SNU-387,ACH-000478,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Female,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0253,EFM-19,ACH-000330,breast,breast,Breast,ERpos, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Pleural effusion,Breast ductal carcinoma,Breast
+CVCL_0270,G-401,ACH-000096,rhabdoid,rhabdoid,Muscle, , ,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,Kidney,Rhabdoid tumor,Muscle
+CVCL_0291,HCT 116,ACH-000971,colorectal,colorectal,Colon,colorectal_MSI, ,,,Male,ATCC,Colon,Colon carcinoma,Colon
+CVCL_0292,HCT 15,ACH-000997,colorectal,colorectal,Colon,colorectal_MSI, ,,,Male,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0293,HEC-1-A,ACH-000954,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,ATCC,Endometrium,Type II endometrial adenocarcinoma,Uterus
+CVCL_0294,HEC-1-B,ACH-000941,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 10% FBS,Female,ATCC,Endometrium,Type II endometrial adenocarcinoma,Uterus
+CVCL_0312,HOS,ACH-000613,bone,bone,Bone,osteosarcoma, ,,,Female,ATCC,"Bone, right femur",Osteosarcoma,Bone
+CVCL_0313,HPAF-II,ACH-000094,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,Ascites,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_0317,HT-1080,ACH-000054,soft_tissue,soft_tissue,Soft Tissue,fibrosarcoma, ,Adherent,MEM + 10% FBS,Male,ATCC,"Bone, pelvis, acetabulum",Fibrosarcoma,Soft Tissue
+CVCL_0318,HT-144,ACH-000322,skin,skin,Skin,melanoma, ,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,Hypodermis,Melanoma,Skin
+CVCL_0320,HT-29,ACH-000552,colorectal,colorectal,Colon, , ,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0324,HuCC-T1,ACH-000976,bile_duct,bile_duct,Liver,cholangiocarcinoma,intrahepatic,Adherent,RPMI + 10% FBS,Male,HSSRB,Ascites,Cholangiocarcinoma,Liver
+CVCL_0326,Hep 3B2.1-7,ACH-000625,liver,liver,Liver, , ,,,Male,ATCC,Liver,Pediatric hepatocellular carcinoma,Liver
+CVCL_0331,Hs 294T,ACH-000014,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,Lymph node,Melanoma,Skin
+CVCL_0332,Hs 578T,ACH-000148,breast,breast,Breast,TNBC, ,Adherent,DMEM + 10% FBS,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_0333,Hs 746.T,ACH-000616,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,"Left leg, skeletal muscle",Gastric adenocarcinoma,Stomach
+CVCL_0334,Hs 766T,ACH-000178,pancreas,pancreas,Pancreas, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Lymph node,Pancreatic adenocarcinoma,Pancreas
+CVCL_0337,HuT 78,ACH-000509,lymphoma,lymphoma,Lymph,T-cell_lymphoma_other, ,,,Male,ATCC,Peripheral blood,Sezary syndrome,Lymph
+CVCL_0346,IMR-32,ACH-000310,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,MEM + 10% FBS,Male,ATCC,Abdomen,Neuroblastoma,Nervous System
+CVCL_0359,J82,ACH-000396,urinary_tract,urinary_tract,Bladder, , ,,,Male,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_0364,JHH-5,ACH-000734,liver,liver,Liver, , ,Adherent,William's E Medium + 10% FBS,Male,HSSRB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0366,SNU-423,ACH-000493,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0374,KG-1,ACH-000386,leukemia,leukemia,Blood,AML, ,,,Male,ATCC,Bone marrow,Acute myeloid leukemia,Blood
+CVCL_0378,KNS-42,ACH-000622,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,MEM + 5% FBS,Male,HSSRB,"Brain, right fronto-parietal lobe.",Glioblastoma,Brain
+CVCL_0379,Ku812,ACH-000074,leukemia,leukemia,Blood,CML, ,,RPMI + 10% FBS,Male,ATCC,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_0392,LN-18,ACH-000819,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 5% FBS,Male,ATCC,"Brain, right temporal lobe",Glioblastoma,Brain
+CVCL_0393,LN-229,ACH-000595,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Female,ATCC,"Brain, right frontal parieto-occipital cortex.",Glioblastoma,Brain
+CVCL_0400,M059J,ACH-001118,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,,Brain,Glioblastoma,Brain
+CVCL_0418,MDA-MB-453,ACH-000910,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Pericardial effusion,Breast adenocarcinoma,Breast
+CVCL_0419,MDA-MB-468,ACH-000849,breast,breast,Breast,TNBC, ,Adherent,DMEM + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_0425,MEG-01,ACH-000072,leukemia,leukemia,Blood,CML, ,,,Male,ATCC,Bone marrow,Chronic myeloid leukemia,Blood
+CVCL_0426,MG-63,ACH-000359,bone,bone,Bone,osteosarcoma, ,,,Male,ATCC,"Bone, left femur",Osteosarcoma,Bone
+CVCL_0428,MIA PaCa-2,ACH-000601,pancreas,pancreas,Pancreas, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Pancreas,Pancreatic undifferentiated carcinoma,Pancreas
+CVCL_0434,MKN45,ACH-000356,gastric,gastric,Stomach,gastric_adenocarcinoma,diffuse_gastric,Adherent,RPMI + 10% FBS,Female,HSRRB,Liver,Gastric adenocarcinoma,Stomach
+CVCL_0445,MeWo,ACH-000987,skin,skin,Skin,melanoma, ,,,Male,ATCC,Lymph node,Cutaneous melanoma,Skin
+CVCL_0454,SNU-449,ACH-000420,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0459,NCI-H460,ACH-000463,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Lung large cell carcinoma,Lung
+CVCL_0465,OVCAR-3,,,high grade ovarian serous adenocarcinoma,Ovary,,,,,,,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_0471,OE33,ACH-000383,esophagus,esophagus,Esophagus,esophagus_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Female,HPACC,Esophagus,Adenocarcinoma of the esophagus,Esophagus
+CVCL_0485,PLC/PRF/5,ACH-001318,liver,liver,Liver, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0497,SNU-475,ACH-000422,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0504,RKO,ACH-000943,colorectal,colorectal,Colon,colorectal_MSI, ,Adherent,MEM + 10% FBS,Unknown,ATCC,Colon,Colon carcinoma,Colon
+CVCL_0505,RL95-2,ACH-000965,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,DMEM:F12  (1:1) + 5% FBS + 2mM L-glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,Female,ATCC,Endometrium,Endometrial adenosquamous carcinoma,Uterus
+CVCL_0511,Raji,ACH-000654,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,RPMI + 10% FBS,Male,ATCC,"Bone, jaw, maxilla",Burkitt lymphoma,Lymph
+CVCL_0525,SK-HEP-1,ACH-000361,liver,liver,Liver, , ,Adherent,MEM + 10% FBS,Male,ATCC,Ascites,Liver and intrahepatic bile duct epithelial neoplasm,Liver
+CVCL_0527,SK-MEL-5,ACH-000730,skin,skin,Skin,melanoma, ,,,Female,ATCC,Axillary lymph node,Cutaneous melanoma,Skin
+CVCL_0528,SK-N-BE(2),ACH-000312,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,MEM:F12 (1:1) + 10% FBS,Male,ATCC,Bone marrow,Neuroblastoma,Nervous System
+CVCL_0531,SK-N-SH,ACH-000149,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Female,ATCC,Bone marrow,Neuroblastoma,Nervous System
+CVCL_0532,SK-OV-3,ACH-000811,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_serous,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,Ascites,Ovarian serous cystadenocarcinoma,Ovary
+CVCL_0539,SU-DHL-4,ACH-000365,lymphoma,lymphoma,Lymph,DLBCL, ,Suspension,RPMI + 20% FBS,Male,DSMZ,Peritoneal effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_0543,SW1353,ACH-000418,bone,bone,Bone,chondrosarcoma, ,,,Female,ATCC,"Bone, right humerus",Chondrosarcoma,Bone
+CVCL_0545,SW403,ACH-000820,colorectal,colorectal,Colon, , ,Adherent,L15 + 10% FBS,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0546,SW480,ACH-000842,colorectal,colorectal,Colon, , ,,,Male,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0547,SW620,ACH-000651,colorectal,colorectal,Colon, , ,Semi-adherent,L15 + 10% FBS,Male,ATCC,Lymph node,Colon adenocarcinoma,Colon
+CVCL_0548,SaOS-2,ACH-000410,bone,bone,Bone,osteosarcoma, ,Adherent,McCoy's 5A + 15% FBS,Female,ATCC,Bone,Osteosarcoma,Bone
+CVCL_0553,T-47D,ACH-000147,breast,breast,Breast,ERpos, ,,,Female,ATCC,Pleural effusion,Invasive breast carcinoma of no special type,Breast
+CVCL_0554,T24,ACH-000018,urinary_tract,urinary_tract,Bladder, , ,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_0555,T84,ACH-000381,colorectal,colorectal,Colon, , ,Adherent,DMEM:F12(1:1) + 5% FBS + 2mM Glutamine,Male,ATCC,Lung,Colon adenocarcinoma,Colon
+CVCL_0556,T98G,ACH-000571,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,MEM + 10% FBS,Male,ATCC,Brain,Glioblastoma,Brain
+CVCL_0588,ZR-75-1,ACH-000097,breast,breast,Breast,ERpos, ,Adherent,RPMI + 10% FBS,Female,ATCC,Ascites,Invasive breast carcinoma of no special type,Breast
+CVCL_0590,Kasumi-2,ACH-000728,leukemia,leukemia,Blood,B-cell_ALL, ,,,Male,DSMZ,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(1,Blood
+CVCL_0599,SK-MEL-24,ACH-000822,skin,skin,Skin,melanoma, ,Adherent,MEM + 10% FBS,Male,ATCC,Lymph node,Melanoma,Skin
+CVCL_0600,SK-MEL-31,ACH-000640,skin,skin,Skin,melanoma, ,,,Female,ATCC,,Cutaneous melanoma,Skin
+CVCL_0608,Calu-1,ACH-000511,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,Pleural effusion,Lung squamous cell carcinoma,Lung
+CVCL_0609,Calu-3,ACH-000392,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_0618,MDA-MB-157,ACH-000621,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Pleural effusion,Breast carcinoma,Breast
+CVCL_0621,MDA-MB-415,ACH-000876,breast,breast,Breast,ERpos, ,Adherent,L15 + 15% FBS + 2mM Glutamine + 10ug/ml Insulin + 10ug/ml Glutathione,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_0622,MDA-MB-435S,ACH-000884,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,ATCC,"Right buttock, hypodermis",Amelanotic melanoma,Skin
+CVCL_0623,MDA-MB-436,ACH-000573,breast,breast,Breast,TNBC, ,Semi-adherent,RPMI + 10% FBS + 16ug/ml Glutathione,Female,ATCC,Pleural effusion,Invasive breast carcinoma of no special type,Breast
+CVCL_0626,SK-CO-1,ACH-000400,colorectal,colorectal,Colon, , ,,,Male,ATCC,Ascites,Colon adenocarcinoma,Colon
+CVCL_0627,SK-ES-1,ACH-000087,bone,bone,Bone,Ewing_sarcoma, ,Semi-Adherent,McCoy's 5A + 15% FBS,Male,ATCC,,Ewing sarcoma,Bone
+CVCL_0628,SK-LMS-1,ACH-000145,soft_tissue,soft_tissue,Soft Tissue,leiomyosarcoma, ,,,Female,ATCC,Vulva,Leiomyosarcoma,Soft Tissue
+CVCL_0629,SK-LU-1,ACH-000309,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_0630,SK-MES-1,ACH-000665,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,DMEM + 10% FBS,Male,ATCC,Pleural effusion,Lung squamous cell carcinoma,Lung
+CVCL_0633,U-118MG,ACH-000040,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,DMEM + 10% FBS,Male,ATCC,Brain,Astrocytoma,Brain
+CVCL_0698,Hs 229.T,ACH-000131,fibroblast,fibroblast,Soft Tissue, , ,,,Male,ATCC,Lung,,Soft Tissue
+CVCL_0844,Hs 683,ACH-000067,central_nervous_system,central_nervous_system,Brain,glioma,oligodendroglioma,Adherent,DMEM + 10% FBS,Male,ATCC,"Brain, left temporal lobe",Oligodendroglioma,Brain
+CVCL_0851,Hs 695T,ACH-000799,skin,skin,Skin,melanoma, ,Adherent,MEM + 10% FBS,Male,ATCC,Lymph node,Amelanotic melanoma,Skin
+CVCL_0871,Hs 729.T,,,embryonal rhabdomyosarcoma,Muscle,,,,,,,Muscle,Embryonal rhabdomyosarcoma,Muscle
+CVCL_0882,Hs 739.T,ACH-000413,fibroblast,fibroblast,Soft Tissue, , ,,,Female,,Breast,,Soft Tissue
+CVCL_0942,Hs 840.T,ACH-000284,fibroblast,fibroblast,Soft Tissue, , ,,,Male,ATCC,Pharynx,,Soft Tissue
+CVCL_0950,Hs 852.T,ACH-000274,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,Skin,Melanoma,Skin
+CVCL_0993,Hs 895.T,ACH-000043,fibroblast,fibroblast,Soft Tissue, , ,,,Female,ATCC,Skin,,Soft Tissue
+CVCL_1033,Hs 936.T,ACH-000801,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,Skin,Melanoma,Skin
+CVCL_1036,Hs 939.T,ACH-000814,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Female,ATCC,,Melanoma,Skin
+CVCL_1040,Hs 944.T,ACH-000632,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,,Cutaneous melanoma,Skin
+CVCL_1045,22Rv1,ACH-000956,prostate,prostate,Prostate, , ,,,Male,ATCC,Prostate,Prostate carcinoma,Prostate
+CVCL_1048,639V,ACH-000973,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Ureter,Upper tract urothelial carcinoma,Bladder
+CVCL_1050,769-P,ACH-000411,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Female,ATCC,Kidney,Renal cell carcinoma,Kidney
+CVCL_1051,786-O,ACH-000649,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Kidney,Renal cell carcinoma,Kidney
+CVCL_1052,8-MG-BA,ACH-000137,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,MEM + 20% FBS,Female,DSMZ,"Brain, frontal lobe",Glioblastoma,Brain
+CVCL_1053,8305C,ACH-001306,thyroid,thyroid,Thyroid, , ,Adherent,RPMI + 15% FBS,Female,DSMZ,Thyroid gland,Anaplastic thyroid carcinoma,Thyroid
+CVCL_1054,8505C,ACH-001307,thyroid,thyroid,Thyroid, , ,,,Female,HSRRB,Thyroid gland,Anaplastic thyroid carcinoma,Thyroid
+CVCL_1058,A-204,ACH-000201,rhabdoid,rhabdoid,Muscle, , ,,,Female,ATCC,Muscle,Embryonal rhabdomyosarcoma,Muscle
+CVCL_1059,A2058,ACH-000788,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,ATCC,Lymph node,Amelanotic melanoma,Skin
+CVCL_1060,A-253,ACH-000740,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,"Salivary gland, submandibular gland",Squamous cell carcinoma of salivary glands,Head And Neck
+CVCL_1067,ACHN,ACH-000046,kidney,kidney,Kidney, , ,,,Male,ATCC,Pleural effusion,Papillary renal cell carcinoma,Kidney
+CVCL_1074,AU565,ACH-000248,breast,breast,Breast,HER2Amp, ,Adherent,DMEM + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_1084,BFTC-909,ACH-000792,kidney,kidney,Kidney, , ,Adherent,DMEM + 10% FBS,Male,DSMZ,"Kidney, renal pelvis",Upper tract urothelial carcinoma,Kidney
+CVCL_1087,BL-41,ACH-000245,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Male,DSMZ,,Burkitt lymphoma,Lymph
+CVCL_1088,BL-70,ACH-000402,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,Suspension,RPMI + 10% FBS + 1mM Sodium pyruvate + 50uM 2-Mercaptoethanol,Male,DSMZ,,Burkitt lymphoma,Lymph
+CVCL_1092,BT-549,ACH-000288,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% heat inactivated FBS,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_1096,C2BBe1,ACH-000009,colorectal,colorectal,Colon, , ,Adherent,DMEM + 10% FBS + Glutamine + Insulin-Transferrin-Selenium,Male,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_1098,Hep-G2/C3A,,,hepatoblastoma,Liver,,,,,,,Liver,Hepatoblastoma,Liver
+CVCL_1105,CAL-12T,ACH-000826,lung,lung,Lung,lung_NSC, ,Adherent,DMEM + 10% FBS,Male,DSMZ,Lung,Lung non-small cell carcinoma,Lung
+CVCL_1107,CAL-27,ACH-000832,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,DMEM + 10% FBS,Male,ATCC,"Oral cavity, tongue",Tongue adenosquamous carcinoma,Head And Neck
+CVCL_1114,CAL-85-1,ACH-000857,breast,breast,Breast,TNBC, ,,,Female,DSMZ,Breast,Breast carcinoma,Breast
+CVCL_1115,CAMA-1,ACH-000783,breast,breast,Breast,ERpos, ,Adherent,MEM + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_1117,CAS-1,ACH-000464,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 10% FBS,Male,ICLC,Brain,Glioblastoma,Brain
+CVCL_1122,CHL-1,ACH-001024,skin,skin,Skin,melanoma, ,,,Female,ATCC,Pleural effusion,Melanoma,Skin
+CVCL_1125,CHP-212,ACH-000120,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,MEM:F12 (1:1) + 10% FBS,Male,ATCC,Brain,Neuroblastoma,Nervous System
+CVCL_1129,COLO 678,ACH-000350,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,DSMZ,Lymph node,Colon carcinoma,Colon
+CVCL_1130,COLO 679,ACH-000805,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Soft tissue,Cutaneous melanoma,Skin
+CVCL_1133,COLO 741,ACH-000582,skin,skin,Skin,melanoma, ,,,Female,ECACC,Pelvic wall,Melanoma,Skin
+CVCL_1138,COR-L105,ACH-000161,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ECACC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1139,COR-L23,ACH-000662,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS + 2mM Glutamine,Male,ECAAC,Pleural effusion,Lung large cell carcinoma,Lung
+CVCL_1167,Daoy,ACH-000211,central_nervous_system,central_nervous_system,Brain,medulloblastoma,non-MYC,Adherent,MEM + 10% FBS,Male,ATCC,"Brain, posterior fossa",Medulloblastoma,Brain
+CVCL_1169,DBTRG-05MG,ACH-000863,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Female,ATCC,Brain,Anaplastic astrocytoma,Brain
+CVCL_1170,DEL,ACH-000233,lymphoma,lymphoma,Lymph,T-cell_lymphoma_other, ,Suspension,RPMI + 10% FBS,Male,DSMZ,Pleural effusion,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_1171,Detroit 562,ACH-000207,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,MEM + 10% FBS,Female,ATCC,Pleural effusion,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1173,DK-MG,ACH-000244,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,RPMI + 10% FBS + 2mM Glutamine,Female,DSMZ,"Brain, right parietal lobe",Glioblastoma,Brain
+CVCL_1174,DMS 114,ACH-000530,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lung,Thoracic SMARCA4-deficient undifferentiated tumor,Lung
+CVCL_1179,DoHH2,ACH-000056,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,DSMZ,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1184,DV-90,ACH-000925,lung,lung,Lung,lung_NSC, ,,,Male,DSMZ,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1186,EB2 [Human Burkitt lymphoma],,,burkitt lymphoma,Lymph,,,,,,,Ovary,Burkitt lymphoma,Lymph
+CVCL_1191,EFE-184,ACH-000435,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,DSMZ,Ascites,Endometrial carcinoma,Uterus
+CVCL_1192,EFO-27,ACH-000936,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,Adherent,RPMI + 20% FBS + 1mM Sodium pyruvate + 0.1mM NEAA,Female,DSMZ,Omentum,Mucinous adenocarcinoma of ovary,Ovary
+CVCL_1196,EM-2,ACH-000295,leukemia,leukemia,Blood,CML, ,Suspension,RPMI + 10% FBS,Female,DSMZ,Bone marrow,Chronic myeloid leukemia,Blood
+CVCL_1205,ESS-1,ACH-000913,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,RPMI + 20% FBS,Female,DSMZ,Endometrium,Endometrial stromal sarcoma,Uterus
+CVCL_1218,FaDu,ACH-000846,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,MEM + 10% FBS,Male,ATCC,"Pharynx, hypopharynx",Squamous cell carcinoma of the hypopharynx,Head And Neck
+CVCL_1220,G-361,ACH-000572,skin,skin,Skin,melanoma, ,,,Male,ATCC,Skin,Melanoma,Skin
+CVCL_1221,G-402,ACH-000375,rhabdoid,rhabdoid,Muscle, , ,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,Kidney,Kidney neoplasm,Muscle
+CVCL_1226,GaMG,ACH-000098,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 10% FBS + 2mM Glutamax,Female,DSMZ,Brain,Glioblastoma,Brain
+CVCL_1227,GB-1,ACH-000738,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,MEM + 10% FBS,Male,HSSRB,Brain,Glioblastoma,Brain
+CVCL_1228,GCIY,ACH-000047,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,MEM + 15% FBS,Female,RIKEN,Ascites,Gastric adenocarcinoma,Stomach
+CVCL_1229,GCT,ACH-000835,soft_tissue,soft_tissue,Soft Tissue,pleomorphic_sarcoma, ,,McCoy's 5A + 10% FBS,Male,ATCC,Lung,Undifferentiated pleomorphic sarcoma,Soft Tissue
+CVCL_1231,GI-1,ACH-000756,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,DMEM + 10% FBS,Male,RIKEN,"Brain, left fronto-parietal lobe.",Gliosarcoma,Brain
+CVCL_1233,GMS-10,ACH-000102,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Male,DSMZ,Brain,Glioblastoma,Brain
+CVCL_1239,H4,ACH-000389,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,RPMI + 10% FBS,Male,ATCC,Brain,Astrocytoma,Brain
+CVCL_1247,HCC1187,ACH-000111,breast,breast,Breast,TNBC, ,Mixed Adherent and Suspension,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1249,HCC1395,ACH-000699,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1255,HCC1569,ACH-000930,breast,breast,Breast,TNBC, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1258,HCC1806,ACH-000624,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast acantholytic squamous cell carcinoma,Breast
+CVCL_1259,HCC1954,ACH-000859,breast,breast,Breast,HER2Amp, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1265,HCC2935,ACH-000150,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,,Lung adenocarcinoma,Lung
+CVCL_1269,HCC4006,ACH-000066,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1270,HCC70,ACH-000668,breast,breast,Breast,TNBC, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1273,HD-MY-Z,ACH-000190,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,Adherent,RPMI + 10% heat inactivated FBS,Male,DSMZ,Pleural effusion,Acute myeloid leukemia,Lymph
+CVCL_1279,HGC-27,ACH-000847,gastric,gastric,Stomach, , ,Adherent,MEM + 10% FBS + 2mM L-glutamine + NEAA,Unknown,ECACC,Lymph node,Gastric carcinoma,Stomach
+CVCL_1280,HH [Human lymphoma],,,primary cutaneous t-cell lymphoma,Lymph,,,,,,,Peripheral blood,Primary cutaneous T-cell lymphoma,Lymph
+CVCL_1281,HLE,ACH-001089,liver,liver,Liver, , ,,,Male,HSRRB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_1287,HSC-2,ACH-000472,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,MEM + 10% FBS,Male,HSSRB,Cervical lymph node,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1290,HT,ACH-000914,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,RPMI + 10% FBS,Male,ATCC,Ascites,Diffuse large B-cell lymphoma,Lymph
+CVCL_1291,HT-1197,ACH-000547,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS,Male,ATCC,Urinary bladder,Recurrent bladder carcinoma,Bladder
+CVCL_1292,HT-1376,ACH-000724,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS,Female,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1299,HuP-T3,ACH-000118,pancreas,pancreas,Pancreas, , ,Adherent,MEM + 10% FBS,Male,DSMZ,Ascites,Pancreatic adenocarcinoma,Pancreas
+CVCL_1300,HuP-T4,ACH-000213,pancreas,pancreas,Pancreas, , ,,,Male,DSMZ,Ascites,Pancreatic adenocarcinoma,Pancreas
+CVCL_1302,IA-LM,ACH-000672,lung,lung,Lung,lung_NSC,lung_large,,,Male,RIKEN,,Lung large cell carcinoma,Lung
+CVCL_1304,IGROV-1,ACH-000966,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,,,Female,NCI/DCTD,Ovary,Endometrioid carcinoma of ovary,Ovary
+CVCL_1307,IPC-298,ACH-000915,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,DSMZ,,Cutaneous melanoma,Skin
+CVCL_1311,IST-Mes1,ACH-000569,mesothelioma,mesothelioma,Lung, , ,,,Female,ICLC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1312,IST-Mes2,ACH-000331,mesothelioma,mesothelioma,Lung, , ,Adherent,DMEM + 10% FBS + 2mM L-glutamine + NEAA,Male,ICLC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1320,JVM-3,ACH-000346,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,DSMZ,Peripheral blood,B-cell prolymphocytic leukemia,Lymph
+CVCL_1321,KO52,ACH-000498,leukemia,leukemia,Blood,AML, ,Suspension,AlphaMEM + 10% heat inactivated FBS,Male,HSSRB,Bone marrow,Acute myeloid leukemia,Blood
+CVCL_1323,KALS-1,ACH-000231,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,RPMI + 5% FBS,Female,HSSRB,Brain,Glioblastoma,Brain
+CVCL_1324,Karpas-299,ACH-000053,lymphoma,lymphoma,Lymph,ALCL, ,Suspension,RPMI + 20% FBS + 2mM Glutamine,Male,ECAAC,Peripheral blood,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_1325,Karpas-422,ACH-000315,lymphoma,lymphoma,Lymph,DLBCL, ,Suspension,RPMI + 20% FBS,Female,DSMZ,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1329,KLE,ACH-000293,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,DMEM:F12 (1:1) + 10% FBS,Female,ATCC,Endometrium,Type II endometrial adenocarcinoma,Uterus
+CVCL_1334,KMS-12-BM,ACH-000380,multiple_myeloma,multiple_myeloma,Blood, , ,,,Female,DSMZ,Bone marrow,Multiple myeloma,Blood
+CVCL_1335,KNS-62,ACH-000858,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,AlphaMEM + 10% FBS,Male,ATCC,Brain,Lung squamous cell carcinoma,Lung
+CVCL_1338,KP-4,ACH-000265,pancreas,pancreas,Pancreas, , ,Adherent,DMEM:F12 (1:1) + 10% FBS,Male,RIKEN,Ascites,Pancreatic carcinoma,Pancreas
+CVCL_1340,KP-N-SI9s,ACH-000446,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,HSSRB,Left axillary lymph node,Neuroblastoma,Nervous System
+CVCL_1345,Kuramochi,ACH-000524,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,RPMI + 10% FBS,Female,HSRRB,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1347,KYSE-140,ACH-000823,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1348,KYSE-150,ACH-000855,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI:F12 (1:1) + 10% FBS,Female,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1349,KYSE-180,ACH-000693,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1351,KYSE-30,ACH-000777,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI:F12 (1:1) + 20% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1352,KYSE-410,ACH-000809,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1353,KYSE-450,ACH-000865,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI:F12 (1:1) + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1354,KYSE-510,ACH-000824,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1355,KYSE-520,ACH-000637,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1356,KYSE-70,ACH-000784,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1357,L-363,ACH-000183,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 15% FBS,Female,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_1361,L-428,ACH-000754,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Female,DSMZ,Pleural effusion,Hodgkin lymphoma,Lymph
+CVCL_1375,LCLC-103H,ACH-000627,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Male,DSMZ,Pleural effusion,Lung large cell carcinoma,Lung
+CVCL_1381,LOX-IMVI,ACH-000750,skin,skin,Skin,melanoma, ,,,Male,NCI/DCTD,Axillary lymph node,Amelanotic melanoma,Skin
+CVCL_1383,LS123,ACH-000501,colorectal,colorectal,Colon, , ,,,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_1385,LS411N,ACH-000985,colorectal,colorectal,Colon,colorectal_MSI, ,,,Male,ATCC,Cecum,Cecum adenocarcinoma,Colon
+CVCL_1386,LS513,ACH-000007,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,ATCC,"Intestine, ileocecal valve",Cecum adenocarcinoma,Colon
+CVCL_1399,MC116,ACH-000583,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,ATCC,Pleural effusion,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_1400,MDA-MB-175-VII,ACH-000759,breast,breast,Breast,ERpos, ,,,Female,ATCC,Pleural effusion,Invasive breast carcinoma of no special type,Breast
+CVCL_1402,Mel Ho,ACH-000450,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Skin,Melanoma,Skin
+CVCL_1404,MES-SA,ACH-000449,uterus,uterus,Uterus,uterine_sarcoma, ,,,Female,ATCC,Uterus,Sarcoma of the corpus uteri,Uterus
+CVCL_1405,MFE-280,ACH-000192,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,DSMZ,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_1406,MFE-296,ACH-000879,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,DSMZ,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_1411,MHH-ES-1,ACH-000391,bone,bone,Bone,Ewing_sarcoma, ,,,Male,DSMZ,Ascites,Ewing sarcoma,Bone
+CVCL_1414,MJ,ACH-000077,lymphoma,lymphoma,Lymph,T-cell_lymphoma_other, ,,,Male,ATCC,Peripheral blood,Primary cutaneous T-cell lymphoma,Lymph
+CVCL_1417,MKN7,ACH-000678,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Male,RIKEN,Lymph node,Gastric tubular adenocarcinoma,Stomach
+CVCL_1424,MOLT-16,ACH-000918,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1425,Mono-Mac-1,ACH-001129,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 0.1mM NEAA,Male,DSMZ,Peripheral blood,Acute monoblastic/monocytic leukemia,Blood
+CVCL_1427,MPP 89,ACH-000319,mesothelioma,mesothelioma,Lung, , ,Adherent,DMEM + 10% FBS,Male,ICLC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1430,MSTO-211H,ACH-000335,mesothelioma,mesothelioma,Lung, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1438,Malme-3M,ACH-000477,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Melanoma,Skin
+CVCL_1453,NCI-H1048,ACH-000866,lung,lung,Lung,lung_small, ,Adherent,RPMI + 10% FBS + 5ml Insulin-Transferrin-Selenium,Female,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1454,NCI-H1092,ACH-000514,lung,lung,Lung,lung_small, ,Suspension,RPMI + 5% FBS + 2mM L-glutamine + 5ml Insulin-Transferrin-Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,Male,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1456,NCI-H1155,ACH-000980,lung,lung,Lung,lung_NSC,lung_large,Adherent,DMEM:F12 (1:1) + 10% FBS + NEAA,Male,ATCC,Lymph node,Lung large cell carcinoma,Lung
+CVCL_1458,NCI-H1184,ACH-000523,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1463,NCI-H1341,ACH-000129,lung,lung,Lung,lung_small, ,,,Female,ATCC,"Uterus, cervix",High-grade neuroendocrine carcinoma of the cervix uteri,Lung
+CVCL_1464,NCI-H1355,ACH-000666,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1465,NCI-H1373,ACH-000845,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1475,NCI-H1563,ACH-000892,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1476,NCI-H1568,ACH-000869,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1478,NCI-H1573,ACH-000916,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 5% FBS,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1479,NCI-H1581,ACH-000015,lung,lung,Lung,lung_NSC,lung_large,Adherent,DMEM:F12 (1:1) + 5% FBS,Male,ATCC,Lung,Lung large cell carcinoma,Lung
+CVCL_1482,NCI-H1648,ACH-000766,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1483,NCI-H1650,ACH-000035,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1484,NCI-H1651,ACH-000893,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1485,NCI-H1666,ACH-000448,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Mixed Adherent and Suspension,ACL4,Female,ATCC,Pleural effusion,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1488,NCI-H1693,ACH-000021,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1489,NCI-H1694,ACH-000431,lung,lung,Lung,lung_small, ,Suspension,F12 + 10% FBS,Male,ATCC,Ascites,Small cell lung cancer,Lung
+CVCL_1490,NCI-H1703,ACH-000747,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1495,NCI-H1792,ACH-000496,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1496,NCI-H1793,ACH-000888,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,DMEM:F12 (1:1) + 5% FBS + 2mM L-glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1500,NCI-H1869,ACH-000894,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,ATCC,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1505,NCI-H1915,ACH-000434,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Female,ATCC,Lung,Lung non-small cell carcinoma,Lung
+CVCL_1508,NCI-H1944,ACH-000414,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1511,NCI-H1975,ACH-000587,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,DMEM + 10% FBS,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1514,NCI-H2009,ACH-000886,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1515,NCI-H2023,ACH-000781,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,DMEM:F12 (1:1) + 5% FBS + 2mM L-glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 10nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1517,NCI-H2030,ACH-000521,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1518,NCI-H2052,ACH-000153,mesothelioma,mesothelioma,Lung, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1523,NCI-H2085,ACH-000451,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1524,NCI-H2087,ACH-000841,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 5% FBS,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1529,NCI-H211,ACH-000639,lung,lung,Lung,lung_small, ,Semi-Adherent,RPMI + 10% FBS,Female,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1531,NCI-H2122,ACH-000311,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1535,NCI-H2170,ACH-000481,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 10% FBS,Male,ATCC,,Lung squamous cell carcinoma,Lung
+CVCL_1537,NCI-H2172,ACH-000924,lung,lung,Lung,lung_NSC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Lung,Lung non-small cell carcinoma,Lung
+CVCL_1543,NCI-H2228,ACH-000447,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1544,NCI-H226,ACH-000367,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,ATCC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1545,NCI-H2286,ACH-000912,lung,lung,Lung,lung_small, ,Adherent,DMEM:F12 (1:1) + 10% FBS + 1x Insulin-Transferrin-Selenium,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1547,NCI-H23,ACH-000900,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1552,NCI-H2444,ACH-000186,lung,lung,Lung,lung_NSC, ,,,Male,ATCC,Lung,Lung non-small cell carcinoma,Lung
+CVCL_1553,NCI-H2452,ACH-000092,mesothelioma,mesothelioma,Lung, , ,Adherent,RPMI + 10% FBS,Male,ATCC,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_1555,NCI-H28,ACH-000648,mesothelioma,mesothelioma,Lung, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_1556,NCI-H322,ACH-000837,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS + 2% Glutamine,Male,EACC,Lung,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1559,NCI-H358,ACH-000860,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1561,NCI-H441,ACH-000638,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Pericardial effusion,Lung papillary adenocarcinoma,Lung
+CVCL_1566,NCI-H520,ACH-000395,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1567,NCI-H522,ACH-000343,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1574,NCI-H647,ACH-000378,lung,lung,Lung,lung_NSC, ,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Lung adenosquamous carcinoma,Lung
+CVCL_1575,NCI-H650,ACH-000945,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1577,NCI-H661,ACH-000853,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung large cell carcinoma,Lung
+CVCL_1584,NCI-H727,ACH-000775,lung,lung,Lung,lung_NSC, ,,RPMI + 10% FBS,Female,ATCC,,Lung carcinoid tumor,Lung
+CVCL_1587,NCI-H747,ACH-000403,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Cecum adenocarcinoma,Colon
+CVCL_1590,NCI-H810,ACH-000789,lung,lung,Lung,lung_NSC,lung_large,,,Male,ATCC,Lung,Lung large cell carcinoma,Lung
+CVCL_1603,NCI-N87,ACH-000427,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,ATCC,Liver,Gastric tubular adenocarcinoma,Stomach
+CVCL_1612,NUGC-3,ACH-000911,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,JHSF,Brachialis muscle,Gastric adenocarcinoma,Stomach
+CVCL_1616,OC 314,ACH-000962,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_serous,,,Female,ICLC,Ascites,Ovarian serous adenocarcinoma,Ovary
+CVCL_1617,OC 315,,,ovarian serous adenocarcinoma,Ovary,,,,,,,Ascites,Ovarian serous adenocarcinoma,Ovary
+CVCL_1618,OC 316,ACH-001145,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,ICLC,Ascites,Ovarian serous adenocarcinoma,Ovary
+CVCL_1619,OCI-AML-2,ACH-000113,leukemia,leukemia,Blood,AML, ,Suspension,AlphaMEM + 20% FBS,Male,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1620,OCI-AML-5,ACH-000065,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1624,ONS-76,ACH-000776,central_nervous_system,central_nervous_system,Brain,medulloblastoma,non-MYC,Adherent,RPMI + 10% FBS,Female,HSSRB,Brain,Medulloblastoma,Brain
+CVCL_1625,OPM-2,ACH-000024,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Female,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_1627,OVCAR-4,ACH-000617,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,NCI/DCTD,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1629,OVCAR-8,ACH-000696,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,RPMI + 10% FBS,Female,NCI/DCTD,,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1630,P12-Ichikawa,ACH-000372,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1632,P31/FUJ,ACH-000770,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Male,HSSRB,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1633,Panc 02.03,ACH-000042,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS + 1mM Sodium pyruvate,Female,ATCC,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_1635,Panc 03.27,ACH-000139,pancreas,pancreas,Pancreas, , ,,,Female,ATCC,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_1636,Panc 04.03,ACH-000235,pancreas,pancreas,Pancreas, , ,,RPMI + 15% FBS + 20ug/ml Insulin,Male,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_1639,Panc 10.05,ACH-000060,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 1.5g/l Sodium bicarbonate + 4.5g/l Glucose,Male,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_1640,PC-14,ACH-000030,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,RIKEN,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1644,PSN1,ACH-000320,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS + 2mM Glutamine,Male,ECACC,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_1649,RD,ACH-000169,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,Adherent,DMEM:F12  (1:1) + 5% FBS + 2mM L-glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 10nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,Female,ATCC,"Pelvis, muscle",Embryonal rhabdomyosarcoma,Muscle
+CVCL_1650,Reh,ACH-000960,leukemia,leukemia,Blood,B-cell_ALL, ,Suspension,RPMI + 10% FBS,Female,ATCC,Peripheral blood,B-lymphoblastic leukemia/lymphoma with t(12,Blood
+CVCL_1655,RERF-LC-MS,ACH-000062,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,JCRB,Lung,Lung adenocarcinoma,Lung
+CVCL_1661,ZR-75-30,ACH-000828,breast,breast,Breast,TPBC, ,,,Female,ATCC,Ascites,Invasive breast carcinoma of no special type,Breast
+CVCL_1666,RPMI-7951,ACH-000348,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,ATCC,Lymph node,Melanoma,Skin
+CVCL_1667,RPMI-8402,ACH-000636,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1670,RT-112,ACH-000473,urinary_tract,urinary_tract,Bladder, , ,Adherent,RPMI + 10% FBS,Female,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1672,RVH-421,ACH-000614,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Brain,Melanoma,Skin
+CVCL_1679,SBC-5,ACH-000670,lung,lung,Lung,lung_small, ,,,Male,HSRRB,Pleural effusion,Thoracic SMARCA4-deficient undifferentiated tumor,Lung
+CVCL_1682,SCC-25,ACH-000188,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,DMEM:F12 (1:1) + 10% FBS + 0.4ug/ml Hydrocortisone,Male,ATCC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1685,SCC-9,ACH-000181,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,ATCC,"Oral cavity, tongue, anterior part",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1688,SF126,ACH-000609,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,MEM + 10% FBS,Female,HSSRB,"Brain, left frontal lobe",Glioblastoma,Brain
+CVCL_1690,SF295,ACH-000376,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,RPMI + 10% FBS,Female,NCI/DCTD,"Brain, left temporal lobe",Glioblastoma,Brain
+CVCL_1693,SHP-77,ACH-000790,lung,lung,Lung,lung_small, ,Semi Adherent,RPMI + 10% FBS,Male,ATCC,"Lung, left upper lobe",Small cell lung cancer,Lung
+CVCL_1694,SIG-M5,ACH-000112,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,Bone marrow,Acute myeloid leukemia,Blood
+CVCL_1695,SiMa,ACH-000099,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1697,SJSA-1,ACH-000748,bone,bone,Bone,osteosarcoma, ,Adherent,RPMI + 10% FBS,Male,ATCC,"Bone, femur",Osteosarcoma,Bone
+CVCL_1699,SK-MM-2,ACH-000363,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_1700,SK-N-AS,ACH-000260,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,DMEM + 10% FBS + NEAA,Female,ATCC,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1701,SK-N-DZ,ACH-000366,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,DMEM + 10% FBS + NEAA,Female,ATCC,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1702,SK-N-FI,ACH-000341,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,DMEM + 10% FBS + NEAA,Male,ATCC,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1707,SNG-M,ACH-000974,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,F12 + 20% FBS,Female,HSSRB,Obturator lymph node,Endometrial adenocarcinoma,Uterus
+CVCL_1709,SNU-C2A,ACH-000967,colorectal,colorectal,Colon,colorectal_MSI, ,,,Female,ATCC,Cecum,Cecum adenocarcinoma,Colon
+CVCL_1710,SNU-C2B,ACH-001199,colorectal,colorectal,Colon, , ,,,Female,,Cecum,Cecum adenocarcinoma,Colon
+CVCL_1714,SUP-T1,ACH-000953,leukemia,leukemia,Blood,T-cell_ALL, ,Suspension,RPMI + 10% FBS,Male,ATCC,Pleural effusion,T-cell non-Hodgkin lymphoma,Blood
+CVCL_1715,SW1088,ACH-000437,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,RPMI + 10% FBS,Male,ATCC,,Astrocytoma,Brain
+CVCL_1716,SW1271,ACH-000890,lung,lung,Lung,lung_small, ,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Small cell lung cancer,Lung
+CVCL_1717,SW1417,ACH-000236,colorectal,colorectal,Colon, , ,,,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_1720,SW1573,ACH-000677,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,L15 + 10% FBS,Female,ATCC,Lung,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1723,SW1990,ACH-000155,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_1724,SW48,ACH-000958,colorectal,colorectal,Colon,colorectal_MSI, ,Semi-adherent,RPMI + 10% FBS,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_1728,SW780,ACH-000384,urinary_tract,urinary_tract,Bladder, , ,,,Female,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1731,SW900,ACH-000669,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,ATCC,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1738,TCCSUP,ACH-000720,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS + 1mM Sodium pyruvate + 1mM NEAA,Female,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1755,TE 617.T,ACH-000051,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,,,Female,ATCC,Connective tissue,Rhabdomyosarcoma,Muscle
+CVCL_1759,TE-1,ACH-000647,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,JCRB,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1761,TE-11,ACH-000488,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1763,TE-15,ACH-000353,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Female,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1764,TE-5,ACH-000408,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Female,Riken,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1767,TE-9,ACH-000694,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,RIKEN,Pleural effusion,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1776,TYK-nu,ACH-000430,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,HSRRB,,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1779,UACC-257,ACH-000579,skin,skin,Skin,melanoma, ,,,Unknown,NCI/DCTD,,Melanoma,Skin
+CVCL_1780,UACC-62,ACH-000425,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Unknown,NCI/DCTD,Skin,Melanoma,Skin
+CVCL_1781,UACC-812,ACH-000568,breast,breast,Breast,HER2Amp, ,,,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_1783,UM-UC-3,ACH-000522,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS,Male,ATCC,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1787,VMRC-LCD,ACH-001233,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,HSRRB,Lung,Lung adenocarcinoma,Lung
+CVCL_1790,VMRC-RCW,ACH-000484,kidney,kidney,Kidney, , ,Adherent,MEM + 10% FBS,Male,RIKEN,,Renal cell carcinoma,Kidney
+CVCL_1791,VMRC-RCZ,ACH-000171,kidney,kidney,Kidney, , ,,,Unknown,HSRRB,,Renal cell carcinoma,Kidney
+CVCL_1796,YKG-1,ACH-000570,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 10% FBS,Female,HSRRB,"Brain, right temporo-occipital lobe.",Glioblastoma,Brain
+CVCL_1798,42-MG-BA,ACH-000323,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,RPMI:MEM (1:1) + 20% FBS,Male,DSMZ,"Brain, temporal lobe",Glioblastoma,Brain
+CVCL_1805,ALL-SIL,ACH-000105,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1806,AMO1,ACH-000838,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Female,DSMZ,Ascites,Multiple myeloma,Blood
+CVCL_1809,CAL-78,ACH-000516,bone,bone,Bone,chondrosarcoma, ,Adherent,RPMI + 20% FBS,Male,DSMZ,"Thigh, skeletal muscle",Chondrosarcoma,Bone
+CVCL_1818,Granta-519,ACH-000073,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Peripheral blood,Mantle cell lymphoma,Lymph
+CVCL_1823,Karpas-620,ACH-000193,multiple_myeloma,multiple_myeloma,Blood, , ,,,Female,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_1845,PaTu 8902,ACH-000599,pancreas,pancreas,Pancreas, , ,,,Female,DSMZ,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_1861,Ci-1,ACH-000687,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Ascites,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_1862,COLO 677,,,multiple myeloma,Blood,,,,,,,Peripheral blood,Multiple myeloma,Blood
+CVCL_1870,MEC-1,ACH-000405,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,DSMZ,Peripheral blood,B-cell chronic lymphocytic leukemia,Lymph
+CVCL_1872,Mino,ACH-000220,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,ATCC,Peripheral blood,Mantle cell lymphoma,Lymph
+CVCL_1882,ONCO-DG-1,ACH-000013,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,RPMI + 10% FBS,Female,DSMZ,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1889,SU-DHL-10,ACH-000271,lymphoma,lymphoma,Lymph,DLBCL, ,Suspension,RPMI + 20% FBS,Male,DSMZ,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1987,COLO 201,ACH-000253,colorectal,colorectal,Colon, , ,Mixed adherence ,RPMI + 10% FBS,Male,,Ascites,Colon adenocarcinoma,Colon
+CVCL_1989,COLO 320,ACH-000202,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Female,DSMZ,"Colon, sigmoid",Colon adenocarcinoma,Colon
+CVCL_1992,COLO 699,ACH-001041,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,DSMZ,Pleural effusion,Melanoma,Lung
+CVCL_2027,EB1,ACH-000877,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Female,ATCC,"Bone, jaw, maxilla",Burkitt lymphoma,Lymph
+CVCL_2034,EN,ACH-000978,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Endometrium,Endometrial carcinoma,Uterus
+CVCL_2037,F-36P,ACH-000487,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 20% FBS + 10ng/ml GM-CSF,Male,DSMZ,Pleural effusion,Myelodysplastic syndrome,Blood
+CVCL_2047,FU-OV-1,ACH-000574,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,DSMZ,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_2057,HCC15,ACH-000878,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 10% FBS,Male,DSMZ,Lung,Lung squamous cell carcinoma,Lung
+CVCL_2060,HCC44,ACH-000667,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,DSMZ,Lung,Lung adenocarcinoma,Lung
+CVCL_2061,HCC78,ACH-000562,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,DSMZ,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_2063,HCC827,ACH-000012,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherentepithelialdensity >30%,RPMI + 10% FBS,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_2067,HDQ-P1,ACH-000643,breast,breast,Breast,TNBC, ,,,Female,DSMZ,Breast,Breast ductal carcinoma,Breast
+CVCL_2075,IGR-37,ACH-000650,skin,skin,Skin,melanoma, ,,,Male,DSMZ,Inguinal lymph node,Melanoma,Skin
+CVCL_2076,IGR-39,ACH-000550,skin,skin,Skin,melanoma, ,Adherent,DMEM + 15% FBS,Male,DSMZ,Skin,Melanoma,Skin
+CVCL_2081,JMSU-1,ACH-000753,urinary_tract,urinary_tract,Bladder, , ,Adherent,RPMI + 10% FBS + 2mM Glutamax,Male,DSMZ,Ascites,Bladder carcinoma,Bladder
+CVCL_2090,KCI-MOH1,ACH-001098,pancreas,pancreas,Pancreas, , ,,,Female,DSMZ,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_2091,KCL-22,ACH-000983,leukemia,leukemia,Blood,CML, ,Suspension,RPMI + 10% FBS,Female,DSMZ,Pleural effusion,Chronic myeloid leukemia,Blood
+CVCL_2092,Kelly,ACH-000259,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Brain,Neuroblastoma,Nervous System
+CVCL_2104,LOU-NH91,ACH-000176,lung,lung,Lung,lung_NSC,lung_squamous,,,Female,DSMZ,"Lung, right lower lobe",Lung squamous cell carcinoma,Lung
+CVCL_2112,MFE-319,ACH-000988,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,RPMI:MEM (1:1) + 20% heat inactivated FBS,Female,DSMZ,Endometrium,Endometrial adenosquamous carcinoma,Uterus
+CVCL_2124,MOLP-8,ACH-000745,multiple_myeloma,multiple_myeloma,Blood, , ,,,Male,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_2206,SU-DHL-6,ACH-000611,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,DSMZ,Peritoneal effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_2207,SU-DHL-8,ACH-000656,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,DSMZ,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_2209,SUP-M2,ACH-000226,lymphoma,lymphoma,Lymph,ALCL, ,Suspension,RPMI + 20% FBS,Female,DSMZ,Cerebrospinal fluid,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_2213,TC-71,ACH-000424,bone,bone,Bone,Ewing_sarcoma, ,Adherent,IMDM + 10% FBS,Male,DSMZ,"Bone, humerus",Ewing sarcoma,Bone
+CVCL_2218,TT2609-C02,ACH-000716,thyroid,thyroid,Thyroid, , ,,,Male,DSMZ,Thyroid gland,Differentiated thyroid carcinoma,Thyroid
+CVCL_2419,COV318,ACH-000256,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,MEM + 10% FBS,Female,ECACC,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_2424,COV504,ACH-001048,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM + 10% FBS + 2mM L-glutamine,Female,ECACC,Pleural effusion,Ovarian carcinoma,Ovary
+CVCL_2481,HEL 92.1.7,ACH-000005,leukemia,leukemia,Blood,AML, ,Semi-adherent,RPMI + 10% FBS,Male,ATCC,Peripheral blood,Acute erythroid leukemia,Blood
+CVCL_2582,LUDLU-1,ACH-000390,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 10% FBS,Male,ECAAC,,Lung squamous cell carcinoma,Lung
+CVCL_2613,MOG-G-CCM,ACH-001125,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Unknown,,Brain,Anaplastic astrocytoma,Brain
+CVCL_2620,MOR/CPR,ACH-000851,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Unknown,ECACC,Lung,Lung adenocarcinoma,Lung
+CVCL_2661,OE21,ACH-000544,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,HPACC,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_2676,P3HR-1,ACH-000707,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Male,ATCC,Ascites,Burkitt lymphoma,Lymph
+CVCL_2765,WM266-4,ACH-001239,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Female,ATCC,"Right thigh, skin",Melanoma,Skin
+CVCL_2786,JHH-2,ACH-000577,liver,liver,Liver, , ,Adherent,MEM + 10% FBS,Male,HSRRB,Ascites,Adult hepatocellular carcinoma,Liver
+CVCL_2787,JHH-4,ACH-000476,liver,liver,Liver, , ,Adherent,MEM + 10% FBS,Male,HSRRB,,Adult hepatocellular carcinoma,Liver
+CVCL_2788,JHH-6,ACH-000217,liver,liver,Liver, , ,Adherent,William's E Medium + 10% FBS,Female,HSRRB,,Adult hepatocellular carcinoma,Liver
+CVCL_2791,MKN74,ACH-000758,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,HSSRB,Liver,Gastric tubular adenocarcinoma,Stomach
+CVCL_2798,KNS-60,ACH-000445,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 5% FBS,Male,HSSRB,Brain,Glioblastoma,Brain
+CVCL_2799,KNS-81,ACH-000479,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Male,HSSRB,Brain,Glioblastoma,Brain
+CVCL_2804,CMK-86,ACH-001037,leukemia,leukemia,Blood,AML, ,,,Male,HSRRB,Peripheral blood,Acute megakaryoblastic leukemia in Down syndrome,Blood
+CVCL_2805,JHH-7,ACH-000848,liver,liver,Liver, , ,Adherent,William's E medium + 10% FBS,Male,HSRRB,,Adult hepatocellular carcinoma,Liver
+CVCL_2862,AZ-521,ACH-001015,small_intestine,small_intestine,Small Intestine, , ,,,Male,,"Small intestine, duodenum",Duodenal adenocarcinoma,Small Intestine
+CVCL_2873,CCK-81,ACH-000963,colorectal,colorectal,Colon,colorectal_MSI, ,Adherent,MEM + 10% FBS,Female,HSRRB,Lymph node,Colon adenocarcinoma,Colon
+CVCL_2891,EBC-1,ACH-000563,lung,lung,Lung,lung_NSC,lung_squamous,,MEM + 10% FBS,Male,RIKEN,Skin,Lung squamous cell carcinoma,Lung
+CVCL_2908,Fu97,ACH-000633,gastric,gastric,Stomach,gastric_adenocarcinoma,diffuse_gastric,Adherent,DMEM + 10% FBS + 0.01mg/ml Insulin,Female,HSRRB,Stomach,Gastric adenocarcinoma,Stomach
+CVCL_2914,HARA [Human squamous cell lung carcinoma],,,lung squamous cell carcinoma,Lung,,,,,,,Pleural effusion,Lung squamous cell carcinoma,Lung
+CVCL_2917,HCC-56,ACH-000467,colorectal,colorectal,Colon, , ,Adherent,MEM + 10% FBS,Unknown,HSRRB,Ascites,Gastric tubular adenocarcinoma,Colon
+CVCL_2925,HEC-151,ACH-000972,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,HSSRB,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_2927,HEC-251,ACH-000996,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 0.15% FBS,Female,HSSRB,Endometrium,Endometrial carcinoma,Uterus
+CVCL_2928,HEC-265,ACH-000946,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 15% FBS,Female,HSSRB,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_2930,HEC-59,ACH-000994,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 15% FBS,Female,HSSRB,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_2931,HEC-6,ACH-000984,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 15% FBS,Female,HSSRB,Endometrium,"Endometrial endometrioid adenocarcinoma, variant with squamous differentiation",Uterus
+CVCL_2947,HLF,ACH-000393,liver,liver,Liver, , ,Adherent,MEM + 10% FBS,Male,HSRRB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_2949,HMC-1-8,ACH-000721,breast,breast,Breast, , ,Adherent,RPMI + 10% FBS,Female,HSSRB,Pleural effusion,Breast carcinoma,Breast
+CVCL_2956,HuH-1,ACH-000475,liver,liver,Liver, , ,Adherent ,DMEM + 10% FBS,Male,HSRRB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_2961,IM95,ACH-000919,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Male,HSRRB,Stomach,Gastric adenocarcinoma,Stomach
+CVCL_2972,KHM-1B,ACH-000564,multiple_myeloma,multiple_myeloma,Blood, , ,,,Male,HSSRB,Pleural effusion,Multiple myeloma,Blood
+CVCL_2977,KMBC-2,ACH-000862,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Unknown,HSRRB,,Bladder carcinoma,Bladder
+CVCL_2981,KMM-1,ACH-000889,multiple_myeloma,multiple_myeloma,Blood, , ,Mixed Adherent and Suspension,RPMI + 10% FBS,Male,HSSRB,,Multiple myeloma,Blood
+CVCL_2983,KMRC-1,ACH-000684,kidney,kidney,Kidney, , ,Adherent,DMEM + 10% FBS,Male,HSRRB,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_2984,KMRC-2,ACH-000709,kidney,kidney,Kidney, , ,,,Male,HSRRB,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_2989,KMS-11,ACH-000714,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Female,HSRRB,Pleural effusion,Multiple myeloma,Blood
+CVCL_2992,KMS-26,ACH-000588,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Male,HSRRB,Pleural effusion,Multiple myeloma,Blood
+CVCL_2996,KMS-34,ACH-000541,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Female,HSRRB,Pleural effusion,Multiple myeloma,Blood
+CVCL_3002,KP-1N,ACH-001107,pancreas,pancreas,Pancreas, , ,,,Male,,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_3003,KP-1NL,ACH-001108,pancreas,pancreas,Pancreas, , ,,,Male,,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_3004,KP-2,ACH-000281,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Female,HSRRB,Pancreas,Pancreatic carcinoma,Pancreas
+CVCL_3005,KP-3,ACH-000108,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Male,HSSRB,Liver,Squamous cell carcinoma of pancreas,Pancreas
+CVCL_3007,KYM-1,ACH-000607,rhabdoid,rhabdoid,Muscle, , ,,,Male,HSRRB,Neck,Embryonal rhabdomyosarcoma,Muscle
+CVCL_3015,Lu-99,ACH-000444,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 10% FBS,Male,HSRRB,Lung,Lung giant cell carcinoma,Lung
+CVCL_3020,MCAS,ACH-000796,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_mucinous,Adherent,MEM + 15% FBS,Female,HSRRB,Ovary,Mucinous adenocarcinoma of ovary,Ovary
+CVCL_3043,NCO2,ACH-000076,leukemia,leukemia,Blood,CML, ,Suspension,RPMI + 10% FBS,Female,HSSRB,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_3082,NUGC-4,ACH-000674,gastric,gastric,Stomach,gastric_adenocarcinoma,diffuse_gastric,,,Female,RIKEN,Paragastric lymph node,Gastric signet ring cell adenocarcinoma,Stomach
+CVCL_3084,OCUM-1,ACH-000247,gastric,gastric,Stomach,gastric_adenocarcinoma,diffuse_gastric,Semi-adherent,DMEM + 10% FBS,Female,HSRRB,Pleural effusion,Gastric signet ring cell adenocarcinoma,Stomach
+CVCL_3111,OVMANA,ACH-000646,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,RPMI + 10% FBS,Female,HSRRB,Ovary,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_3114,OVSAHO,ACH-000409,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,HSSRB,Abdomen,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_3117,OVTOKO,ACH-000663,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,RPMI + 10% FBS,Female,HSSRB,Spleen,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_3143,QGP-1,ACH-000347,pancreas,pancreas,Pancreas, , ,,,Male,HSRRB,"Pancreas, islets of Langerhans",Somatostatinoma,Pancreas
+CVCL_3152,RERF-GC-1B,ACH-000144,gastric,gastric,Stomach, , ,,,Male,HSRRB,Pyloric lymph node,Gastric adenocarcinoma,Stomach
+CVCL_3156,RKN,ACH-000505,soft_tissue,soft_tissue,Soft Tissue,leiomyosarcoma, ,Adherent,F12 + 10% FBS,Female,HSSRB,Ovary,Leiomyosarcoma,Soft Tissue
+CVCL_3172,SUIT-2,ACH-000652,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Male,HSSRB,Liver,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_3317,HMCB,ACH-000931,skin,skin,Skin,melanoma, ,,,Female,ATCC,,Melanoma,Skin
+CVCL_3326,Pfeiffer,ACH-000140,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,ATCC,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_3360,BGC-823,ACH-001017,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Male,,"Uterus, cervix",Human papillomavirus-related endocervical adenocarcinoma,Stomach
+CVCL_3371,GLC-82,ACH-001071,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ICLC,"Uterus, cervix",Human papillomavirus-related endocervical adenocarcinoma,Lung
+CVCL_3385,KE-39,ACH-000507,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,RIKEN,Lymph node,Gastric adenocarcinoma,Stomach
+CVCL_3386,KE-97,ACH-000167,gastric,gastric,Stomach, , ,Semi-Adherent,RPMI + 10% FBS,Male,RIKEN,,,Blood
+CVCL_3509,ES-2,ACH-000906,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,RPMI + 10% FBS,Female,ATCC,Ovary,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_3517,HPAC,ACH-000270,pancreas,pancreas,Pancreas, , ,,,Female,ATCC,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_3532,JM-1,ACH-000151,leukemia,leukemia,Blood,B-cell_ALL, ,,IMDM + 10% FBS,Male,ATCC,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_3567,PL45,ACH-001171,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_3599,SCaBER,ACH-000839,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS + 2mM L-glutamine + 0.1mM Sodium pyruvate + 0.1mM NEAA,Male,ATCC,Urinary bladder,Bladder squamous cell carcinoma,Bladder
+CVCL_3603,SW579,ACH-000163,thyroid,thyroid,Thyroid, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Thyroid gland,Thyroid carcinoma,Thyroid
+CVCL_3611,Toledo,ACH-000285,lymphoma,lymphoma,Lymph,DLBCL, ,,,Female,ATCC,Peripheral blood,Diffuse large B-cell lymphoma,Lymph
+CVCL_3612,TOV-112D,ACH-000048,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,Adherent,MCDB 105:Medium 199 (1:1) + 15% FBS + 1.5g/l Sodium bicarbonate,Female,ATCC,Ovary,Endometrioid carcinoma of ovary,Ovary
+CVCL_3613,TOV-21G,ACH-000885,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,MCDB 105:Medium 199 (1:1) + 15% FBS,Female,ATCC,Ovary,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_3768,OV-90,ACH-000291,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,MCDB 105:Medium 199 (1:1) + 10% FBS + 1.5g/l Sodium bicarbonate,Female,ATCC,Ascites,Adenocarcinoma of ovary,Ovary
+CVCL_3881,SU.86.86,ACH-000114,pancreas,pancreas,Pancreas, , ,,,Female,ATCC,Liver,Pancreatic adenocarcinoma,Pancreas
+CVCL_4402,RERF-LC-A1,,,lung squamous cell carcinoma,Lung,,,,,,,Pleural effusion,Lung squamous cell carcinoma,Lung
+CVCL_4613,BDCM,ACH-000080,leukemia,leukemia,Blood,B-cell_ALL, ,,,Male,ATCC,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_4647,JHOS-2,ACH-000132,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM:F12 (1:1) + 10% FBS,Female,RIKEN,Lymph node,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_4649,JHOS-4,ACH-000584,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM:F12 (1:1) + 10% FBS,Female,RIKEN,Peritoneum,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_4656,JHUEM-2,ACH-000909,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,RIKEN,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_4717,PK-1,ACH-000307,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Male,RIKEN,Liver,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_4897,PK-59,ACH-000205,pancreas,pancreas,Pancreas, , ,,,Female,JCRB,Liver,Pancreatic carcinoma,Pancreas
+CVCL_4900,Sq-1,ACH-000553,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,RIKEN,,Lung squamous cell carcinoma,Lung
+CVCL_5167,SH-10-TC,ACH-000764,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Unknown,RIKEN,Stomach,Gastric mucinous adenocarcinoma,Stomach
+CVCL_5480,LC-1/sq-SF,ACH-001113,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,RIKEN,Lung,Lung squamous cell carcinoma,Lung
+CVCL_6543,Ishikawa (Heraklio) 02 ER-,ACH-000961,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,ECACC,Endometrium,Type I endometrial adenocarcinoma,Uterus
+CVCL_6748,PK-45H,ACH-000468,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Unknown,RIKEN,,Pancreatic carcinoma,Pancreas
+CVCL_6774,DOV13,ACH-001063,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,Academic Lab,Ovary,Adenocarcinoma of ovary,Ovary
+CVCL_6805,WM88,ACH-000899,skin,skin,Skin,melanoma, ,,RPMI + 10% FBS,Male,Academic Lab,Not specified.,Melanoma,Skin
+CVCL_6809,WM983B,ACH-000765,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,Academic Lab,Inguinal lymph node,Melanoma,Skin
+CVCL_6831,NCI-H3255,ACH-000109,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,Academic Lab,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_8067,T3M-10,ACH-000813,lung,lung,Lung,lung_NSC,lung_large,,,Male,RIKEN,Lymph node,Lung large cell carcinoma,Lung
+CVCL_8147,L3.3,ACH-000685,pancreas,pancreas,Pancreas, , ,Mixed Adherent and Suspension,DMEM + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 1mM NEAA,Female,Academic Lab,Celiac axis lymph node,Squamous cell carcinoma of pancreas,Pancreas
+CVCL_8784,K029AX,ACH-000404,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Unknown,Academic Lab,,Cutaneous melanoma,Skin
+CVCL_8787,WM793,ACH-000827,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,WISTAR,Skin,Cutaneous melanoma,Skin
+CVCL_8795,OCI-Ly10,ACH-001146,lymphoma,lymphoma,Lymph,DLBCL, ,,,Female,,Lymph node,Diffuse large B-cell lymphoma,Lymph
+CVCL_8878,HEY A8,ACH-000542,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_low_grade_serous,Adherent,RPMI + 10% FBS,Female,Academic Lab,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_A341,WM1799,ACH-000661,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,WISTAR,Not specified.,Melanoma,Skin
+CVCL_A472,NCI-H1339,ACH-000921,lung,lung,Lung,lung_small, ,Adherent,RPMI + 20% FBS,Female,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_E063,TEN,ACH-000397,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 10% FBS,Female,RIKEN,Endometrium,Endometrial clear cell adenocarcinoma,Uterus
+CVCL_K085,SF8657,ACH-001187,skin,skin,Skin,melanoma, ,,,Male,,Skin,,Skin
+CVCL_1097,C32 [Human melanoma],,,amelanotic melanoma,Skin,,,,,,,Skin,Amelanotic melanoma,Skin
+CVCL_0001,HEL,ACH-000004,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Acute erythroid leukemia,Blood
+CVCL_0002,HL-60,ACH-000002,leukemia,leukemia,Blood,AML, ,,,Female,ATCC,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_0004,K-562,ACH-000551,leukemia,leukemia,Blood,CML, ,Suspension,IMDM + 10% FBS,Female,ATCC,Pleural effusion,Chronic myeloid leukemia,Blood
+CVCL_0005,NB4,ACH-000294,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Female,DSMZ,Bone marrow,Acute promyelocytic leukemia,Blood
+CVCL_0006,THP-1,ACH-000146,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS + 0.5mM BME,Male,ATCC,Peripheral blood,Acute monoblastic/monocytic leukemia,Blood
+CVCL_0008,Daudi,ACH-000786,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Male,ATCC,Peripheral blood,Burkitt lymphoma,Lymph
+CVCL_0009,HDLM-2,ACH-000267,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Male,DSMZ,Pleural effusion,Hodgkin lymphoma,Lymph
+CVCL_0013,MOLT-4,ACH-001127,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,ATCC,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_0014,RPMI-8226,ACH-000817,multiple_myeloma,multiple_myeloma,Blood, , ,Adherent+Suspension,RPMI + 10% FBS,Male,ATCC,Peripheral blood,Multiple myeloma,Blood
+CVCL_0017,U-698-M,ACH-001680,lymphoma,lymphoma,Lymph,lymphoblastic_lymphoma, ,,,Male,,,Non-Hodgkin lymphoma,Lymph
+CVCL_0021,U-251MG,ACH-000232,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,DMEM + 10% FBS,Male,HSRRB,"Brain, parietal lobe",Astrocytoma,Brain
+CVCL_0030,HeLa,ACH-001086,cervix,cervix,Cervix, , ,,,Female,,"Uterus, cervix",Human papillomavirus-related endocervical adenocarcinoma,Cervix
+CVCL_0032,SiHa,ACH-000556,cervix,cervix,Cervix, , ,Adherent,MEM + 10% FBS,Female,,"Uterus, cervix",Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_0037,A-431,ACH-001328,skin,skin,Skin,epidermoid_carcinoma, ,Adherent,DMEM + 10% FBS,Female,,"Skin, epidermis",Skin squamous cell carcinoma,Skin
+CVCL_0062,MDA-MB-231,ACH-000768,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_0064,MV4-11,ACH-000045,leukemia,leukemia,Blood,AML, ,Suspension,IMDM + 10% FBS,Male,ATCC,Peripheral blood,Acute monoblastic/monocytic leukemia,Blood
+CVCL_0067,Namalwa,ACH-000944,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Female,JCRB,,Burkitt lymphoma,Lymph
+CVCL_0068,SK-MEL-1,ACH-000465,skin,skin,Skin,melanoma, ,,,Male,ATCC,Thoracic lymph duct,Melanoma,Skin
+CVCL_0078,SNU-5,ACH-000303,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Female,ATCC,Ascites,Gastric adenocarcinoma,Stomach
+CVCL_0092,NALM-6,ACH-000938,leukemia,leukemia,Blood,B-cell_ALL, ,Suspensions,RPMI + 15% FBS,Male,DSMZ,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_0093,RS4;11,ACH-000874,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,ATCC,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(v,Blood
+CVCL_0103,SUP-B15,ACH-000059,leukemia,leukemia,Blood,B-cell_ALL, ,,,Male,ATCC,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(9,Blood
+CVCL_0139,AGS,ACH-000880,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,F12K + 10% FBS,Female,ATCC,Stomach,Gastric adenocarcinoma,Stomach
+CVCL_0167,SK-N-BE(2)-M17,,,neuroblastoma,Nervous System,,,,,,,Bone marrow,Neuroblastoma,Nervous System
+CVCL_0201,Caov-3,ACH-000713,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM + 10% FBS,Female,ATCC,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_0202,Caov-4,ACH-000103,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,ATCC,"Fallopian tube, subserosa",High grade ovarian serous adenocarcinoma,Ovary
+CVCL_0207,CCRF-CEM,ACH-001738,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_0209,CESS,ACH-002218,unknown,acute myeloid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_0234,Caki-1,ACH-000433,kidney,kidney,Kidney, , ,Adherent,McCoy's 5A + 10% FBS,Male,ATCC,Skin,Clear cell renal carcinoma,Kidney
+CVCL_0237,Capan-1,ACH-000354,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,Liver,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_0243,DAN-G,ACH-000243,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Female,DSMZ,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_0244,DG-75,ACH-002232,unknown,burkitt lymphoma,Lymph, , ,,,,Sanger,Pleural effusion,Burkitt lymphoma,Lymph
+CVCL_0258,EoL-1,ACH-000198,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Chronic eosinophilic leukemia,Blood
+CVCL_0290,HCC1937,ACH-000223,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_0336,Huh-7,ACH-000480,liver,liver,Liver, , ,Adherent,DMEM + 10% FBS,Male,HSSRB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_0360,JAR,ACH-001529,uterus,uterus,Uterus,choriocarcinoma, ,Adherent,RPMI + 10% FBS + 1% L-glutamine + 1% HEPES,Male,,,Gestational choriocarcinoma,Uterus
+CVCL_0375,KGN,ACH-002149,unknown,maligant granulosa cell tumor of the ovary,Ovary, , ,,,,Sanger,"Ovary, ovarian follicle, granulosa cell layer",Maligant granulosa cell tumor of the ovary,Ovary
+CVCL_0388,LAMA-84,ACH-000301,leukemia,leukemia,Blood,CML, ,,,Female,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_0397,LS180,ACH-000957,colorectal,colorectal,Colon,colorectal_MSI, ,Adherent,MEM + 10% FBS,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0399,LoVo,ACH-000950,colorectal,colorectal,Colon,colorectal_MSI, ,Adherent,F12 + 10% FBS + 2mM Glutamax + 1.5g/l Sodium bicarbonate,Male,ATCC,Left supraclavicular lymph node,Colon adenocarcinoma,Colon
+CVCL_0455,NCI-H292,ACH-000474,unknown,lung mucoepidermoid carcinoma,Lung, , ,,,Female,ATCC,Lymph node,Lung mucoepidermoid carcinoma,Lung
+CVCL_0479,PA-1,ACH-001374,ovary,ovary,Ovary,ovary_non_epithelial,ovary_mixed_germ_cell,Adherent,MEM + 10% FBS,Female,,Ascites,Mixed germ cell tumor,Ovary
+CVCL_0526,SK-MEL-28,ACH-000615,skin,skin,Skin,melanoma, ,,,Male,ATCC,Skin,Cutaneous melanoma,Skin
+CVCL_0533,SK-UT-1,ACH-000939,soft_tissue,soft_tissue,Soft Tissue,leiomyosarcoma, ,Adherent,MEM + 10% FBS,Female,ATCC,Uterus,Leiomyosarcoma of the corpus uteri,Soft Tissue
+CVCL_0542,SW13,ACH-001401,adrenal_cortex,adrenal_cortex,Adrenal Gland, , ,,,Female,,Adrenal gland,Adrenocortical carcinoma,Adrenal Gland
+CVCL_0550,SK-MEL-3,ACH-000423,skin,skin,Skin,melanoma, ,,,Female,ATCC,Lymph node,Cutaneous melanoma,Skin
+CVCL_0566,U266B1,ACH-000626,multiple_myeloma,multiple_myeloma,Blood, , ,,,Male,ATCC,Peripheral blood,Multiple myeloma,Blood
+CVCL_0582,WRO,,,differentiated thyroid carcinoma,Thyroid,,,,,,,Not specified.,Differentiated thyroid carcinoma,Thyroid
+CVCL_0619,MDA-MB-330,ACH-001358,breast,breast,Breast, , ,,,Female,,Pleural effusion,Invasive breast lobular carcinoma,Breast
+CVCL_0620,MDA-MB-361,ACH-000934,breast,breast,Breast,HER2Amp, ,,,Female,ATCC,Brain,Breast adenocarcinoma,Breast
+CVCL_0632,SW948,ACH-000680,colorectal,colorectal,Colon, , ,,,Female,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0761,Hs 445,ACH-002245,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Female,ATCC,Lymph node,,Lymph
+CVCL_0832,Hs 633.T,ACH-002246,unknown,fibrosarcoma,Soft Tissue, , ,,,,Sanger,,Fibrosarcoma,Soft Tissue
+CVCL_1038,Hs 940.T,ACH-000135,fibroblast,fibroblast,Soft Tissue, , ,,,Male,ATCC,Skin,,Soft Tissue
+CVCL_1046,23132/87,ACH-000948,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,DSMZ,Stomach,Gastric adenocarcinoma,Stomach
+CVCL_1049,647V,ACH-000896,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 15% FBS + 2mM Glutamax,Male,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1055,A-427,ACH-000757,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,DMEM + 10% FBS,Male,,Lung,Lung adenocarcinoma,Lung
+CVCL_1056,A-498,ACH-000555,kidney,kidney,Kidney, , ,,,Male,ATCC,Kidney,Renal cell carcinoma,Kidney
+CVCL_1062,A3/Kawakami,,,diffuse large b-cell lymphoma,Lymph,,,,,,,Ascites,Diffuse large B-cell lymphoma,Lymph
+CVCL_1063,A-388,ACH-001442,cervix,cervix,Cervix, , ,,,Male,,Lymph node,Skin squamous cell carcinoma,Cervix
+CVCL_1064,A4/Fukuda,,,precursor b-cell acute lymphoblastic leukemia,Blood,,,,,,,Ascites,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1065,A-704,ACH-000429,kidney,kidney,Kidney, , ,,,Male,ATCC,Kidney,Renal cell carcinoma,Kidney
+CVCL_1066,ABC-1,ACH-000528,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,MEM + 10% FBS,Male,HSRRB,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1069,ALL-PO,ACH-002209,unknown,b-lymphoblastic leukemia/lymphoma with t(v,Blood, , ,,,,Sanger,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(v,Blood
+CVCL_1070,AM-38,ACH-000269,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,,,Male,HSSRB,"Brain, left occipital lobe",Glioblastoma,Brain
+CVCL_1072,ARH-77,ACH-002210,unknown,unknown,Unknown, , ,,,,Sanger,Peripheral blood,,Blood
+CVCL_1073,ATN-1,ACH-002058,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1075,BALL-1,ACH-002211,unknown,precursor b-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1076,BB30-HNC,ACH-002212,unknown,head and neck squamous cell carcinoma,Head And Neck, , ,,,,Sanger,,Head and neck squamous cell carcinoma,Head And Neck
+CVCL_1077,BB49-HNC,ACH-002213,unknown,squamous cell carcinoma of the oral cavity,Head And Neck, , ,,,,Sanger,,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1078,BB65-RCC,ACH-002090,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,Kidney,Renal cell carcinoma,Kidney
+CVCL_1079,BC-1,ACH-002214,unknown,primary effusion lymphoma,Lymph, , ,,,,Sanger/ATCC,Ascites,Primary effusion lymphoma,Lymph
+CVCL_1080,BC-3,ACH-002215,unknown,primary effusion lymphoma,Lymph, , ,,,,ATCC/Sanger,Pleural effusion,Primary effusion lymphoma,Lymph
+CVCL_1081,BE-13,ACH-002216,unknown,precursor t-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1082,BEN,ACH-000603,lung,lung,Lung,lung_NSC, ,,,Male,DSMZ,Supraclavicular lymph node,Lung non-small cell carcinoma,Lung
+CVCL_1083,BFTC-905,ACH-000802,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Female,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1085,BHT-101,ACH-000191,thyroid,thyroid,Thyroid, , ,,,Female,DSMZ,Lymph node,Anaplastic thyroid carcinoma,Thyroid
+CVCL_1091,BPH-1,ACH-001453,prostate,prostate,Prostate, , ,,,Male,,Prostate,Benign prostatic hyperplasia,Prostate
+CVCL_1093,Becker,ACH-001016,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,HSRRB,Brain,Astrocytoma,Brain
+CVCL_1094,C-33 A,ACH-001333,cervix,cervix,Cervix, , ,Adherent,MEM + 10% FBS,Female,,"Uterus, cervix",Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1100,Ca Ski,ACH-001336,cervix,cervix,Cervix, , ,Adherent,RPMI + 10% FBS,Female,,Small intestine,Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1101,CA46,ACH-000440,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Male,ATCC,Ascites,Burkitt lymphoma,Lymph
+CVCL_1104,CAL-120,ACH-000212,breast,breast,Breast,TNBC, ,,,Female,DSMZ,Pleural effusion,Breast carcinoma,Breast
+CVCL_1106,CAL-148,ACH-000902,breast,breast,Breast,TNBC, ,,,Female,DSMZ,Pleural effusion,Breast carcinoma,Breast
+CVCL_1108,CAL-33,ACH-000518,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,DMEM + 10% FBS,Male,DSMZ,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1109,CAL-39,ACH-002091,unknown,vulvar squamous cell carcinoma,Cervix, , ,,,,Sanger,Vulva,Vulvar squamous cell carcinoma,Cervix
+CVCL_1110,CAL-51,ACH-000856,breast,breast,Breast,TNBC, ,Adherent,DMEM + 20% FBS,Female,DSMZ,Pleural effusion,Breast carcinoma,Breast
+CVCL_1111,CAL-54,ACH-000457,kidney,kidney,Kidney, , ,,,Male,DSMZ,Pleural effusion,Renal cell carcinoma,Kidney
+CVCL_1113,CAL-72,ACH-001715,bone,bone,Bone,osteosarcoma, ,Adherent,DMEM + 10% FBS + 2mM L-glutamine + 1x Insulin-Transferrin-Selenium,Male,,"Bone, patella",Osteosarcoma,Bone
+CVCL_1116,CaR-1,ACH-002345,colorectal,colorectal,Colon, , ,,,Unknown,JCRB,Left inguinal lymph node,Rectal adenocarcinoma,Colon
+CVCL_1119,CFPAC-1,ACH-000138,pancreas,pancreas,Pancreas, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Liver,Cystic fibrosis,Pancreas
+CVCL_1120,CGTH-W-1,ACH-001023,thyroid,thyroid,Thyroid, , ,,,Female,DSMZ,Thyroid gland,Thyroid carcinoma,Thyroid
+CVCL_1121,ChaGo-K-1,ACH-000867,lung,lung,Lung,lung_NSC, ,Adherent,RPMI + 10% FBS,Male,ECACC,Hypodermis,Bronchogenic carcinoma,Lung
+CVCL_1123,CHP-126,ACH-000136,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Female,DSMZ,Retroperitoneal space,Neuroblastoma,Nervous System
+CVCL_1128,COLO 668,ACH-000803,lung,lung,Lung,lung_small, ,,,Female,ECACC,Brain,Small cell lung cancer,Lung
+CVCL_1131,COLO 680N,ACH-000717,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Female,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1132,COLO 684,ACH-000864,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,ECACC,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_1134,COLO 792,ACH-000968,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,ECACC,Brain,Melanoma,Skin
+CVCL_1136,COLO 824,ACH-001820,breast,breast,Breast, , ,,,Female,,Pleural effusion,Breast carcinoma,Breast
+CVCL_1137,COLO 829,ACH-000644,skin,skin,Skin,melanoma, ,,,Male,ATCC,Skin,Cutaneous melanoma,Skin
+CVCL_1141,COR-L88,ACH-000508,lung,lung,Lung,lung_small, ,,,Male,ECACC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1144,CP66-MEL,ACH-002097,unknown,melanoma,Skin, , ,,,,Sanger,,Melanoma,Skin
+CVCL_1146,CPC-N,ACH-001049,lung,lung,Lung,lung_small, ,,,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1150,CTV-1,ACH-002222,unknown,precursor t-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1151,CW-2,ACH-000998,colorectal,colorectal,Colon,colorectal_MSI, ,,,Female,RIKEN,Colon,Colon adenocarcinoma,Colon
+CVCL_1154,D-263MG,ACH-002225,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1155,D283 Med,ACH-000055,central_nervous_system,central_nervous_system,Brain,medulloblastoma,med_group_3,Semi-Adherent,MEM + 10% FBS,Male,ATCC,Ascites,Medulloblastoma,Brain
+CVCL_1160,D-423MG,ACH-002228,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1162,D-502MG,ACH-002229,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1166,D-566MG,ACH-002231,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1168,DB,ACH-000334,lymphoma,lymphoma,Lymph,DLBCL, ,Suspension,RPMI + 10% FBS,Male,ATCC,Ascites,Diffuse large B-cell lymphoma,Lymph
+CVCL_1172,DJM-1,ACH-002100,unknown,skin squamous cell carcinoma,Skin, , ,,,,Sanger,Skin,Skin squamous cell carcinoma,Skin
+CVCL_1176,DMS 273,ACH-000749,lung,lung,Lung,lung_small, ,,,Female,ECACC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1177,DMS 53,ACH-000698,lung,lung,Lung,lung_small, ,Adherent,RPMI + 10% FBS,Male,ATCC,Lung,Small cell lung cancer,Lung
+CVCL_1178,DMS 79,ACH-000703,lung,lung,Lung,lung_small, ,,,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1181,DoTc2 4510,ACH-001341,cervix,cervix,Cervix, , ,Adherent,DMEM + 10% FBS,Female,,"Uterus, cervix",Cervical carcinoma,Cervix
+CVCL_1182,DSH1,ACH-002235,unknown,bladder carcinoma,Bladder, , ,,,,Sanger,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1183,DU4475,ACH-000258,breast,breast,Breast,TNBC, ,Suspension,RPMI + 10% FBS,Female,ATCC,Skin,Breast carcinoma,Breast
+CVCL_1185,EB3 [Human Burkitt lymphoma],,,burkitt lymphoma,Lymph,,,,,,,"Bone, jaw, maxilla",Burkitt lymphoma,Lymph
+CVCL_1187,EC-GI-10,ACH-000305,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Male,RIKEN,Lymph node,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1188,ECC10,ACH-000560,gastric,gastric,Stomach,gastric_small, ,,,Male,RIKEN,Stomach,Gastric small cell carcinoma,Stomach
+CVCL_1194,EHEB,ACH-000038,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Peripheral blood,,Lymph
+CVCL_1195,EKVX,ACH-000706,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,Garraway Lab,,Lung adenocarcinoma,Lung
+CVCL_1197,EPLC-272H,ACH-000585,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 20% FBS,Male,DSMZ,,Lung mucoepidermoid carcinoma,Lung
+CVCL_1198,ES1,ACH-002103,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1200,ES4,ACH-002105,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1202,ES6,ACH-002107,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1203,ES7,ACH-002108,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1204,ES8,ACH-002109,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1207,Evsa-T,ACH-001065,breast,breast,Breast,ERneg, ,,,Female,,Ascites,Breast carcinoma,Breast
+CVCL_1208,EW-1,ACH-002110,unknown,ewing sarcoma,Bone, , ,,,,Sanger,Pleural effusion,Ewing sarcoma,Bone
+CVCL_1209,EW-11,ACH-002111,unknown,ewing sarcoma,Bone, , ,,,,Sanger,Mediastinal lymph node,Ewing sarcoma,Bone
+CVCL_1211,EW-13,ACH-002113,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1212,EW-16,ACH-002114,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1213,EW-18,ACH-002115,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1215,EW-24,ACH-002117,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1216,EW-3,ACH-002118,unknown,ewing sarcoma,Bone, , ,,,,Sanger,Pleural effusion,Ewing sarcoma,Bone
+CVCL_1217,EW-7,ACH-002119,unknown,ewing sarcoma,Bone, , ,,,,Sanger,Pleural effusion,Ewing sarcoma,Bone
+CVCL_1219,FTC-133,ACH-000903,thyroid,thyroid,Thyroid, , ,,DMEM:F12 (1:1) + 10% FBS + 2mM Glutamine,Male,ECACC,Thyroid gland,Differentiated thyroid carcinoma,Thyroid
+CVCL_1225,GAK,ACH-002120,unknown,vulvar melanoma,Skin, , ,,,,Sanger,Inguinal lymph node,Vulvar melanoma,Skin
+CVCL_1230,GDM-1,ACH-000081,leukemia,leukemia,Blood,AML, ,,,Female,ATCC,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1232,GI-ME-N,ACH-001344,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1234,GOTO,ACH-001716,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1235,GP5d,ACH-001345,colorectal,colorectal,Colon, , ,Adherent,DMEM + 10% FBS,Female,,Colon,Colon adenocarcinoma,Colon
+CVCL_1236,GR-ST,ACH-002238,unknown,precursor b-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1238,H-EMC-SS,ACH-001519,bone,bone,Bone,chondrosarcoma, ,,,Female,,Muscle,Extraskeletal myxoid chondrosarcoma,Bone
+CVCL_1240,H9,ACH-002240,unknown,sezary syndrome,Lymph, , ,,,,Sanger,Peripheral blood,Sezary syndrome,Lymph
+CVCL_1241,HA7-RCC,ACH-002139,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,,Renal cell carcinoma,Kidney
+CVCL_1242,HAL-01,ACH-002241,unknown,b-lymphoblastic leukemia/lymphoma with t(17,Blood, , ,,,,Sanger,Peripheral blood,B-lymphoblastic leukemia/lymphoma with t(17,Blood
+CVCL_1243,HC-1,ACH-002242,unknown,classic hairy cell leukemia,Blood, , ,,,,Sanger,Peripheral blood,Classic hairy cell leukemia,Blood
+CVCL_1251,HCC1419,ACH-000277,breast,breast,Breast,HER2Amp, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1252,HCC1428,ACH-000352,breast,breast,Breast,ERpos, ,Adherent,RPMI + 10% FBS,Female,ATCC,Pleural effusion,Breast adenocarcinoma,Breast
+CVCL_1256,HCC1599,ACH-000196,breast,breast,Breast,HER2Amp, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1261,HCC2157,ACH-000691,breast,breast,Breast,TNBC, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1263,HCC2218,ACH-000755,breast,breast,Breast,HER2Amp, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1266,HCC2998,ACH-001081,colorectal,colorectal,Colon, , ,,,Unknown,,,Colon adenocarcinoma,Colon
+CVCL_1267,HCC38,ACH-000276,breast,breast,Breast,TNBC, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1274,HEC-1,ACH-001517,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,,Endometrium,Type II endometrial adenocarcinoma,Uterus
+CVCL_1284,HO-1-N-1,ACH-002244,unknown,squamous cell carcinoma of the oral cavity,Head And Neck, , ,,,,Sanger,,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1286,HOP-92,ACH-000825,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,Garraway Lab,Lung,Lung non-small cell carcinoma,Lung
+CVCL_1288,HSC-3,ACH-000778,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,MEM + 10% FBS,Male,HSSRB,Cervical lymph node,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1289,HSC-4,ACH-000546,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,HSSRB,Cervical lymph node,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1293,HT-3,ACH-001525,cervix,cervix,Cervix, , ,,,Female,,Lymph node,Cervical carcinoma,Cervix
+CVCL_1294,HT-55,ACH-000926,colorectal,colorectal,Colon, , ,Adherent,MEM + 20% FBS + Glutamine + NEAA,Unknown,ECACC,Rectum,Rectal adenocarcinoma,Colon
+CVCL_1295,HTC-C3,ACH-001350,thyroid,thyroid,Thyroid, , ,,,Female,,Pleural effusion,Anaplastic thyroid carcinoma,Thyroid
+CVCL_1297,HuO-3N1,ACH-002142,unknown,osteosarcoma,Bone, , ,,,,Sanger,Bone,Osteosarcoma,Bone
+CVCL_1298,HuO9,ACH-001526,bone,bone,Bone,osteosarcoma, ,,RPMI + 10% FBS,Female,,"Bone, right distal femur",Osteosarcoma,Bone
+CVCL_1301,HuTu 80,ACH-000538,small_intestine,small_intestine,Small Intestine, , ,,,Male,ATCC,"Small intestine, duodenum",Duodenal adenocarcinoma,Small Intestine
+CVCL_1305,IM-9,ACH-002247,unknown,unknown,Unknown, , ,,,,Sanger,Bone marrow,,Blood
+CVCL_1306,IMR-5,ACH-002248,unknown,neuroblastoma,Nervous System, , ,,,,Sanger,Abdomen,Neuroblastoma,Nervous System
+CVCL_1308,IST-MEL1,ACH-002143,unknown,melanoma,Skin, , ,,,,Sanger,Skin,Melanoma,Skin
+CVCL_1313,IST-SL1,ACH-002144,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Supraclavicular lymph node,Small cell lung cancer,Lung
+CVCL_1314,IST-SL2,ACH-002145,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1317,Jiyoye,,,burkitt lymphoma,Lymph,,,,,,,Ascites,Burkitt lymphoma,Lymph
+CVCL_1319,JVM-2,ACH-000106,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Peripheral blood,Mantle cell lymphoma,Lymph
+CVCL_1322,K5,ACH-002148,unknown,differentiated thyroid carcinoma,Thyroid, , ,,,,Sanger,Thyroid gland,Differentiated thyroid carcinoma,Thyroid
+CVCL_1326,Karpas-45,ACH-002256,unknown,precursor t-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Bone marrow,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1327,KE-37,ACH-000101,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1328,KINGS-1,ACH-002257,unknown,anaplastic astrocytoma,Brain, , ,,,,Sanger,Brain,Anaplastic astrocytoma,Brain
+CVCL_1330,KM-H2,ACH-000815,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Male,DSMZ,Pleural effusion,Hodgkin lymphoma,Lymph
+CVCL_1331,KM12,ACH-000969,colorectal,colorectal,Colon,colorectal_MSI, ,Semi-Adherent,RPMI + 10% FBS,Unknown,JCRB,Colon,Colon carcinoma,Colon
+CVCL_1336,KNS-81-FD,ACH-002259,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1341,KP-N-YN,ACH-000227,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,RPMI + 10% FBS,Male,HSSRB,Right pararenal lymph node.,Neuroblastoma,Nervous System
+CVCL_1342,KP-N-YS,ACH-002261,unknown,neuroblastoma,Nervous System, , ,,,,Sanger,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1343,KS-1 [Human glioblastoma],,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_1344,KU-19-19,ACH-000486,urinary_tract,urinary_tract,Bladder, , ,Adherent,RPMI + 10% heat inactivated FBS,Male,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1346,KY821,ACH-002262,unknown,acute myelomonocytic leukemia,Blood, , ,,,,Sanger,"Brain, meninges",Acute myelomonocytic leukemia,Blood
+CVCL_1350,KYSE-270,ACH-000873,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI:F12 (1:1) + 10% FBS,Male,DSMZ,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1359,KYSE-220,ACH-002263,unknown,squamous cell carcinoma of the esophagus,Esophagus, , ,,,,Sanger,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1360,KYSE-50,ACH-002264,unknown,squamous cell carcinoma of the esophagus,Esophagus, , ,,,,Sanger,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1362,L-540,ACH-000806,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Female,DSMZ,Bone marrow,Hodgkin lymphoma,Lymph
+CVCL_1363,LA-N-6,ACH-001355,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1365,LB2241-RCC,ACH-002151,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,Kidney,Renal cell carcinoma,Kidney
+CVCL_1367,LB373-MEL-D,ACH-002153,unknown,melanoma,Skin, , ,,,,Sanger,,Melanoma,Skin
+CVCL_1368,LB647-SCLC,ACH-002154,unknown,small cell lung cancer,Lung, , ,,,,Sanger,,Small cell lung cancer,Lung
+CVCL_1369,LB771-HNC,ACH-002265,unknown,head and neck squamous cell carcinoma,Head And Neck, , ,,,,Sanger,,Head and neck squamous cell carcinoma,Head And Neck
+CVCL_1370,LB831-BLC,ACH-002266,unknown,bladder carcinoma,Bladder, , ,,,,Sanger,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1371,LB996-RCC,ACH-002155,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,Kidney,Renal cell carcinoma,Kidney
+CVCL_1373,LC-2/ad,ACH-002157,unknown,lung adenocarcinoma,Lung, , ,,,,Sanger,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1374,LC4-1,ACH-002267,unknown,precursor b-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1376,LCLC-97TM1,ACH-000596,lung,lung,Lung,lung_NSC,lung_large,Adherent,RPMI + 20% FBS,Male,DSMZ,Lung,Lung large cell carcinoma,Lung
+CVCL_1377,LK-2,ACH-000769,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,DMEM + 10% FBS,Male,RIKEN,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1378,LN-405,ACH-002268,unknown,glioblastoma,Brain, , ,,,,Sanger,"Brain, left fronto-temporal lobe.",Glioblastoma,Brain
+CVCL_1379,LNCaP clone FGC,ACH-000977,prostate,prostate,Prostate, , ,,,Male,ATCC,Left supraclavicular lymph node,Prostate carcinoma,Prostate
+CVCL_1380,Loucy,ACH-000104,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,ATCC,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1382,LS1034,ACH-000252,colorectal,colorectal,Colon, , ,,,Male,ATCC,Cecum,Cecum adenocarcinoma,Colon
+CVCL_1387,Lu-134-A,ACH-002051,lung,lung,Lung,lung_small, ,,,Male,,Lung,Small cell lung cancer,Lung
+CVCL_1389,Lu-135,ACH-001549,lung,lung,Lung,lung_small, ,,,Male,,Lung,Small cell lung cancer,Lung
+CVCL_1390,Lu-139,ACH-002052,lung,lung,Lung,lung_small, ,,,Male,,Lung,Small cell lung cancer,Lung
+CVCL_1391,Lu-165,ACH-002077,lung,lung,Lung,lung_small, ,,,Male,,Lymph node,Small cell lung cancer,Lung
+CVCL_1392,Lu-65,ACH-000438,lung,lung,Lung,lung_NSC,lung_large,,,Male,JCRB,Lung,Lung giant cell carcinoma,Lung
+CVCL_1393,Lu-99A,ACH-002158,unknown,lung giant cell carcinoma,Lung, , ,,,,Sanger,Lung,Lung giant cell carcinoma,Lung
+CVCL_1394,LXF 289,ACH-000787,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,F12 + 10% FBS,Male,DSMZ,Lung,Lung adenocarcinoma,Lung
+CVCL_1395,M14,ACH-002159,unknown,amelanotic melanoma,Skin, , ,,,,Sanger,"Right buttock, hypodermis",Amelanotic melanoma,Skin
+CVCL_1401,ME-180,ACH-001359,cervix,cervix,Cervix, , ,,,Female,,Omentum,Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1407,MFH-ino,ACH-002271,unknown,undifferentiated pleomorphic sarcoma,Soft Tissue, , ,,,,Sanger,,Undifferentiated pleomorphic sarcoma,Soft Tissue
+CVCL_1408,MFM-223,ACH-001819,breast,breast,Breast, , ,,,Female,,Pleural effusion,Breast carcinoma,Breast
+CVCL_1413,MHH-PREB-1,ACH-002272,unknown,b-cell non-hodgkin lymphoma,Lymph, , ,,,,Sanger,Lymph node,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_1415,MKN1,ACH-000351,gastric,gastric,Stomach,gastric_adenosquamous, ,,,Male,HSSRB,Lymph node,Gastric adenosquamous carcinoma,Stomach
+CVCL_1416,MKN28,ACH-002161,unknown,gastric tubular adenocarcinoma,Stomach, , ,,,,Sanger,Liver,Gastric tubular adenocarcinoma,Stomach
+CVCL_1418,ML-2,ACH-002273,unknown,acute myeloid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1419,MLMA,ACH-002274,unknown,classic hairy cell leukemia,Blood, , ,,,,Sanger,Peritoneal effusion,Classic hairy cell leukemia,Blood
+CVCL_1421,MN-60,ACH-002275,unknown,burkitt lymphoma,Lymph, , ,,,,Sanger,Peripheral blood,Burkitt lymphoma,Lymph
+CVCL_1426,Mono-Mac-6,ACH-000006,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,Peripheral blood,Acute monoblastic/monocytic leukemia,Blood
+CVCL_1428,MRK-nu-1,ACH-002163,unknown,breast carcinoma,Breast, , ,,,,Sanger,Pleural effusion,Breast carcinoma,Breast
+CVCL_1429,MS-1 [Human lung carcinoma],,,small cell lung cancer,Lung,,,,,,,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1434,MZ-PC-1,,,pancreatic ductal adenocarcinoma,Pancreas,,,,,,,Pleural effusion,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_1439,Mo,,,classic hairy cell leukemia,Blood,,,,,,,Spleen,Classic hairy cell leukemia,Blood
+CVCL_1440,NB1,ACH-000804,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Adherent,RPMI + 10% FBS,Male,HSRRB,Cervical lymph node,Neuroblastoma,Nervous System
+CVCL_1441,SJNB-10,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_1442,SJNB-12,,,neuroblastoma,Nervous System,,,,,,,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1443,SJNB-13,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_1444,SJNB-14,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_1448,NB69,ACH-002083,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,,Neuroblastoma,Nervous System
+CVCL_1451,NCC-IT,ACH-001578,embryo,embryo,Embryonic, , ,,,Male,,,Non-central nervous system-localized embryonal carcinoma,Embryonic
+CVCL_1462,NCI-H1304,ACH-002169,unknown,small cell lung cancer,Lung, , ,,,,Sanger,,Small cell lung cancer,Lung
+CVCL_1470,NCI-H1435,ACH-000852,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1471,NCI-H1436,ACH-000830,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1472,NCI-H1437,ACH-000589,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_1481,NCI-H1623,ACH-000744,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1487,NCI-H1688,ACH-002170,unknown,small cell lung cancer,Lung, , ,,,Male,ATCC/Sanger,Liver,Small cell lung cancer,Lung
+CVCL_1491,NCI-H1734,ACH-000675,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1492,NCI-H1755,ACH-000282,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Liver,Lung adenocarcinoma,Lung
+CVCL_1493,NCI-H1770,ACH-001362,lung,lung,Lung,lung_NSC, ,,,Male,,Lymph node,Lung non-small cell carcinoma,Lung
+CVCL_1494,NCI-H1781,ACH-000379,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Pleural effusion,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1498,NCI-H1836,ACH-000559,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lung,Small cell lung cancer,Lung
+CVCL_1499,NCI-H1838,ACH-000733,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1501,NCI-H187,ACH-001136,lung,lung,Lung,lung_small, ,,,Male,,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1503,NCI-H1876,ACH-000586,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1510,NCI-H1963,ACH-000729,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lung,Small cell lung cancer,Lung
+CVCL_1512,NCI-H1993,ACH-001137,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1516,NCI-H2029,ACH-000298,lung,lung,Lung,lung_small, ,,,Female,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1522,NCI-H2081,ACH-000394,lung,lung,Lung,lung_small, ,,,Female,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1525,NCI-H209,ACH-000290,lung,lung,Lung,lung_small, ,Suspension,RPMI + 10% FBS,Male,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1530,NCI-H2110,ACH-000929,lung,lung,Lung,lung_NSC, ,Adherent,RPMI + 10% FBS,Unknown,ATCC,Pleural effusion,Lung non-small cell carcinoma,Lung
+CVCL_1533,NCI-H2135,ACH-001363,lung,lung,Lung,lung_NSC, ,,,Unknown,,,Lung non-small cell carcinoma,Lung
+CVCL_1534,NCI-H2141,ACH-001138,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1536,NCI-H2171,ACH-000525,lung,lung,Lung,lung_small, ,,,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1539,NCI-H2196,ACH-000399,lung,lung,Lung,lung_small, ,,,Male,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1542,NCI-H2227,ACH-000610,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lung,Small cell lung cancer,Lung
+CVCL_1546,NCI-H2291,ACH-000718,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1549,NCI-H2342,ACH-000951,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1550,NCI-H2347,ACH-000875,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1551,NCI-H2405,ACH-000121,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1557,NCI-H322M,ACH-002172,unknown,minimally invasive lung adenocarcinoma,Lung, , ,,,,Sanger,Lung,Minimally invasive lung adenocarcinoma,Lung
+CVCL_1558,NCI-H345,ACH-001364,lung,lung,Lung,lung_small, ,,,Male,,Bone marrow,Small cell lung cancer,Lung
+CVCL_1562,NCI-H446,ACH-000800,lung,lung,Lung,lung_small, ,Adherent,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1565,NCI-H510A,,,small cell lung cancer,Lung,,,,,,,Adrenal gland,Small cell lung cancer,Lung
+CVCL_1568,NCI-H524,ACH-000816,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1569,NCI-H526,ACH-000767,lung,lung,Lung,lung_small, ,Suspension,RPMI + 10% FBS,Male,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1571,NCI-H596,ACH-000628,lung,lung,Lung,lung_NSC, ,,,Male,ATCC,Lung,Lung adenosquamous carcinoma,Lung
+CVCL_1573,NCI-H64,ACH-001599,lung,lung,Lung,lung_small, ,,,Female,,Lymph node,Small cell lung cancer,Lung
+CVCL_1579,NCI-H69,ACH-000358,lung,lung,Lung,lung_small, ,,,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1581,NCI-H716,ACH-000491,colorectal,colorectal,Colon, , ,Semi-adherent,RPMI + 10% FBS,Male,ATCC,Ascites,Cecum adenocarcinoma,Colon
+CVCL_1583,NCI-H720,ACH-002174,unknown,lung carcinoid tumor,Lung, , ,,,,Sanger,Lung,Lung carcinoid tumor,Lung
+CVCL_1588,NCI-H748,ACH-002176,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Lymph node,Small cell lung cancer,Lung
+CVCL_1591,NCI-H82,ACH-000355,lung,lung,Lung,lung_small, ,,RPMI + 10% FBS,Male,ATCC,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1594,NCI-H838,ACH-000416,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,ATCC,Lymph node,Lung adenocarcinoma,Lung
+CVCL_1595,NCI-H841,ACH-000292,lung,lung,Lung,lung_small, ,Adherent,DMEM:F12 (1:1) + 10% FBS + 1ml Insulin-Transferrin-Selenium,Male,ATCC,Lung,Thoracic SMARCA4-deficient undifferentiated tumor,Lung
+CVCL_1596,NCI-H847,ACH-001365,lung,lung,Lung,lung_small, ,,,Male,,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1604,NEC8,ACH-002288,unknown,non-central nervous system-localized embryonal carcinoma,Embryonic, , ,,,,Sanger,Testis,Non-central nervous system-localized embryonal carcinoma,Embryonic
+CVCL_1605,NH-12,ACH-001603,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1607,NKM-1,ACH-002290,unknown,acute myeloid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1608,NMC-G1,ACH-000200,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM + 10% FBS,Female,HSSRB,Brain,Astrocytoma,Brain
+CVCL_1609,NOMO-1,ACH-000168,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Female,HSRRB,Bone marrow,Acute monoblastic/monocytic leukemia,Blood
+CVCL_1610,NOS-1 [Human osteosarcoma],,,osteosarcoma,Bone,,,,,,,"Bone, left proximal tibia",Osteosarcoma,Bone
+CVCL_1613,NY,ACH-002178,unknown,osteosarcoma,Bone, , ,,,,Sanger,"Bone, right femur",Osteosarcoma,Bone
+CVCL_1614,OAW28,ACH-000116,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM + 10% FBS,Female,ECACC,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1615,OAW42,ACH-000704,ovary,ovary,Ovary, , ,,,Female,ECACC,Ascites,Ovarian serous cystadenocarcinoma,Ovary
+CVCL_1621,OCUB-M,ACH-002179,unknown,breast carcinoma,Breast, , ,,,,Sanger,Pleural effusion,Breast carcinoma,Breast
+CVCL_1622,OE19,ACH-000679,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Male,HPACC,Esophagus,Adenocarcinoma of the esophagus,Esophagus
+CVCL_1623,OMC-1 [Human cervical carcinoma],,,squamous cell carcinoma of the cervix uteri,Cervix,,,,,,,Left supraclavicular lymph node,Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1626,OS-RC-2,ACH-000159,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Male,RIKEN,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_1628,OVCAR-5,ACH-001151,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,RPMI + 5% FBS,Female,Garraway Lab,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_1631,P30/OHK,ACH-002059,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,,Bone marrow,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1638,Panc 08.13,ACH-000417,pancreas,pancreas,Pancreas, , ,,,Male,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_1641,PF-382,ACH-000937,leukemia,leukemia,Blood,T-cell_ALL, ,Suspension,RPMI + 10% FBS,Female,DSMZ,Pleural effusion,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1642,PFSK-1,ACH-001711,central_nervous_system,central_nervous_system,Brain,PNET, ,,,Male,,"Brain, right frontal lobe",Primitive neuroectodermal tumor,Brain
+CVCL_1645,QIMR-WIL,ACH-002299,unknown,acute myeloid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1646,Ramos.2G6.4C10,ACH-002300,unknown,burkitt lymphoma,Lymph, , ,,,,Sanger,Ascites,Burkitt lymphoma,Lymph
+CVCL_1647,RCC10RGB,ACH-000189,kidney,kidney,Kidney, , ,Adherent,DMEM + 10% FBS,Male,RIKEN,Kidney,Renal cell carcinoma,Kidney
+CVCL_1648,RCM-1 [Human rectal adenocarcinoma],,,rectal adenocarcinoma,Colon,,,,,,,Rectum,Rectal adenocarcinoma,Colon
+CVCL_1654,RERF-LC-KJ,ACH-000482,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,HSSRB,,Lung adenocarcinoma,Lung
+CVCL_1656,RERF-LC-Sq1,ACH-000442,lung,lung,Lung,lung_NSC,lung_squamous,,,Female,HSRRB,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1657,RF-48,ACH-002301,unknown,lymphoma,Lymph, , ,,,,Sanger,,Lymphoma,Lymph
+CVCL_1660,RL,ACH-000371,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,ATCC,Ascites,Diffuse large B-cell lymphoma,Lymph
+CVCL_1662,RMG-I,ACH-000719,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,,,Female,HSRRB,Ascites,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_1665,RPMI-6666,ACH-001182,other,other,Unknown, , ,,,Unknown,ATCC,,,Blood
+CVCL_1668,RPMI-8866,ACH-002302,unknown,chronic myeloid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_1673,RXF 393L,,,renal cell carcinoma,Kidney,,,,,,,,Renal cell carcinoma,Kidney
+CVCL_1675,SAS,ACH-002029,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Female,,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1676,SBC-1,ACH-002196,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Lung,Small cell lung cancer,Lung
+CVCL_1678,SBC-3,ACH-002197,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Bone marrow,Small cell lung cancer,Lung
+CVCL_1681,SCC-15,ACH-000254,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,ATCC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1683,SCC-3,ACH-001642,lymphoma,lymphoma,Lymph, , ,,,Female,,Pleural effusion,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_1684,SCC-4,ACH-000238,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM:F12 (1:1) + 10% FBS + 0.4ug/ml Hydrocortisone,Male,ATCC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1687,SCH,ACH-002198,unknown,gastric choriocarcinoma,Stomach, , ,,,,Sanger,Omentum,Gastric choriocarcinoma,Stomach
+CVCL_1689,SF268,ACH-000655,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,RPMI + 5% FBS,Female,Garraway Lab,"Brain, right parietal lobe",Astrocytoma,Brain
+CVCL_1691,SF539,ACH-000273,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,RPMI + 5% FBS,Female,Garraway Lab,"Brain, right temporo-parietal junction",Gliosarcoma,Brain
+CVCL_1692,SH-4,ACH-000441,skin,skin,Skin,melanoma, ,,,Female,ATCC,Pleural effusion,Melanoma,Skin
+CVCL_1698,SK-MG-1,ACH-002304,unknown,astrocytoma,Brain, , ,,,,Sanger,,Astrocytoma,Brain
+CVCL_1703,SK-PN-DW,ACH-001193,bone,bone,Bone,Ewing_sarcoma, ,Adherent,DMEM + 10% FBS + 1% Glutamine,Male,,Retroperitoneal space,Primitive neuroectodermal tumor,Bone
+CVCL_1704,SKG-IIIa,ACH-002020,cervix,cervix,Cervix, , ,,,Female,,"Uterus, cervix",Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1705,SN12C,ACH-002199,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,Kidney,Renal cell carcinoma,Kidney
+CVCL_1706,SNB-75,ACH-000504,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,RPMI + 5% FBS,Female,Garraway Lab,Brain,Glioblastoma,Brain
+CVCL_1708,SNU-C1,ACH-000722,colorectal,colorectal,Colon, , ,,,Male,ATCC,Peritoneum,Colon adenocarcinoma,Colon
+CVCL_1711,SR,ACH-001665,unknown,alk-positive anaplastic large cell lymphoma,Lymph, , ,,,Male,,Pleural effusion,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_1712,ST486,ACH-000567,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Female,ATCC,Ascites,Burkitt lymphoma,Lymph
+CVCL_1719,SW156,ACH-001398,kidney,kidney,Kidney, , ,,,Male,,Kidney,Renal cell carcinoma,Kidney
+CVCL_1721,SW1710,ACH-000566,urinary_tract,urinary_tract,Bladder, , ,,,Female,DSMZ,,Bladder carcinoma,Bladder
+CVCL_1722,SW1783,ACH-000883,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,,,Male,ATCC,,Anaplastic astrocytoma,Brain
+CVCL_1725,SW626,ACH-001399,colorectal,colorectal,Colon, , ,,,Female,,Ovary,Colon adenocarcinoma,Colon
+CVCL_1726,SW684,ACH-002309,unknown,fibrosarcoma,Soft Tissue, , ,,,,Sanger,,Fibrosarcoma,Soft Tissue
+CVCL_1727,SW756,ACH-001402,cervix,cervix,Cervix, , ,Adherent,L15 + 10% FBS,Female,,"Uterus, cervix",Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_1730,SW872,ACH-002310,unknown,liposarcoma,Soft Tissue, , ,,,,Sanger,,Liposarcoma,Soft Tissue
+CVCL_1733,SW962,ACH-002200,unknown,vulvar carcinoma,Cervix, , ,,,,Sanger,Lymph node,Vulvar carcinoma,Cervix
+CVCL_1734,SW982,ACH-001274,soft_tissue,soft_tissue,Soft Tissue,synovial_sarcoma, ,Adherent,DMEM + 20% FBS + 1mM Sodium pyruvate,Female,,Synovium,Synovial sarcoma,Soft Tissue
+CVCL_1735,SU-DHL-5,ACH-000660,lymphoma,lymphoma,Lymph,DLBCL, ,,,Female,DSMZ,Lymph node,Diffuse large B-cell lymphoma,Lymph
+CVCL_1754,TE 441.T,ACH-000772,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,,,Female,ATCC,Connective tissue,Rhabdomyosarcoma,Muscle
+CVCL_1760,TE-10,ACH-000318,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,DMEM + 10% FBS,Male,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1762,TE-12,ACH-002311,unknown,squamous cell carcinoma of the esophagus,Esophagus, , ,,,,Sanger,,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1765,TE-6,ACH-000605,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1766,TE-8,ACH-000452,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Male,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1768,TGBC11TKB,ACH-000949,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Female,RIKEN,Lymph node,Gastric carcinoma,Stomach
+CVCL_1769,TGBC1TKB,ACH-001861,bile_duct,bile_duct,Liver,gallbladder, ,,,Female,,Lymph node,Carcinoma of gallbladder and extrahepatic biliary tract,Liver
+CVCL_1770,TGBC24TKB,ACH-002312,unknown,carcinoma of gallbladder and extrahepatic biliary tract,Liver, , ,,,,Sanger,Ascites,Carcinoma of gallbladder and extrahepatic biliary tract,Liver
+CVCL_1771,TGW,ACH-001674,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1773,TK-10,ACH-001208,kidney,kidney,Kidney, , ,,,Male,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_1774,TT,ACH-000561,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Male,HSSRB,Thyroid gland,Multiple endocrine neoplasia type 2,Esophagus
+CVCL_1775,TUR,ACH-002314,unknown,acute monoblastic/monocytic leukemia,Blood, , ,,,,Sanger,Pleural effusion,Acute monoblastic/monocytic leukemia,Blood
+CVCL_1782,UACC-893,ACH-000554,breast,breast,Breast,HER2Amp, ,,,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_1784,UMC-11,ACH-001417,lung,lung,Lung, , ,,,Male,,,Lung carcinoid tumor,Lung
+CVCL_1785,VA-ES-BJ,ACH-001702,soft_tissue,soft_tissue,Soft Tissue,epitheliod_sarcoma, ,,,Male,,Bone marrow,Epithelioid sarcoma,Soft Tissue
+CVCL_1789,VMRC-MELG,ACH-001704,skin,skin,Skin,melanoma, ,,,Male,,,Melanoma,Skin
+CVCL_1793,WSU-NHL,ACH-001709,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1794,YAPC,ACH-000332,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Male,DSMZ,Ascites,Pancreatic carcinoma,Pancreas
+CVCL_1795,YH-13,ACH-000469,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,MEM + 20% FBS,Male,HSSRB,"Brain, left fronto-parietal lobe.",Glioblastoma,Brain
+CVCL_1797,YT,ACH-002317,unknown,natural killer cell lymphoblastic leukemia/lymphoma,Blood, , ,,,,Sanger,Pericardial effusion,Natural killer cell lymphoblastic leukemia/lymphoma,Blood
+CVCL_1808,CAL-29,ACH-000142,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Female,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1812,EFM-192A,ACH-000117,breast,breast,Breast,TPBC, ,,,Female,DSMZ,Pleural effusion,Breast carcinoma,Breast
+CVCL_1819,VAL,ACH-001703,lymphoma,lymphoma,Lymph,B-cell_ALL, ,,,Female,,Bone marrow,Diffuse large B-cell lymphoma,Lymph
+CVCL_1822,Karpas-231,ACH-002255,unknown,diffuse large b-cell lymphoma,Lymph, , ,,,,Sanger,Peripheral blood,Diffuse large B-cell lymphoma,Lymph
+CVCL_1844,OCI-AML-3,ACH-000336,leukemia,leukemia,Blood,AML, ,Suspension,AlphaMEM + 20% FBS,Male,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1847,PaTu 8988t,ACH-000023,pancreas,pancreas,Pancreas, , ,,,Female,DSMZ,Liver,Pancreatic adenocarcinoma,Pancreas
+CVCL_1866,KOPN-8,ACH-001106,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,DSMZ,Peripheral blood,B-lymphoblastic leukemia/lymphoma with t(v,Blood
+CVCL_1877,NU-DUL-1,ACH-000287,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,DSMZ,Cerebrospinal fluid,Diffuse large B-cell lymphoma,Lymph
+CVCL_1878,OCI-Ly19,ACH-000124,lymphoma,lymphoma,Lymph,DLBCL, ,,,Female,DSMZ,Bone marrow,Diffuse large B-cell lymphoma,Lymph
+CVCL_1883,RC-K8,ACH-001638,lymphoma,lymphoma,Lymph, , ,,,Male,,Peritoneal effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1899,UPCI-SCC-090,,,squamous cell carcinoma of the oral tongue,Head And Neck,,,,,,,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_1902,WSU-DLCL2,ACH-000534,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,DSMZ,Pleural effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1911,UO-31,ACH-000428,kidney,kidney,Kidney, , ,,,Male,Garraway Lab,Kidney,Renal cell carcinoma,Kidney
+CVCL_1978,CL-11,ACH-000249,colorectal,colorectal,Colon, , ,,,Male,DSMZ,Colon,Colon adenocarcinoma,Colon
+CVCL_1997,COLO 783,ACH-000812,skin,skin,Skin,melanoma, ,,,Female,DSMZ,Right axillary lymph node,Melanoma,Skin
+CVCL_2022,DND-41,ACH-000981,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_2058,HCC33,ACH-000515,lung,lung,Lung,lung_small, ,,,Male,DSMZ,Pleural effusion,Small cell lung cancer,Lung
+CVCL_2062,HCC202,ACH-000725,breast,breast,Breast,HER2Amp, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_2077,JIMT-1,ACH-000711,breast,breast,Breast,HER2Amp, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Pleural effusion,Breast ductal carcinoma,Breast
+CVCL_2078,JJN-3,ACH-000653,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,DMEM:IMDM (1:1) + 20% FBS,Female,DSMZ,Bone marrow,Multiple myeloma,Blood
+CVCL_2096,L-1236,ACH-000702,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Hodgkin lymphoma,Lymph
+CVCL_2149,OCI-M1,ACH-000751,leukemia,leukemia,Blood,AML, ,,,Unknown,DSMZ,,Acute myeloid leukemia,Blood
+CVCL_2161,PL-21,ACH-000218,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_2176,Rh41,ACH-000100,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,,,Female,DSMZ,Lung,Alveolar rhabdomyosarcoma,Muscle
+CVCL_2193,SiSo,ACH-001650,cervix,cervix,Cervix, , ,Adherent,RPMI + 10% heat inactivated FBS,Female,,"Uterus, cervix",Human papillomavirus-related endocervical adenocarcinoma,Cervix
+CVCL_2208,SUP-HD1,ACH-001203,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Male,DSMZ,Pleural effusion,Hodgkin lymphoma,Lymph
+CVCL_2235,VCaP,ACH-000115,prostate,prostate,Prostate, , ,Adherent,DMEM + 10% FBS,Male,ATCC,"Bone, vertebra",Prostate carcinoma,Prostate
+CVCL_2253,C-4-I,ACH-001334,cervix,cervix,Cervix, , ,Adherent,Waymouth's MB 752/1 + 10% FBS,Female,,"Uterus, cervix",Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_2307,BICR 10,ACH-001331,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Female,,"Oral cavity, buccal mucosa",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_2310,BICR 22,ACH-000794,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone,Male,ECACC,Lymph node,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_2312,BICR 31,ACH-000228,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS,Male,ECACC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_2315,BICR 78,ACH-001332,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS + Glutamine + Hydrocortisone,Male,,"Oral cavity, alveolar ridge",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_2319,BT-483,ACH-000818,breast,breast,Breast,TPBC, ,,,Female,ATCC,Breast,Invasive breast carcinoma of no special type,Breast
+CVCL_2418,COR-L95,ACH-000743,lung,lung,Lung,lung_small, ,,,Male,ECACC,Lung,Small cell lung cancer,Lung
+CVCL_2520,HT115,ACH-000986,colorectal,colorectal,Colon, , ,Adherent,DMEM + 15% FBS + 2mM Glutamax,Unknown,ECACC,,Colon carcinoma,Colon
+CVCL_2588,MDST8,ACH-000935,colorectal,colorectal,Colon, , ,Adherent,DMEM + 10% FBS + 2mM Glutamine,Unknown,ECACC,Colon,Colon carcinoma,Colon
+CVCL_2678,PE/CA-PJ15,ACH-000619,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,IMDM + 10% FBS + 2mM Glutamine,Male,ECACC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_2761,WIL2 NS,ACH-002316,unknown,hereditary spherocytosis,Blood, , ,,,,Sanger,Spleen,Hereditary spherocytosis,Blood
+CVCL_2784,HO-1-u-1,ACH-002045,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,,"Salivary gland, sublingual gland",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_2785,JHH-1,ACH-000620,liver,liver,Liver, , ,Adherent,William's E Medium + 10% FBS,Male,HSRRB,,Adult hepatocellular carcinoma,Liver
+CVCL_2856,ASH-3,ACH-001443,thyroid,thyroid,Thyroid, , ,,,Female,,Thyroid gland,Anaplastic thyroid carcinoma,Thyroid
+CVCL_2909,G-292 clone A141B1,ACH-000082,bone,bone,Bone,osteosarcoma, ,Adherent,McCoy's 5A + 10% FBS,Female,ATCC,Bone,Osteosarcoma,Bone
+CVCL_2960,IHH-4,ACH-001528,thyroid,thyroid,Thyroid, , ,,,Male,,Left cervical lymph node,Differentiated thyroid carcinoma,Thyroid
+CVCL_2986,KMRC-20,ACH-000250,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Unknown,HSSRB,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_3001,KON,ACH-001542,upper_aerodigestive,upper_aerodigestive,Head And Neck, , ,,,Male,,Cervical lymph node,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_3008,LC-1/sq,ACH-002156,unknown,lung squamous cell carcinoma,Lung, , ,,,,Sanger,Lung,Lung squamous cell carcinoma,Lung
+CVCL_3035,MY-M12,ACH-002276,unknown,mixed phenotype acute leukemia,Blood, , ,,,,Sanger,Bone marrow,Mixed phenotype acute leukemia,Blood
+CVCL_3041,NB(TU)1,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_3075,Onda 10,,,glioblastoma,Brain,,,,,,,"Brain, left parietal lobe",Glioblastoma,Brain
+CVCL_3086,OSC-19,ACH-001625,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,,Cervical lymph node,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_3087,OSC-20,ACH-001626,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Female,,Cervical lymph node,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_3110,OVKATE,ACH-000443,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,HSRRB,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_3112,OVMIU,ACH-002183,unknown,high grade ovarian serous adenocarcinoma,Ovary, , ,,,,Sanger,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_3116,OVISE,ACH-000527,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,RPMI + 10% FBS,Female,HSSRB,"Pelvis, innominate bone",Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_3119,P32/ISH,ACH-002293,unknown,burkitt lymphoma,Lymph, , ,,,,Sanger,,Burkitt lymphoma,Lymph
+CVCL_3160,SAT [Human HNSCC],,,head and neck squamous cell carcinoma,Head And Neck,,,,,,,,Head and neck squamous cell carcinoma,Head And Neck
+CVCL_3167,SKN,ACH-001655,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,,,Leiomyosarcoma of the corpus uteri,Uterus
+CVCL_3168,SKN-3,ACH-002305,unknown,squamous cell carcinoma of the oral cavity,Head And Neck, , ,,,,Sanger,,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_3169,VL51,,,splenic marginal zone lymphoma,Lymph,,,,,,,Peripheral blood,Splenic marginal zone lymphoma,Lymph
+CVCL_3174,T.T,ACH-000561,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Male,HSSRB,"Bone, jaw, mandible",Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_3216,TK [Human B-cell lymphoma],,,b-cell non-hodgkin lymphoma,Lymph,,,,,,,Ascites,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_3302,Farage,ACH-001498,lymphoma,lymphoma,Lymph,B-cell_ALL, ,,,Female,,Lymph node,Diffuse large B-cell lymphoma,Lymph
+CVCL_3407,NT2-D1,,,embryonal carcinoma,Embryonic,,,,,,,Lung,Embryonal carcinoma,Embryonic
+CVCL_3540,LNZTA3WT4,ACH-002269,unknown,astrocytoma,Brain, , ,,,,Sanger,"Brain, right parieto-occipital lobe.",Astrocytoma,Brain
+CVCL_3728,JSC-1,ACH-002253,unknown,primary effusion lymphoma,Lymph, , ,,,,Sanger,Ascites,Primary effusion lymphoma,Lymph
+CVCL_3755,NK-92MI,ACH-002289,unknown,natural killer cell lymphoblastic leukemia/lymphoma,Blood, , ,,,,Sanger,Peripheral blood,Natural killer cell lymphoblastic leukemia/lymphoma,Blood
+CVCL_4384,TMK-1,ACH-002202,unknown,gastric adenocarcinoma,Stomach, , ,,,,Sanger,Lymph node,Gastric adenocarcinoma,Stomach
+CVCL_4996,MS751,ACH-001360,cervix,cervix,Cervix, , ,Adherent,MEM + 10% FBS,Female,,Lymph node,Squamous cell carcinoma of the cervix uteri,Cervix
+CVCL_5160,NCI-H3122,ACH-000337,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Unknown,,Pleural effusion,Lung adenocarcinoma,Lung
+CVCL_5986,JHU-011,ACH-002249,unknown,squamous cell carcinoma of the larynx,Head And Neck, , ,,,,Sanger,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5991,JHU-022,ACH-002250,unknown,squamous cell carcinoma of the larynx,Head And Neck, , ,,,,Sanger,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5993,JHU-029,ACH-002251,unknown,squamous cell carcinoma of the larynx,Head And Neck, , ,,,,Sanger,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_6357,451Lu,ACH-001002,skin,skin,Skin,melanoma, ,,,Male,,"Arm, skin",Cutaneous melanoma,Skin
+CVCL_8822,SJNB-5,,,neuroblastoma,Nervous System,,,,,,,Bone marrow,Neuroblastoma,Nervous System
+CVCL_8823,SJNB-6,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_8824,SJNB-7,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_A385,HSC-39,ACH-002141,unknown,gastric signet ring cell adenocarcinoma,Stomach, , ,,,,Sanger,Ascites,Gastric signet ring cell adenocarcinoma,Stomach
+CVCL_A464,NCI-H3118,,,parotid gland mucoepidermoid carcinoma,Head And Neck,,,,,,,,Parotid gland mucoepidermoid carcinoma,Head And Neck
+CVCL_A532,NCI-H2369,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_A533,NCI-H2373,,,pleural mesothelioma,Lung,,,,,,,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_A536,NCI-H2461,,,pleural mesothelioma,Lung,,,,,,,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_A543,NCI-H2591,,,pleural mesothelioma,Lung,,,,,,,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_A545,NCI-H2595,,,pleural mesothelioma,Lung,,,,,,,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_A555,NCI-H290,,,pleural mesothelioma,Lung,,,,,,,Pleural effusion,Pleural mesothelioma,Lung
+CVCL_A570,NCI-H513,ACH-002341,unknown,lung adenosquamous carcinoma,Lung, , ,,,,Sanger,Hypodermis,Lung adenosquamous carcinoma,Lung
+CVCL_C184,PCI-15A,ACH-002294,unknown,squamous cell carcinoma of the hypopharynx,Head And Neck, , ,,,,Sanger,"Pharynx, hypopharynx, pyriform sinus",Squamous cell carcinoma of the hypopharynx,Head And Neck
+CVCL_1658,EW-8,ACH-000499,bone,bone,Bone,Ewing_sarcoma, ,Adherent,DMEM + 10% FBS + 2mM L-glutamine,Male,,Bone marrow,Ewing sarcoma,Bone
+CVCL_C757,PCI-30,ACH-002295,unknown,squamous cell carcinoma of the oral tongue,Head And Neck, , ,,,,Sanger,,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_H525,ML-1 [Human thyroid carcinoma],,,differentiated thyroid carcinoma,Thyroid,,,,,,,Thyroid gland,Differentiated thyroid carcinoma,Thyroid
+CVCL_L911,ME1,ACH-000439,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,,Melanoma,Blood
+CVCL_M471,PCI-38,ACH-002296,unknown,squamous cell carcinoma of the oral tongue,Head And Neck, , ,,,,Sanger,,Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_S641,KMH-2,ACH-000815,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Male,DSMZ,Thyroid gland,Anaplastic thyroid carcinoma,Lymph
+CVCL_S976,PL4,ACH-002186,unknown,pancreatic ductal adenocarcinoma,Pancreas, , ,,,,Sanger,,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_S982,PC-3 [Human lung carcinoma],,,lung adenocarcinoma,Lung,,,,,,,Lymph node,Lung adenocarcinoma,Lung
+CVCL_T023,CS-1 [Human chondrosarcoma],,,chondrosarcoma,Bone,,,,,,,"Bone, humerus",Chondrosarcoma,Bone
+CVCL_U994,NCI-H2722,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_U995,NCI-H2731,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_U996,NCI-H2795,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_U997,NCI-H2803,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_U998,NCI-H2804,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_V000,NCI-H2818,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_V001,NCI-H2869,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_W798,G-mel,ACH-002121,unknown,cutaneous melanoma,Skin, , ,,,,Sanger,,Cutaneous melanoma,Skin
+CVCL_X483,CHSA0011,ACH-002092,unknown,chondrosarcoma,Bone, , ,,,,Sanger,,Chondrosarcoma,Bone
+CVCL_X484,CHSA0108,ACH-002093,unknown,chondrosarcoma,Bone, , ,,,,Sanger,,Chondrosarcoma,Bone
+CVCL_X485,CHSA8926,ACH-002094,unknown,chondrosarcoma,Bone, , ,,,,Sanger,,Chondrosarcoma,Bone
+CVCL_X508,STS-0421,ACH-002306,unknown,gastric adenocarcinoma,Stomach, , ,,,,Sanger,,Gastric adenocarcinoma,Stomach
+CVCL_0181,BV-173,ACH-000432,leukemia,leukemia,Blood,CML, ,,,Male,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_0220,COLO 320HSR,ACH-002219,unknown,colon adenocarcinoma,Colon, , ,,,,Sanger,"Colon, sigmoid",Colon adenocarcinoma,Colon
+CVCL_0363,JEG-3,ACH-001530,uterus,uterus,Uterus,choriocarcinoma, ,,,Male,,Fetal brain,Gestational choriocarcinoma,Uterus
+CVCL_0538,SU-DHL-1,ACH-000664,lymphoma,lymphoma,Lymph,ALCL, ,,,Male,DSMZ,Pleural effusion,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_0580,WM35,ACH-002207,unknown,cutaneous melanoma,Skin, , ,,,,Sanger,Skin,Cutaneous melanoma,Skin
+CVCL_1057,A101D,ACH-000008,unknown,melanoma,Skin, , ,,,Male,ATCC,Lymph node,Melanoma,Skin
+CVCL_1102,Ca9-22,ACH-002043,upper_aerodigestive,upper_aerodigestive,Head And Neck, , ,,,Male,,"Oral cavity, gingiva",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1112,CAL-62,ACH-000174,thyroid,thyroid,Thyroid, , ,,,Female,DSMZ,Thyroid gland,Anaplastic thyroid carcinoma,Thyroid
+CVCL_1135,COLO 800,ACH-000401,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Male,ATCC,Hypodermis,Cutaneous melanoma,Skin
+CVCL_1143,CP50-MEL-B,ACH-002096,unknown,melanoma,Skin, , ,,,,Sanger,,Melanoma,Skin
+CVCL_1149,CTB-1,ACH-002221,unknown,diffuse large b-cell lymphoma,Lymph, , ,,,,Sanger,Pericardial effusion,Diffuse large B-cell lymphoma,Lymph
+CVCL_1158,D-392MG,ACH-002227,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1164,D-542MG,ACH-002230,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1180,DOK,ACH-002234,unknown,oral epithelial dysplasia,Head And Neck, , ,,,,Sanger,"Oral cavity, tongue",Oral epithelial dysplasia,Head And Neck
+CVCL_1201,ES5,ACH-002106,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1206,ETK-1,ACH-002237,unknown,cholangiocarcinoma,Liver, , ,,,,Sanger,Ascites,Cholangiocarcinoma,Liver
+CVCL_1254,HCC1500,ACH-000349,breast,breast,Breast,TPBC, ,,,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1271,HCE-4,ACH-002243,unknown,squamous cell carcinoma of the esophagus,Esophagus, , ,,,,Sanger,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_1282,HMV-II,ACH-002040,skin,skin,Skin, , ,,,Female,,Vagina,Vaginal melanoma,Skin
+CVCL_1285,HOP-62,ACH-000861,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Female,Garraway Lab,Lung,Lung adenocarcinoma,Lung
+CVCL_1303,IGR-1,ACH-000882,skin,skin,Skin,melanoma, ,Adherent,DMEM + 10% FBS,Male,DSMZ,Inguinal lymph node,Cutaneous melanoma,Skin
+CVCL_1337,KOSC-2,ACH-002260,unknown,squamous cell carcinoma of the oral cavity,Head And Neck, , ,,,,Sanger,"Oral cavity, floor of mouth",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1364,LB1047-RCC,ACH-002150,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,Lymph node,Renal cell carcinoma,Kidney
+CVCL_1366,LB2518-MEL,ACH-002152,unknown,melanoma,Skin, , ,,,,Sanger,,Melanoma,Skin
+CVCL_1398,SK-N-MC-IXC,,,peripheral primitive neuroectodermal tumor,Nervous System,,,,,,,Orbital region,Peripheral primitive neuroectodermal tumor,Nervous System
+CVCL_1403,Mel JuSo,ACH-000881,skin,skin,Skin,melanoma, ,Adherent,RPMI + 10% FBS,Female,DSMZ,Skin,Cutaneous melanoma,Skin
+CVCL_1420,MMAc-SF,ACH-002162,unknown,melanoma,Skin, , ,,,,Sanger,Ascites,Melanoma,Skin
+CVCL_1435,MZ-MEL-2,,,melanoma,Skin,,,,,,,Abdomen,Melanoma,Skin
+CVCL_1436,MZ-MEL-7,,,melanoma,Skin,,,,,,,Spleen,Melanoma,Skin
+CVCL_1509,NCI-H196,ACH-000752,lung,lung,Lung,lung_small, ,,,Male,ATCC,Pleural effusion,Lung sarcomatoid carcinoma,Lung
+CVCL_1718,SW1463,ACH-000470,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Female,ATCC,Rectum,Rectal adenocarcinoma,Colon
+CVCL_1729,SW837,ACH-000421,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Rectum,Rectal adenocarcinoma,Colon
+CVCL_1732,SW954,ACH-001400,cervix,cervix,Cervix, , ,,,Female,,Vulva,Vulvar squamous cell carcinoma,Cervix
+CVCL_1887,ROS-50,ACH-001639,leukemia,leukemia,Blood,B-cell_ALL, ,,,Male,,Peripheral blood,Adult B acute lymphoblastic leukemia,Blood
+CVCL_1888,Sc-1,ACH-002392,unknown,follicular lymphoma,Lymph, , ,,,Male,Sanger,Ascites,Follicular lymphoma,Lymph
+CVCL_2086,JURL-MK1,ACH-000326,leukemia,leukemia,Blood,CML, ,Suspension,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_2119,MOLM-13,ACH-000362,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 20% FBS,Male,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_2614,MOG-G-UVW,ACH-001126,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,,Brain,Anaplastic astrocytoma,Brain
+CVCL_3076,Onda 11,,,glioblastoma,Brain,,,,,,,"Brain, right parietal lobe",Glioblastoma,Brain
+CVCL_6473,WM278,ACH-002206,unknown,cutaneous melanoma,Skin, , ,,,,Sanger,Skin,Cutaneous melanoma,Skin
+CVCL_C171,PCI-04B,,,squamous cell carcinoma of the larynx,Head And Neck,,,,,,,Lymph node,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_C173,PCI-06A,,,squamous cell carcinoma of the oral cavity,Head And Neck,,,,,,,"Oral cavity, tonsil",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1086,BHY,ACH-000548,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS,Male,DSMZ,"Oral cavity, alveolar ridge",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_1332,KMOE-2,ACH-002258,unknown,acute erythroid leukemia,Blood, , ,,,,Sanger,Peripheral blood,Acute erythroid leukemia,Blood
+CVCL_1412,MHH-NB-11,ACH-000078,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,Semi-Adherent,RPMI + 10% FBS,Male,DSMZ,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1890,SU-DHL-16,ACH-002307,unknown,b-cell non-hodgkin lymphoma,Lymph, , ,,,,Sanger,Pleural effusion,B-cell non-Hodgkin lymphoma,Lymph
+CVCL_2030,EJM,ACH-000821,multiple_myeloma,multiple_myeloma,Blood, , ,Semi-adherent,IMDM + 10% FBS,Female,DSMZ,Ascites,Multiple myeloma,Blood
+CVCL_6472,WM1552C,ACH-002205,unknown,cutaneous melanoma,Skin, , ,,,,Sanger,Hypodermis,Cutaneous melanoma,Skin
+CVCL_AT85,K2 [Human melanoma],,,melanoma,Skin,,,,,,,,Melanoma,Skin
+CVCL_0216,CMK,ACH-000641,leukemia,leukemia,Blood,AML, ,,,Male,DSMZ,Peripheral blood,Acute megakaryoblastic leukemia in Down syndrome,Blood
+CVCL_0297,HEY,ACH-002140,unknown,high grade ovarian serous adenocarcinoma,Ovary, , ,,,,Sanger,Ovary,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_0371,KATO III,ACH-000793,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Semi-Adherent,IMDM + 20% FBS,Male,ATCC,Pleural effusion,Down syndrome,Stomach
+CVCL_0475,OVCA433,ACH-002182,unknown,ovarian serous adenocarcinoma,Ovary, , ,,,,Sanger,Ovary,Ovarian serous adenocarcinoma,Ovary
+CVCL_0544,SW1116,ACH-000489,colorectal,colorectal,Colon, , ,,,Male,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_1103,CADO-ES1,ACH-000210,bone,bone,Bone,Ewing_sarcoma, ,,,Female,DSMZ,Pleural effusion,Ewing sarcoma,Bone
+CVCL_1140,COR-L279,ACH-000257,lung,lung,Lung,lung_small, ,Semi-adherent,RPMI + 10% FBS + 2mM Glutamine,Male,ECACC,Lymph node,Small cell lung cancer,Lung
+CVCL_1147,CRO-AP2,ACH-002220,unknown,primary effusion lymphoma,Lymph, , ,,,,Sanger,Pleural effusion,Primary effusion lymphoma,Lymph
+CVCL_1153,D-247MG,ACH-002224,unknown,gliosarcoma,Brain, , ,,,,Sanger,Brain,Gliosarcoma,Brain
+CVCL_1156,D-336MG,ACH-002226,unknown,gliosarcoma,Brain, , ,,,,Sanger,Brain,Gliosarcoma,Brain
+CVCL_1214,EW-22,ACH-002116,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1222,GA-10,ACH-000162,lymphoma,lymphoma,Lymph,Burkitt_lymphoma, ,,,Male,ATCC,Peripheral blood,Burkitt lymphoma,Lymph
+CVCL_1409,MHH-CALL-2,ACH-000020,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,DSMZ,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1445,SJNB-17,,,neuroblastoma,Nervous System,,,,,,,,Neuroblastoma,Nervous System
+CVCL_1455,NCI-H1105,ACH-000780,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1520,NCI-H2066,ACH-000727,lung,lung,Lung,lung_small, ,,,Female,ATCC,Lung,Lung squamous cell carcinoma,Lung
+CVCL_1593,NCI-H835,ACH-002177,unknown,lung carcinoid tumor,Lung, , ,,,,Sanger,Lung,Lung carcinoid tumor,Lung
+CVCL_1600,NCI-H929,ACH-000050,multiple_myeloma,multiple_myeloma,Blood, , ,,,Female,ATCC,Pleural effusion,Multiple myeloma,Blood
+CVCL_1659,Rh18,ACH-000689,rhabdomyosarcoma,rhabdomyosarcoma,Muscle, , ,,,Female,DSMZ,"Perineus, muscle",Alveolar rhabdomyosarcoma,Muscle
+CVCL_1713,SUP-B8,ACH-002308,unknown,precursor b-cell acute lymphoblastic leukemia,Blood, , ,,,,Sanger,Bone marrow,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1737,TC-YIK,ACH-002201,unknown,high-grade neuroendocrine carcinoma of the cervix uteri,Uterus, , ,,,,Sanger,,High-grade neuroendocrine carcinoma of the cervix uteri,Uterus
+CVCL_1821,Karpas-1106P,ACH-002254,unknown,primary mediastinal large b-cell lymphoma,Lymph, , ,,,,Sanger,Pleural effusion,Primary mediastinal large B-cell lymphoma,Lymph
+CVCL_1825,KYAE-1,ACH-001544,esophagus,esophagus,Esophagus, , ,,,Male,,Pleural effusion,Adenocarcinoma of the esophagus,Esophagus
+CVCL_1842,OACM5.1 C,,,adenocarcinoma of the esophagus,Esophagus,,,,,,,Lymph node,Adenocarcinoma of the esophagus,Esophagus
+CVCL_1843,OACP4 C,ACH-002292,unknown,adenocarcinoma of the esophagus,Esophagus, , ,,,,Sanger,,Adenocarcinoma of the esophagus,Esophagus
+CVCL_1851,RCH-ACV,ACH-000922,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,DSMZ,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(1,Blood
+CVCL_1865,JeKo-1,ACH-000357,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Peripheral blood,Mantle cell lymphoma,Lymph
+CVCL_1881,OCI-Ly7,ACH-001617,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,,Peripheral blood,Diffuse large B-cell lymphoma,Lymph
+CVCL_2036,ESO-51,ACH-001497,esophagus,esophagus,Esophagus,esophagus_adenocarcinoma, ,,,Male,,"Esophagus, distal",Adenocarcinoma of the esophagus,Esophagus
+CVCL_2045,FLO-1,ACH-001500,esophagus,esophagus,Esophagus,esophagus_adenocarcinoma, ,Adherent,DMEM + 10% FBS + 2mM Glutamine,Male,,Esophagus,Adenocarcinoma of the esophagus,Esophagus
+CVCL_2059,HCC366,ACH-000840,lung,lung,Lung,lung_NSC,lung_mixed,Adherent,RPMI + 10% FBS,Female,DSMZ,Lung,Lung adenosquamous carcinoma,Lung
+CVCL_2120,MOLM-16,ACH-000369,leukemia,leukemia,Blood,AML, ,,,Female,DSMZ,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_2194,SK-GT-2,ACH-001653,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS + 2mM Glutamine,Male,,"Stomach, fundus",Gastric fundus carcinoma,Stomach
+CVCL_2195,SK-GT-4,ACH-001654,esophagus,esophagus,Esophagus,esophagus_adenocarcinoma, ,Adherent,RPMI + 10% FBS + 2mM Glutamine,Male,,"Esophagus, distal",Adenocarcinoma of the esophagus,Esophagus
+CVCL_2414,COR-L321,ACH-001490,lung,lung,Lung, , ,,,Female,,,Lung carcinoma,Lung
+CVCL_2673,OV56,ACH-000091,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,ECACC,Ascites,Ovarian serous adenocarcinoma,Ovary
+CVCL_2675,OV7,ACH-000688,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,DMEM:F12 (1:1) + 5% FBS + 2mM L-glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone,Female,ECACC,Ovary,Ovarian carcinoma,Ovary
+CVCL_2686,PEO1,ACH-001630,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,,Ascites,Hereditary breast and ovarian cancer syndrome,Ovary
+CVCL_3337,TE-4,ACH-000917,esophagus,esophagus,Esophagus,esophagus_squamous, ,Adherent,RPMI + 10% FBS,Female,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_3770,OVK18,ACH-000947,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,Adherent,MEM + 10% FBS,Female,Riken,Ascites,Endometrioid carcinoma of ovary,Ovary
+CVCL_3775,PWR-1E,ACH-001383,prostate,prostate,Prostate, , ,,,Male,,"Prostate, epithelium",,Prostate
+CVCL_3935,OVCA420,ACH-002181,unknown,ovarian serous adenocarcinoma,Ovary, , ,,,,Sanger,Ovary,Ovarian serous adenocarcinoma,Ovary
+CVCL_4648,JHOS-3,ACH-002146,unknown,ovarian serous adenocarcinoma,Ovary, , ,,,,Sanger,Lymph node,Ovarian serous adenocarcinoma,Ovary
+CVCL_5078,SNU-61,ACH-000532,colorectal,colorectal,Colon, , ,,,Male,KCLB,Liver,Rectal adenocarcinoma,Colon
+CVCL_5098,SNU-81,ACH-000991,colorectal,colorectal,Colon, , ,,,Male,KCLB,Colon,Colon adenocarcinoma,Colon
+CVCL_5112,SNU-C5,ACH-000970,colorectal,colorectal,Colon, , ,,,Female,KCLB,Cecum,Cecum adenocarcinoma,Colon
+CVCL_5868,KTCTL-21,,,clear cell renal carcinoma,Kidney,,,,,,,,Clear cell renal carcinoma,Kidney
+CVCL_5873,KTCTL-26A,,,clear cell renal carcinoma,Kidney,,,,,,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_5879,KTCTL-140,,,clear cell renal carcinoma,Kidney,,,,,,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_5880,KTCTL-195,,,clear cell renal carcinoma,Kidney,,,,,,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_5884,KTCTL-1M,,,clear cell renal carcinoma,Kidney,,,,,,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_6895,DiFi,ACH-002233,unknown,gardner syndrome,Colon, , ,,,,Sanger,Ascites,Gardner syndrome,Colon
+CVCL_8792,MM1.S,ACH-000763,multiple_myeloma,multiple_myeloma,Blood, , ,Semi-adherent,RPMI + 10% FBS,Female,Academic Lab,Peripheral blood,Multiple myeloma,Blood
+CVCL_B079,UWB1.289,ACH-001418,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,,,Hereditary breast and ovarian cancer syndrome,Ovary
+CVCL_U999,NCI-H2810,,,pleural mesothelioma,Lung,,,,,,,,Pleural mesothelioma,Lung
+CVCL_X486,EMC-BAC-1,ACH-002101,unknown,lung adenocarcinoma,Lung, , ,,,,Sanger,,Lung adenocarcinoma,Lung
+CVCL_X487,EMC-BAC-2,ACH-002102,unknown,lung adenocarcinoma,Lung, , ,,,,Sanger,,Lung adenocarcinoma,Lung
+CVCL_X505,NCC010,ACH-002167,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,,Renal cell carcinoma,Kidney
+CVCL_X506,NCC021,ACH-002168,unknown,renal cell carcinoma,Kidney, , ,,,,Sanger,,Renal cell carcinoma,Kidney
+CVCL_0098,SKM-1,ACH-000373,leukemia,leukemia,Blood,AML, ,,,Male,HSRRB,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_0589,Kasumi-1,ACH-000263,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS,Male,DSMZ,Peripheral blood,Acute myeloblastic leukemia with maturation,Blood
+CVCL_1245,HCC1143,ACH-000374,breast,breast,Breast,TNBC, ,Adherent,RPMI + 10% FBS,Female,ATCC,Breast,Breast ductal carcinoma,Breast
+CVCL_1422,MOLT-13,ACH-000795,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,DSMZ,Bone marrow,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1473,NCI-H146,ACH-000506,lung,lung,Lung,lung_small, ,,,Male,ATCC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1564,NCI-H508,ACH-000360,colorectal,colorectal,Colon, , ,,,Male,ATCC,Abdominal wall,Cecum adenocarcinoma,Colon
+CVCL_2035,ESO-26,ACH-001496,esophagus,esophagus,Esophagus,esophagus_adenocarcinoma, ,Semi-Adherent,RPMI + 10% FBS + 2mM Glutamine,Male,,"Esophagus, distal",Carcinoma of esophagus,Esophagus
+CVCL_2672,OV17R,ACH-001373,ovary,ovary,Ovary,ovary_adenocarcinoma, ,,,Female,,Ascites,Adenocarcinoma of ovary,Ovary
+CVCL_5058,SNU-407,ACH-000955,colorectal,colorectal,Colon,colorectal_MSI, ,,RPMI + 10% FBS + 2mM Glutamine,Male,KCLB,Buttock,Colon adenocarcinoma,Colon
+CVCL_5870,KTCTL-13,,,clear cell renal carcinoma,Kidney,,,,,,,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_1126,CML-T1,ACH-000920,leukemia,leukemia,Blood,CML, ,,,Female,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_1189,ECC12,ACH-000225,gastric,gastric,Stomach,gastric_small, ,,,Male,Riken,Stomach,Gastric small cell carcinoma,Stomach
+CVCL_1210,EW-12,ACH-002112,unknown,ewing sarcoma,Bone, , ,,,,Sanger,,Ewing sarcoma,Bone
+CVCL_1460,NCI-H128,ACH-002286,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Pleural effusion,Small cell lung cancer,Lung
+CVCL_2413,COR-L32,ACH-001489,lung,lung,Lung,lung_NSC,lung_squamous,,,Unknown,,Bone marrow,Lung squamous cell carcinoma,Lung
+CVCL_5003,SNU-1040,ACH-000999,colorectal,colorectal,Colon,colorectal_MSI, ,,,Male,KCLB,Colon,Colon adenocarcinoma,Colon
+CVCL_1145,CP67-MEL,ACH-002098,unknown,melanoma,Skin, , ,,,,Sanger,,Melanoma,Skin
+CVCL_1339,KP-N-RT-BM-1,ACH-000345,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Female,HSSRB,Bone marrow,Neuroblastoma,Nervous System
+CVCL_1124,CHP-134,ACH-001338,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Male,,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_2411,COR-L303,ACH-002095,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Lung,Small cell lung cancer,Lung
+CVCL_2412,COR-L311,ACH-000187,lung,lung,Lung,lung_small, ,Suspension,RPMI + 10% FBS + 2mM Glutamax,Male,ECACC,Lung,Small cell lung cancer,Lung
+CVCL_2815,YMB-1-E,ACH-002208,unknown,invasive breast carcinoma of no special type,Breast, , ,,,,Sanger,Ascites,Invasive breast carcinoma of no special type,Breast
+CVCL_5031,SNU-175,ACH-000989,colorectal,colorectal,Colon,colorectal_MSI, ,,,Female,KCLB,Peritoneum,Colon adenocarcinoma,Colon
+CVCL_1554,NCI-H250,ACH-002171,unknown,small cell lung cancer,Lung, , ,,,,Sanger,Brain,Small cell lung cancer,Lung
+CVCL_1090,BONNA-12,ACH-001452,leukemia,leukemia,Blood, , ,,,Male,,Spleen,Classic hairy cell leukemia,Blood
+CVCL_1152,D-245MG,ACH-002223,unknown,glioblastoma,Brain, , ,,,,Sanger,Brain,Glioblastoma,Brain
+CVCL_1586,NCI-H740,ACH-002175,unknown,small cell lung cancer,Lung, , ,,,Male,ATCC/Sanger,Lymph node,Small cell lung cancer,Lung
+CVCL_1736,TALL-1 [Human adult T-ALL],,,precursor t-cell acute lymphoblastic leukemia,Blood,,,,,,,Bone marrow,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_4989,U-CH2,ACH-002204,bone,bone,Bone,chordoma, ,Adherent,IMDM:RPMI (4:1) + 10% FBS,Female,Sanger,,Chordoma,Bone
+CVCL_5044,SNU-283,ACH-000708,colorectal,colorectal,Colon, , ,,,Female,KCLB,Omentum,Rectal adenocarcinoma,Colon
+CVCL_1410,MHH-CALL-4,ACH-000156,leukemia,leukemia,Blood,B-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor B-cell acute lymphoblastic leukemia,Blood
+CVCL_1576,NCI-H660,ACH-000177,prostate,prostate,Prostate, , ,,,Male,ATCC,Cervical lymph node,Prostate small cell carcinoma,Prostate
+CVCL_2313,BICR 56,ACH-000771,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone,Female,ECACC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_5953,TUHR14TKB,ACH-000317,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Male,RIKEN,,Renal cell carcinoma,Kidney
+CVCL_3055,NCC-StC-K140,ACH-000110,gastric,gastric,Stomach, , ,,,Female,RIKEN,Stomach,Gastric carcinoma,Stomach
+CVCL_5103,SNU-886,ACH-000316,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,KCLB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_1532,NCI-H2126,ACH-000785,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,DMEM:F12 (1:1) + 5% FBS + 2mM L-glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 10nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,Male,ATCC,Pleural effusion,Lung large cell carcinoma,Lung
+CVCL_1637,Panc 05.04,ACH-000093,pancreas,pancreas,Pancreas, , ,,,Female,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_3178,TCC-Pan2,ACH-000502,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Female,HSRRB,Ascites,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_5100,SNU-840,ACH-000280,ovary,ovary,Ovary,ovary_non_epithelial,Brenner_tumor,Adherent,RPMI + 10% FBS,Female,KCLB,Ovary,Malignant ovarian Brenner tumor,Ovary
+CVCL_4381,HuH-6,ACH-000671,liver,liver,Liver,hepatoblastoma, ,Adherent,DMEM + 10% FBS,Male,RIKEN,Liver,Hepatoblastoma,Liver
+CVCL_0807,Hs 578Bst,,,,Unknown,,,,,,,Breast,,Breast
+CVCL_0095,SEM,ACH-000782,leukemia,leukemia,Blood,B-cell_ALL, ,Suspension,IMDM + 10% FBS,Female,DSMZ,Peripheral blood,B-lymphoblastic leukemia/lymphoma with t(v,Blood
+CVCL_0101,SNU-601,ACH-000736,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Male,KCLB,Ascites,Gastric signet ring cell adenocarcinoma,Stomach
+CVCL_0846,Hs 688(A).T,ACH-000306,fibroblast,fibroblast,Soft Tissue, , ,,,Male,,Skin,,Soft Tissue
+CVCL_0933,Hs 822.T,ACH-000229,fibroblast,fibroblast,Soft Tissue, , ,,,Female,ATCC,Bone,,Soft Tissue
+CVCL_0979,Hs 888.T,ACH-000154,fibroblast,fibroblast,Soft Tissue, , ,,,Male,ATCC,Lung,,Soft Tissue
+CVCL_1071,AML-193,ACH-000557,leukemia,leukemia,Blood,AML, ,Suspension,IMDM + 5% FBS + 10ug/ml Insulin + 5ug/ml Transferrin + 2ng/ml GM-CSF,Female,ATCC,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_1876,NU-DHL-1,ACH-000388,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,DSMZ,Left inguinal lymph node,Diffuse large B-cell lymphoma,Lymph
+CVCL_2010,COV434,ACH-000123,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_endometrioid,Adherent,DMEM + 10% FBS + 2mM L-glutamine,Female,ECACC,"Ovary, ovarian follicle, granulosa cell layer",Small cell carcinoma of the ovary,Ovary
+CVCL_2106,M-07e,ACH-000602,leukemia,leukemia,Blood,AML, ,,,Female,DSMZ,Peripheral blood,Acute megakaryoblastic leukemia,Blood
+CVCL_2308,BICR 16,ACH-000503,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS,Male,ECACC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_2438,DMS 454,ACH-000844,lung,lung,Lung,lung_small, ,,,Male,ECACC,Lung,Small cell lung cancer,Lung
+CVCL_2478,HCT 8,ACH-001084,colorectal,colorectal,Colon, , ,,,Male,,Colon,Colon adenocarcinoma,Colon
+CVCL_2738,U-BLC1,ACH-000741,urinary_tract,urinary_tract,Bladder, , ,,,Female,ECACC,,Bladder carcinoma,Bladder
+CVCL_2971,KG-1-C,ACH-000126,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,HSRRB,Brain,Oligodendroglioma,Brain
+CVCL_2990,KMS-20,ACH-000426,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Female,HSRRB,Bone marrow,Multiple myeloma,Blood
+CVCL_3336,TE-14,ACH-000726,esophagus,esophagus,Esophagus,esophagus_squamous, ,,,Male,RIKEN,Esophagus,Squamous cell carcinoma of the esophagus,Esophagus
+CVCL_3946,SNU-216,ACH-000466,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Adherent,RPMI + 10% FBS,Female,KCLB,Lymph node,Gastric tubular adenocarcinoma,Stomach
+CVCL_5111,SNU-C4,ACH-000959,colorectal,colorectal,Colon,colorectal_MSI, ,Suspension,RPMI + 10% heat inactivated FBS + 300mg/L L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,,Colon adenocarcinoma,Colon
+CVCL_6C44,Yamato-SS,,,synovial sarcoma,Soft Tissue,,,,,,,Lung,Synovial sarcoma,Soft Tissue
+CVCL_7146,SYO-1,ACH-001275,soft_tissue,soft_tissue,Soft Tissue,synovial_sarcoma, ,Adherent,DMEM + 20% FBS + 1mM Sodium pyruvate,Female,,Groin,Synovial sarcoma,Soft Tissue
+CVCL_8001,Tm87-16,,,rhabdoid tumor,Muscle,,,,,,,Pleural effusion,Rhabdoid tumor,Muscle
+CVCL_8007,TTC-709,ACH-000597,rhabdoid,rhabdoid,Muscle, , ,,,Unknown,,,Rhabdoid tumor,Muscle
+CVCL_IP11,BT159,,,glioblastoma,Brain,,,,,,,"Brain, left temporal cortex",Glioblastoma,Brain
+CVCL_IP12,BT172,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_IP13,BT245,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_L088,HCC1438,ACH-000891,lung,lung,Lung,lung_NSC,lung_large,,,Male,KCLB,Lung,Lung large cell carcinoma,Lung
+CVCL_M155,BT-12,ACH-000160,rhabdoid,rhabdoid,Muscle, , ,Adherent,DMEM + 10% FBS,Female,,"Brain, posterior fossa",Atypical teratoid rhabdoid tumor,Muscle
+CVCL_M156,BT-16,ACH-001020,rhabdoid,rhabdoid,Muscle, , ,Adherent,DMEM + 10% FBS,Male,,,Atypical teratoid rhabdoid tumor,Muscle
+CVCL_U759,2004,,,rhabdoid tumor,Muscle,,,,,,,Kidney,Rhabdoid tumor,Muscle
+CVCL_WW38,BT131,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW39,BT139,,,glioblastoma,Brain,,,,,,,"Brain, left parietal lobe",Glioblastoma,Brain
+CVCL_WW40,BT147 [Boston],,,glioblastoma,Brain,,,,,,,"Brain, right frontal cortex",Glioblastoma,Brain
+CVCL_WW46,BT187,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW49,BT216,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW51,BT228,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW52,BT231,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW53,BT232,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW54,BT239,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW55,BT248,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW56,BT271,,,glioblastoma,Brain,,,,,,,"Brain, right occipital lobe",Glioblastoma,Brain
+CVCL_WW57,BT286,,,glioblastoma,Brain,,,,,,,"Brain, left frontal lobe",Glioblastoma,Brain
+CVCL_WW58,BT320,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW59,BT328,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW60,BT330,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_WW61,BT333,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW62,BT340,,,glioblastoma,Brain,,,,,,,"Brain, right occipital lobe",Glioblastoma,Brain
+CVCL_WW63,BT359,,,glioblastoma,Brain,,,,,,,"Brain, left temporal cortex",Glioblastoma,Brain
+CVCL_WW64,BT416,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW65,BT422,,,diffuse astrocytoma,Brain,,,,,,,"Brain, left frontal cortex",Diffuse astrocytoma,Brain
+CVCL_WW66,BT428,,,glioblastoma,Brain,,,,,,,"Brain, right occipital lobe",Glioblastoma,Brain
+CVCL_WW67,BT440,,,glioblastoma,Brain,,,,,,,"Brain, right frontal cortex",Glioblastoma,Brain
+CVCL_WW68,BT444,,,glioblastoma,Brain,,,,,,,"Brain, right parietal lobe",Glioblastoma,Brain
+CVCL_WW69,BT482,,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW71,BT498,,,glioblastoma,Brain,,,,,,,"Brain, left parietal lobe",Glioblastoma,Brain
+CVCL_WW72,BT504,,,glioblastoma,Brain,,,,,,,"Brain, right temporal cortex",Glioblastoma,Brain
+CVCL_2985,KMRC-3,ACH-000313,kidney,kidney,Kidney,renal, ,,,Male,HSRRB,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_5002,SNU-1033,ACH-000286,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Female,KCLB,Rectum,Rectal adenocarcinoma,Colon
+CVCL_5038,SNU-245,ACH-000268,bile_duct,bile_duct,Liver,cholangiocarcinoma, ,,,Unknown,KCLB,Bile duct,Cholangiocarcinoma,Liver
+CVCL_1958,BC-3C,ACH-000593,urinary_tract,urinary_tract,Bladder, , ,Adherent,McCoy's 5A + 10% FBS,Female,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_8877,GSU,ACH-000485,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Semi-adherent,RPMI + 10% FBS,Male,RIKEN,Ascites,Gastric carcinoma,Stomach
+CVCL_0089,MHH-CALL-3,ACH-000032,leukemia,leukemia,Blood,B-cell_ALL, ,,,Female,DSMZ,Bone marrow,B-lymphoblastic leukemia/lymphoma with t(1,Blood
+CVCL_0107,BCP-1,ACH-000923,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,ATCC,Peripheral blood,Primary effusion lymphoma,Lymph
+CVCL_0248,DLD-1,ACH-001061,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,ATCC,Colon,Colon adenocarcinoma,Colon
+CVCL_0401,M059K,ACH-000152,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,DMEM:F12 (1:1) + 10% FBS,Male,ATCC,Brain,Glioblastoma,Brain
+CVCL_0530,SK-N-MC,ACH-000039,bone,bone,Bone,Ewing_sarcoma, ,Adherent,MEM + 10% FBS,Female,ATCC,Orbital region,Peripheral primitive neuroectodermal tumor,Bone
+CVCL_0559,TF-1,ACH-000387,leukemia,leukemia,Blood,AML, ,Suspension,RPMI + 10% FBS + 2ng/ml GM-CSF,Male,ATCC,Bone marrow,Acute erythroid leukemia,Blood
+CVCL_0823,Hs 611.T,ACH-000069,lymphoma,lymphoma,Lymph,Hodgkin_lymphoma, ,,,Female,ATCC,Lymph node,Hodgkin lymphoma,Lymph
+CVCL_0941,Hs 839.T,ACH-000180,fibroblast,fibroblast,Soft Tissue, , ,,,Female,ATCC,Skin,,Soft Tissue
+CVCL_0977,Hs 888.Lu,,,,Unknown,,,,,,,Lung,,Lung
+CVCL_1467,NCI-H1395,ACH-000327,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1526,NCI-H2106,ACH-000904,lung,lung,Lung,lung_NSC,lung_large,,,Male,ATCC,Lymph node,Lung large cell carcinoma,Lung
+CVCL_1598,NCI-H889,ACH-000297,lung,lung,Lung,lung_small, ,,,Female,ATCC,Lymph node,Small cell lung cancer,Lung
+CVCL_1606,NH-6,ACH-000203,peripheral_nervous_system,peripheral_nervous_system,Nervous System,neuroblastoma, ,,,Female,HSSRB,Adrenal gland,Neuroblastoma,Nervous System
+CVCL_1651,RERF-LC-Ad1,ACH-000791,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,Adherent,RPMI + 10% FBS,Male,HSRRB,Lung,Lung adenocarcinoma,Lung
+CVCL_1652,RERF-LC-Ad2,ACH-000774,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,HSSRB,Lung,Lung adenocarcinoma,Lung
+CVCL_1786,VM-CUB-1,ACH-000545,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Male,DSMZ,Urinary bladder,Bladder carcinoma,Bladder
+CVCL_1820,HPB-ALL,ACH-000942,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_1846,PaTu 8988s,ACH-000022,pancreas,pancreas,Pancreas, , ,Adherent,DMEM + 10% FBS + 2mM Glutamax,Female,DSMZ,Liver,Pancreatic adenocarcinoma,Pancreas
+CVCL_1884,REC-1,ACH-000068,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Male,DSMZ,Peripheral blood,Mantle cell lymphoma,Lymph
+CVCL_1885,Ri-1,ACH-000398,lymphoma,lymphoma,Lymph,B-cell_lymphoma_other, ,,,Female,DSMZ,Peripheral blood,Diffuse large B-cell lymphoma,Lymph
+CVCL_1913,Peer,ACH-000519,leukemia,leukemia,Blood,T-cell_ALL, ,,,Female,HSRRB,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_2050,GOS-3,ACH-000027,central_nervous_system,central_nervous_system,Brain, ,glioblastoma,,,Male,DSMZ,"Brain, temporal lobe",Glioblastoma,Brain
+CVCL_2079,JK-1,ACH-000241,leukemia,leukemia,Blood,CML, ,,,Male,DSMZ,,Chronic myeloid leukemia,Blood
+CVCL_2080,JL-1,ACH-000645,mesothelioma,mesothelioma,Lung, , ,,,Male,DSMZ,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_2093,Ki-JK,ACH-000773,lymphoma,lymphoma,Lymph,ALCL, ,Suspension,RPMI + 20% FBS,Male,HSSRB,Pleural effusion,ALK-positive anaplastic large cell lymphoma,Lymph
+CVCL_2095,KYO-1,ACH-000604,leukemia,leukemia,Blood,CML, ,Suspension,RPMI + 20% FBS,Male,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_2110,ME-1 [Human leukemia],,,acute myeloid leukemia,Blood,,,,,,,Peripheral blood,Acute myeloid leukemia,Blood
+CVCL_2122,MOLM-6,ACH-000321,leukemia,leukemia,Blood,CML, ,,,Male,DSMZ,Peripheral blood,Chronic myeloid leukemia,Blood
+CVCL_2123,MOLP-2,ACH-000453,multiple_myeloma,multiple_myeloma,Blood, , ,,,Male,DSMZ,Peripheral blood,Multiple myeloma,Blood
+CVCL_2127,MOTN-1,ACH-001130,lymphoma,lymphoma,Lymph, , ,,,Female,DSMZ,Peripheral blood,T-cell large granular lymphocyte leukemia,Lymph
+CVCL_2187,SET-2,ACH-000195,leukemia,leukemia,Blood,AML, ,,,Female,DSMZ,Peripheral blood,Acute megakaryoblastic leukemia,Blood
+CVCL_2210,SUP-T11,ACH-000122,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,DSMZ,Bone marrow,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_2309,BICR 18,ACH-000992,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,ECACC,Lymph node,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_2314,BICR 6,ACH-000415,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,DMEM + 10% FBS,Male,ECACC,"Pharynx, hypopharynx",Squamous cell carcinoma of the hypopharynx,Head And Neck
+CVCL_2420,COV362,ACH-000278,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,DMEM + 10% FBS + 2mM L-glutamine,Female,ECACC,Pleural effusion,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_2425,COV644,ACH-000608,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_mucinous,Adherent,DMEM + 10% FBS + 2mM L-glutamine,Female,ECACC,Ovary,Mucinous adenocarcinoma of ovary,Ovary
+CVCL_2447,FTC-238,ACH-000897,thyroid,thyroid,Thyroid, , ,,,Male,ECACC,Lung,Differentiated thyroid carcinoma,Thyroid
+CVCL_2450,GP2d,ACH-000982,colorectal,colorectal,Colon,colorectal_MSI, ,,,Female,ECACC,Colon,Colon adenocarcinoma,Colon
+CVCL_2679,PE/CA-PJ34 (clone C12),ACH-000606,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,IMDM + 10% FBS + 2mM Glutamine,Male,ECACC,Oral cavity,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_2680,PE/CA-PJ41 (clone D2),ACH-000732,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,IMDM + 10% FBS + Glutamax,Female,ECACC,,Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_2681,PE/CA-PJ49,ACH-000735,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,IMDM + 10% FBS + 2mM Glutamine,Male,ECACC,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_2743,UM-UC-1,ACH-000834,urinary_tract,urinary_tract,Bladder, , ,Adherent,MEM + 10% FBS + 2mM Glutamax + NEAA,Male,ECACC,Lymph node,Bladder carcinoma,Bladder
+CVCL_2923,HEC-108,ACH-000990,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,HSSRB,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_2929,HEC-50B,ACH-000831,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,MEM + 15% FBS,Female,HSSRB,Ascites,Type II endometrial adenocarcinoma,Uterus
+CVCL_2955,HuH-28,ACH-000808,bile_duct,bile_duct,Liver,cholangiocarcinoma,intrahepatic,,,Female,HSSRB,Liver,Cholangiocarcinoma,Liver
+CVCL_2991,KMS-21-BM,ACH-000598,multiple_myeloma,multiple_myeloma,Blood, , ,,,Male,HSSRB,,,Blood
+CVCL_2993,KMS-27,ACH-000576,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Male,HSRRB,Peripheral blood,Multiple myeloma,Blood
+CVCL_2994,KMS-28BM,ACH-000419,multiple_myeloma,multiple_myeloma,Blood, , ,,,Female,HSSRB,Bone marrow,Multiple myeloma,Blood
+CVCL_3088,OUMS-23,ACH-000296,colorectal,colorectal,Colon, , ,Adherent,DMEM + 10% FBS,Male,HSSRB,Pericardial effusion,Familial adenomatous polyposis,Colon
+CVCL_3840,Li-7,ACH-000471,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,RIKEN,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_4640,JHOC-5,ACH-000324,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_clear_cell,Adherent,DMEM:F12 (1:1) + 10% FBS + 0.1mM NEAA,Female,RIKEN,Ovary,Clear cell adenocarcinoma of the ovary,Ovary
+CVCL_4644,JHOM-1,ACH-000237,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_mucinous,,DMEM:F12 (1:1) + 10% FBS + 0.1mM NEAA,Female,RIKEN,Ovary,Mucinous adenocarcinoma of ovary,Ovary
+CVCL_4655,JHUEM-1,ACH-000928,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,DMEM:F12 (1:1) + 15% FBS,Female,RIKEN,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_4657,JHUEM-3,ACH-000173,uterus,uterus,Uterus,uterus_endometrium, ,,,Female,RIKEN,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_4658,JHUEM-7,ACH-000993,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,DMEM:F12 (1:1) + 10% FBS + NEAA,Female,RIKEN,Endometrium,Endometrial adenocarcinoma,Uterus
+CVCL_4846,HuG1-N,ACH-000239,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Male,RIKEN,Ascites,Gastric tubular adenocarcinoma,Stomach
+CVCL_4849,LMSU,ACH-000255,gastric,gastric,Stomach, , ,epithelial-like,F12 + 10% FBS,Female,RIKEN,Lymph node,Gastric carcinoma,Stomach
+CVCL_5005,SNU-1066,ACH-000682,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% heat inactivated FBS + 300mg/L L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5006,SNU-1076,ACH-000549,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5007,SNU-1077,ACH-000302,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,RPMI + 10% FBS,Female,KCLB,Endometrium,Carcinosarcoma of the corpus uteri,Uterus
+CVCL_5008,SNU-1079,ACH-000209,bile_duct,bile_duct,Liver,cholangiocarcinoma,intrahepatic,Adherent,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,"Liver, intrahepatic bile duct",Cholangiocarcinoma,Liver
+CVCL_5010,SNU-1105,ACH-000368,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,RPMI + 10% FBS,Male,KCLB,Brain,Glioblastoma,Brain
+CVCL_5014,SNU-119,ACH-000635,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,,,Female,KCLB,Ascites,High grade ovarian serous adenocarcinoma,Ovary
+CVCL_5015,SNU-1196,ACH-000461,bile_duct,bile_duct,Liver,cholangiocarcinoma,extrahepatic,Adherent,RPMI + 10% heat inactivated FBS + 300mg/L L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Unknown,KCLB,"Bile duct, common hepatic duct",Klatskin tumor,Liver
+CVCL_5017,SNU-1214,ACH-000715,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,KCLB,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5033,SNU-201,ACH-000623,central_nervous_system,central_nervous_system,Brain,glioma,glioblastoma,Adherent,RPMI + 10% FBS,Male,KCLB,Brain,Glioblastoma,Brain
+CVCL_5034,SNU-213,ACH-000266,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS + 2mM L-glutamine,Male,KCLB,Pancreas,Pancreatic adenocarcinoma,Pancreas
+CVCL_5048,SNU-308,ACH-000141,bile_duct,bile_duct,Liver,gallbladder, ,Adherent,RPMI + 10% FBS + Sodium bicarbonate,Unknown,KCLB,Gallbladder,Carcinoma of gallbladder and extrahepatic biliary tract,Liver
+CVCL_5059,SNU-410,ACH-000517,pancreas,pancreas,Pancreas, , ,Adherent,RPMI + 10% FBS,Male,KCLB,Liver,Pancreatic adenocarcinoma,Pancreas
+CVCL_5063,SNU-46,ACH-000500,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5064,SNU-466,ACH-000289,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,KCLB,Brain,Glioblastoma,Brain
+CVCL_5065,SNU-478,ACH-000377,bile_duct,bile_duct,Liver,cholangiocarcinoma,extrahepatic,Adherent,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Unknown,KCLB,"Pancreas, ampulla of Vater",Carcinoma of the ampulla of Vater,Liver
+CVCL_5069,SNU-489,ACH-000543,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,KCLB,Brain,Glioblastoma,Brain
+CVCL_5071,SNU-503,ACH-000683,colorectal,colorectal,Colon, , ,Adherent,RPMI + 10% FBS,Male,KCLB,Abdominal wall,Rectal adenocarcinoma,Colon
+CVCL_5079,SNU-620,ACH-000325,gastric,gastric,Stomach,gastric_adenocarcinoma, ,,,Female,KCLB,Ascites,Gastric adenocarcinoma,Stomach
+CVCL_5080,SNU-626,ACH-000370,central_nervous_system,central_nervous_system,Brain,glioma, ,,,Male,KCLB,Brain,Glioblastoma,Brain
+CVCL_5081,SNU-668,ACH-000344,gastric,gastric,Stomach,gastric_adenocarcinoma,diffuse_gastric,Adherent,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,Ascites,Gastric signet ring cell adenocarcinoma,Stomach
+CVCL_5083,SNU-685,ACH-000407,uterus,uterus,Uterus,uterus_endometrium, ,Adherent,RPMI + 10% FBS,Female,KCLB,Endometrium,Carcinosarcoma of the corpus uteri,Uterus
+CVCL_5086,SNU-719,ACH-000898,gastric,gastric,Stomach,gastric_adenocarcinoma, ,semi-Adherent,RPMI + 10% FBS + 2mM L-glutamine,Male,KCLB,Stomach,Gastric tubular adenocarcinoma,Stomach
+CVCL_5087,SNU-738,ACH-000807,central_nervous_system,central_nervous_system,Brain,glioma,oligodendroglioma,,RPMI + 10% heat inactivated FBS + 300mg/L L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,Brain,Oligodendroglioma,Brain
+CVCL_5089,SNU-761,ACH-000537,liver,liver,Liver, , ,Adherent,RPMI + 10% FBS,Male,KCLB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_5096,SNU-8,ACH-000460,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_high_grade_serous,Adherent,RPMI + 10% FBS,Female,KCLB,Ascites,Ovarian serous cystadenocarcinoma,Ovary
+CVCL_5101,SNU-869,ACH-000182,bile_duct,bile_duct,Liver,cholangiocarcinoma,extrahepatic,Semi-Adherent,RPMI + 10% heat inactivated FBS + 300mg/L L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Unknown,,"Pancreas, ampulla of Vater",Carcinoma of the ampulla of Vater,Liver
+CVCL_5102,SNU-878,ACH-000686,liver,liver,Liver, , ,,,Female,KCLB,Liver,Adult hepatocellular carcinoma,Liver
+CVCL_5105,SNU-899,ACH-000692,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,KCLB,Larynx,Squamous cell carcinoma of the larynx,Head And Neck
+CVCL_5113,ACC-MESO-1,ACH-000086,mesothelioma,mesothelioma,Lung, , ,Adherent,RPMI + 10% FBS + Glutamax + Sodium pyruvate,Female,RIKEN,"Lung, pleura",Pleural mesothelioma,Lung
+CVCL_5126,HCC1171,ACH-000578,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,KCLB,Lung,Lung adenocarcinoma,Lung
+CVCL_5127,HCC1195,ACH-000868,lung,lung,Lung,lung_NSC,lung_mixed,,,Male,KCLB,Lung,Lung adenosquamous carcinoma,Lung
+CVCL_5129,HCC1833,ACH-000712,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,KCLB,Lung,Lung adenocarcinoma,Lung
+CVCL_5131,HCC2279,ACH-000731,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,KCLB,Lung,Lung adenosquamous carcinoma,Lung
+CVCL_5137,HCC95,ACH-000454,lung,lung,Lung,lung_NSC,lung_squamous,Adherent,RPMI + 10% FBS,Male,KCLB,Pleural effusion,Lung squamous cell carcinoma,Lung
+CVCL_5957,TUHR4TKB,ACH-000495,kidney,kidney,Kidney, , ,Adherent,DMEM + 10% FBS,Male,RIKEN,Kidney,Renal cell carcinoma,Kidney
+CVCL_6735,TM-31,ACH-000592,central_nervous_system,central_nervous_system,Brain,glioma, ,Adherent,MEM + 10% FBS,Female,RIKEN,Brain,Neurofibromatosis type 1,Brain
+CVCL_7935,253J,ACH-000011,urinary_tract,urinary_tract,Bladder, , ,Adherent,DMEM + 10% FBS,Male,KCLB,Retroperitoneal lymph node,Bladder carcinoma,Bladder
+CVCL_7937,253J-BV,ACH-000026,urinary_tract,urinary_tract,Bladder, , ,,,Male,,Retroperitoneal lymph node,Bladder carcinoma,Bladder
+CVCL_8788,SNU-1272,ACH-000513,kidney,kidney,Kidney, , ,,,Female,KCLB,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_8800,OCI-Ly3,ACH-000158,lymphoma,lymphoma,Lymph,DLBCL, ,,,Male,Academic Lab,Bone marrow,Diffuse large B-cell lymphoma,Lymph
+CVCL_8876,GSS,ACH-000746,gastric,gastric,Stomach,gastric_adenocarcinoma, ,Suspension,RPMI + 10% FBS,Male,RIKEN,Liver,Gastric carcinoma,Stomach
+CVCL_8929,YD-10B,ACH-000723,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,,,Male,KCLB,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_8930,YD-15,ACH-000836,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% FBS,Male,KCLB,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_A351,HCC1588,ACH-001078,lung,lung,Lung,lung_NSC,lung_squamous,,,Female,KCLB,Lung,Lung squamous cell carcinoma,Lung
+CVCL_A352,HCC2108,ACH-000314,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Male,KCLB,Lung,Lung adenocarcinoma,Lung
+CVCL_A637,KMS-18,ACH-000658,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 10% FBS,Male,ATCC,Peripheral blood,Multiple myeloma,Blood
+CVCL_IP10,BT145,,,glioblastoma,Brain,,,,,,,"Brain, right parietal lobe",Glioblastoma,Brain
+CVCL_L079,YD-8,ACH-000630,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% FBS,Female,KCLB,"Oral cavity, tongue",Squamous cell carcinoma of the oral tongue,Head And Neck
+CVCL_L083,YD-38,ACH-000762,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% FBS,Male,KCLB,"Oral cavity, gingiva",Squamous cell carcinoma of the oral cavity,Head And Neck
+CVCL_L085,SNU-1041,ACH-000618,upper_aerodigestive,upper_aerodigestive,Head And Neck,upper_aerodigestive_squamous, ,Adherent,RPMI + 10% heat inactivated FBS + 300mg/l L-glutamine + 25mM HEPES + 25mM Sodium bicarbonate,Male,KCLB,,Squamous cell carcinoma of the hypopharynx,Head And Neck
+CVCL_L296,H-STS,,,,Unknown,,,,,,,Liver,,Blood
+CVCL_U797,CJM [Human melanoma],,,melanoma,Skin,,,,,,,,Melanoma,Skin
+CVCL_WW37,BT112,,,glioblastoma,Brain,,,,,,,"Brain, right frontal cortex",Glioblastoma,Brain
+CVCL_WW41,BT164 [Boston],,,glioblastoma,Brain,,,,,,,Brain,Glioblastoma,Brain
+CVCL_WW43,BT179,,,glioblastoma,Brain,,,,,,,"Brain, right parietal lobe",Glioblastoma,Brain
+CVCL_WW50,BT224,,,glioblastoma,Brain,,,,,,,"Brain, right occipital lobe",Glioblastoma,Brain
+CVCL_1118,CCF-STTG1,ACH-000329,central_nervous_system,central_nervous_system,Brain,glioma,astrocytoma,Adherent,RPMI + 10% FBS,Female,ATCC,Brain,Astrocytoma,Brain
+CVCL_2094,KPL-1,ACH-000028,breast,breast,Breast,ERpos, ,Adherent,DMEM + 10% FBS,Female,DSMZ,Pleural effusion,Invasive breast carcinoma of no special type,Breast
+CVCL_1372,LC-1F,ACH-000705,lung,lung,Lung,lung_NSC,lung_squamous,,,Male,RIKEN,Lung,Lung squamous cell carcinoma,Lung
+CVCL_4988,U-CH1,ACH-002335,bone,bone,Bone,chordoma, ,,,Male,,"Bone, sacrum",Chordoma,Bone
+CVCL_5952,TUHR10TKB,ACH-000459,kidney,kidney,Kidney, , ,Adherent,RPMI + 10% FBS,Male,RIKEN,Kidney,Clear cell renal carcinoma,Kidney
+CVCL_0624,MOLT-3,ACH-000964,leukemia,leukemia,Blood,T-cell_ALL, ,,,Male,PT-6ZZI,Peripheral blood,Precursor T-cell acute lymphoblastic leukemia,Blood
+CVCL_2416,COR-L51,ACH-001047,lung,lung,Lung,lung_small, ,,,Male,,Pleural effusion,Small cell lung cancer,Lung
+CVCL_2526,HuNS1,ACH-000829,multiple_myeloma,multiple_myeloma,Blood, , ,Suspension,RPMI + 15% FBS,Male,ATCC,Peripheral blood,,Blood
+CVCL_L298,P-STS,,,carcinoid syndrome,Unknown,,,,,,,"Small intestine, ileum",Carcinoid syndrome,Small Intestine
+CVCL_6C43,Aska-SS,,,synovial sarcoma,Soft Tissue,,,,,,,,Synovial sarcoma,Soft Tissue
+CVCL_2415,COR-L47,ACH-000695,lung,lung,Lung,lung_small, ,Suspension,RPMI + 10% FBS + 2mM Glutamax,Male,ECACC,Bone marrow,Small cell lung cancer,Lung
+CVCL_1031,Hs 934.T,ACH-000194,fibroblast,fibroblast,Soft Tissue, , ,,,Female,ATCC,Connective tissue,,Soft Tissue
+CVCL_0024,SCLC-21H,ACH-000659,lung,lung,Lung,lung_small, ,,,Male,DSMZ,Pleural effusion,Small cell lung cancer,Lung
+CVCL_1980,CL-34,ACH-000895,colorectal,colorectal,Colon,colorectal_MSI, ,,,Female,DSMZ,Colon,Colon adenocarcinoma,Colon
+CVCL_1466,NCI-H1385,ACH-000737,lung,lung,Lung,lung_NSC,lung_squamous,,,Female,ATCC,Lymph node,Lung squamous cell carcinoma,Lung
+CVCL_0480,PANC-1,ACH-000164,pancreas,pancreas,Pancreas, , ,Adherent,DMEM + 10% FBS,Male,ATCC,Pancreas,Pancreatic ductal adenocarcinoma,Pancreas
+CVCL_2169,RD-ES,ACH-000041,bone,bone,Bone,Ewing_sarcoma, ,Semi-Adherent,RPMI + 15% FBS,Male,ATCC,"Bone, humerus",Ewing sarcoma,Bone
+CVCL_1521,NCI-H2073,ACH-000590,lung,lung,Lung,lung_NSC,lung_adenocarcinoma,,,Female,ATCC,Lung,Lung adenocarcinoma,Lung
+CVCL_1982,CL-40,ACH-000798,colorectal,colorectal,Colon, , ,,,Female,DSMZ,Colon,Colon adenocarcinoma,Colon
+CVCL_3158,RMUG-S,ACH-000701,ovary,ovary,Ovary,ovary_adenocarcinoma,ovary_mucinous,Adherent,F12 + 10% FBS,Female,HSRRB,Ovary,Mucinous adenocarcinoma of ovary,Ovary
+CVCL_5128,HCC1359,ACH-000901,lung,lung,Lung,lung_NSC,lung_large,,RPMI + 10% FBS,Female,KCLB,Lung,Lung giant cell carcinoma,Lung
+CVCL_1507,NCI-H1930,ACH-000870,lung,lung,Lung,lung_small, ,,,Male,ATCC,Lymph node,Small cell lung cancer,Lung
