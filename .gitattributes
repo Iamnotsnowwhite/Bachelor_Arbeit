@@ -1,0 +1,7 @@
+CCLE/gene_expression.csv filter=lfs diff=lfs merge=lfs -text
+CCLE/mutations.csv filter=lfs diff=lfs merge=lfs -text
+CCLE/proteomics.csv filter=lfs diff=lfs merge=lfs -text
+meta/cellosaurus.txt filter=lfs diff=lfs merge=lfs -text
+CCLE/methylation.csv filter=lfs diff=lfs merge=lfs -text
+CCLE/DIPK_features/human_ppi_features.tsv filter=lfs diff=lfs merge=lfs -text
+CCLE/copy_number_variation_gistic.csv filter=lfs diff=lfs merge=lfs -text
