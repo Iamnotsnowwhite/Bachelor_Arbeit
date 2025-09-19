@@ -36,7 +36,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Output:** Learned data-dependent uncertainty estimates
 - **Interpretation:** Captures inherent noise in the observations
 
-### 📋 3. Active Learning Drug Selection
+### 3. Active Learning Drug Selection
 
 **Objective:** Select the most informative drug-cell line combinations for experimental validation based on uncertainty estimates.
 
@@ -45,7 +45,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - Random sampling baseline
 - Fixed budget of N drugs per active learning cycle
 
-### ⚡ 4. Simulated Experimental Validation
+### 4. Simulated Experimental Validation
 
 **Objective:** Incorporate selected drug response measurements into training data through simulated "experimental" validation.
 
@@ -54,7 +54,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - Augment training dataset with new target cell line measurements
 - Maintain rigorous separation between training and evaluation sets
 
-### 🔧 5. Model Fine-tuning and Evaluation
+### 5. Model Fine-tuning and Evaluation
 
 **Objective:** Assess performance improvement through personalized model adaptation.
 
