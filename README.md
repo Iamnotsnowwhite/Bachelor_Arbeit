@@ -23,8 +23,6 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Objective:** Goal: For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
-## 2. Uncertainty for the Target Cell Line (Completed)
-
 #### A. Epistemic Uncertainty (Model Uncertainty)
 - **Technique:** Monte Carlo Dropout (T = 50)
 - **Approach:** Perform **T stochastic forward passes** with **Dropout active** (BatchNorm kept in eval). Collect per-pass predictions \( \mu_t \).
