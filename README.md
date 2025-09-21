@@ -23,33 +23,41 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Goal:** For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
-#### A. Epistemic Uncertainty (Model Uncertainty)
+### A. Epistemic Uncertainty (Model Uncertainty)
 - **Technique:** Monte Carlo Dropout (T = 50)
-- **Approach:** Perform **T** stochastic forward passes with **Dropout on** (BatchNorm in eval). Collect per-pass predictions $\mu_t$.
+- **Approach:** Run the model T times with dropout **on** (BatchNorm kept in eval) and collect the T predictions.
 - **Output:**
-  - **Mean prediction:** $\mu = \tfrac{1}{T}\sum_{t=1}^{T}\mu_t$
-  - **Epistemic variance:** $\mathrm{Var}_{\mathrm{epi}} = \mathrm{Var}_{t}\!\big(\mu_t\big)$  
-    **Epistemic std:** $\sqrt{\mathrm{Var}_{\mathrm{epi}}}$
-- **Interpretation:** Uncertainty from the **model / limited data**. **Reducible** with more labels → ideal for **active learning** ranking.
+  - **Mean prediction:** average of the T predictions.
+  - **Epistemic variance:** variance across the T predictions.
+  - **Epistemic std:** square root of the epistemic variance.
+- **Interpretation:** Uncertainty from the **model / limited data**. It is **reducible** by adding labels, so it’s ideal for **active learning** ranking.
 
-#### B. Aleatoric Uncertainty (Data Uncertainty)
-- **Technique:** Mean–Variance (dual-head) network with **Gaussian NLL** (outputs $\mu$ and $\log\sigma^2$).
-- **Approach:** During inference we also run MC; for each pass get $\log\sigma_t^2$, convert to variance, then **average**:
-  
-  $$\mathrm{Var}_{\mathrm{ale}} = \tfrac{1}{T}\sum_{t=1}^{T}\exp\!\big(\log\sigma_t^2\big)$$
-  
-- **Output:** **Aleatoric std:** $\sqrt{\mathrm{Var}_{\mathrm{ale}}}$ — per-sample noise estimate
-- **Interpretation:** Uncertainty from **measurement / biological noise**. **Irreducible**; sets a floor on interval width.
+### B. Aleatoric Uncertainty (Data Uncertainty)
+- **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**; the network outputs a mean and a log-variance.
+- **Approach:** During inference we also run MC; for each pass we read the predicted log-variance, convert it to variance, then **average** these variances over T passes.
+- **Output:**
+  - **Aleatoric variance:** average of the per-pass variances.
+  - **Aleatoric std:** square root of the aleatoric variance.
+- **Interpretation:** Uncertainty from **measurement/biological noise**. It is **irreducible** and sets a floor on interval width.
 
-#### C. Combined Uncertainty & Intervals
-- **Total variance:** $\mathrm{Var}_{\mathrm{tot}} = \mathrm{Var}_{\mathrm{epi}} + \mathrm{Var}_{\mathrm{ale}}$  
-- **Total std:** $\mathrm{Std}_{\mathrm{tot}} = \sqrt{\mathrm{Var}_{\mathrm{tot}}}$  
-- **95% CI:** $\mu \pm 1.96\,\mathrm{Std}_{\mathrm{tot}}$
-- **(Optional) Calibration:** On the non-target validation set, estimate a scalar $c$ to match two-sided 95% coverage, then apply  
-  $\mathrm{Std}_{\mathrm{tot}} \leftarrow c \cdot \mathrm{Std}_{\mathrm{tot}}$ to target-cell intervals.
+### C. Combined Uncertainty & Intervals
+- **Total variance:** epistemic variance **plus** aleatoric variance.
+- **Total std:** square root of the total variance.
+- **95% confidence interval:** take the mean prediction and add/subtract **1.96 × total std**.
+- **(Optional) Calibration:** On the non-target validation set, fit a single scale factor so that ~95% of truths fall inside the interval; then multiply the total std by this factor for the target cell line.
 
-**Implementation Notes:** Dropout $p=0.3$ for training & final inference (no forced amplification); seed $=42$; $T=50$.  
+**Implementation Notes:** Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 50**.  
 **CSV columns:** `cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed`.
+
+---
+
+### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
+- 95% CI coverage ≈ **94%**（final inference uses training-time dropout; no forced amplification）  
+- Source split: **Epistemic ≈ 55%**, **Aleatoric ≈ 45%**  
+- Epistemic shows higher spread → strong signal for **active sampling**
+
+<img width="1800" height="1400" alt="UACC-257 uncertainty plots" src="https://github.com/user-attachments/assets/a667ac26-5c19-42ad-ba46-e8fe99226616" />
+
 ---
 
 ### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
