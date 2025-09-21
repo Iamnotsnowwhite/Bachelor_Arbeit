@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The inherent biological heterogeneity of cancer leads to substantial variability in individual drug response, rendering conventional global prediction models often inadequate for personalized medicine. This work addresses the critical need for precise individualized drug efficacy predictions by leveraging cancer cell line data from the GDSC2 dataset. Given the substantial costs associated with experimental drug response measurement, we employ active learning to strategically select the most informative data points for model improvement. I systematically compare two uncertainty-based sampling strategies: aleatoric uncertainty estimation using mean-variance networks and epistemic uncertainty quantification via Monte Carlo dropout. Both approaches are evaluated against random sampling baselines using neural networks, with the ultimate goal of identifying the most effective uncertainty quantification method for maximizing model performance while minimizing data acquisition costs.
+The inherent biological heterogeneity of cancer leads to substantial variability in individual drug response, rendering conventional global prediction models often inadequate for personalized medicine. This work addresses the critical need for precise individualized drug efficacy predictions by leveraging cancer cell line data from the GDSC2 dataset. Given the substantial costs associated with experimental drug response measurement, I employ active learning to strategically select the most informative data points for model improvement. I systematically compare two uncertainty-based sampling strategies: aleatoric uncertainty estimation using mean-variance networks and epistemic uncertainty quantification via Monte Carlo dropout. Both approaches are evaluated against random sampling baselines using neural networks, with the ultimate goal of identifying the most effective uncertainty quantification method for maximizing model performance while minimizing data acquisition costs.
 
 ## Research Workflow
 
@@ -34,7 +34,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 ### B. Aleatoric Uncertainty (Data Uncertainty)
 - **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**; the network outputs a mean and a log-variance.
-- **Approach:** During inference I also run MC; for each pass we read the predicted log-variance, convert it to variance, then **average** these variances over T passes.
+- **Approach:** During inference I also run MC; for each pass I read the predicted log-variance, convert it to variance, then **average** these variances over T passes.
 - **Output:**
   - **Aleatoric variance:** average of the per-pass variances.
   - **Aleatoric std:** square root of the aleatoric variance.
@@ -45,8 +45,8 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Total std:** square root of the total variance.
 - **95% confidence interval:** take the mean prediction and add/subtract **1.96 × total std**.
 
-### **Implementation Notes:
-#### ** Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 50**.  
+### Implementation Notes:
+#### Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 50**.  
 #### CSV columns: cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed.
 ---
 
