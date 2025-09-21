@@ -46,7 +46,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **95% confidence interval:** take the mean prediction and add/subtract **1.96 × total std**.
 
 **Implementation Notes:** Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 50**.  
-**CSV columns:** `cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed`.
+**CSV columns:** cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed.
 ---
 
 ### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
