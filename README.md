@@ -25,7 +25,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 #### A. Epistemic Uncertainty (Model Uncertainty)
 - **Technique:** Monte Carlo Dropout (T = 50)
-- **Approach:** Perform **T stochastic forward passes** with **Dropout active** (BatchNorm kept in eval). Collect per-pass predictions \( \mu_t \).
+- **Approach:** Perform **T stochastic forward passes** with **Dropout active** (BatchNorm kept in eval). Collect per-pass predictions.
 - **Output:**
   - **Mean prediction:** \( \mu=\mathbb{E}_t[\mu_t] \)
   - **Epistemic variance:** \( \mathrm{Var}_{\text{epi}}=\mathrm{Var}_t[\mu_t] \) → **epistemic std** \(=\sqrt{\mathrm{Var}_{\text{epi}}}\)
