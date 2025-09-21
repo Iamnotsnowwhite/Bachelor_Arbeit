@@ -18,7 +18,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Key Insight:** The performance gap between validation set and target cell line demonstrates the necessity for personalized learning approaches.
 
-### 2. Uncertainty Quantification for Target Cell Line - In Progress
+### 2. Uncertainty Quantification for Target Cell Line - mayebe already completed 
 
 **Objective:** Compute predictive uncertainties for all drug combinations on the target cell line to enable intelligent data selection.
 
@@ -35,6 +35,9 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Approach:** Single forward pass with dual-output architecture (mean + variance)
 - **Output:** Learned data-dependent uncertainty estimates
 - **Interpretation:** Captures inherent noise in the observations
+
+#### result for sample cell line: TARGET_CELL_LINE = "UACC-257"
+<img width="3651" height="2968" alt="图片" src="https://github.com/user-attachments/assets/a667ac26-5c19-42ad-ba46-e8fe99226616" />
 
 ### 3. Active Learning Drug Selection
 
