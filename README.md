@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The inherent biological heterogeneity of cancer leads to substantial variability in individual drug response, rendering conventional global prediction models often inadequate for personalized medicine. This work addresses the critical need for precise individualized drug efficacy predictions by leveraging cancer cell line data from the GDSC2 dataset. Given the substantial costs associated with experimental drug response measurement, we employ active learning to strategically select the most informative data points for model improvement. We systematically compare two uncertainty-based sampling strategies: aleatoric uncertainty estimation using mean-variance networks and epistemic uncertainty quantification via Monte Carlo dropout. Both approaches are evaluated against random sampling baselines using neural networks, with the ultimate goal of identifying the most effective uncertainty quantification method for maximizing model performance while minimizing data acquisition costs.
+The inherent biological heterogeneity of cancer leads to substantial variability in individual drug response, rendering conventional global prediction models often inadequate for personalized medicine. This work addresses the critical need for precise individualized drug efficacy predictions by leveraging cancer cell line data from the GDSC2 dataset. Given the substantial costs associated with experimental drug response measurement, we employ active learning to strategically select the most informative data points for model improvement. I systematically compare two uncertainty-based sampling strategies: aleatoric uncertainty estimation using mean-variance networks and epistemic uncertainty quantification via Monte Carlo dropout. Both approaches are evaluated against random sampling baselines using neural networks, with the ultimate goal of identifying the most effective uncertainty quantification method for maximizing model performance while minimizing data acquisition costs.
 
 ## Research Workflow
 
@@ -18,7 +18,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Key Insight:** The performance gap between validation set and target cell line demonstrates the necessity for personalized learning approaches.
 
-### 2. Uncertainty Quantification for Target Cell Line - mayebe already completed 
+### 2. Uncertainty Quantification for Target Cell Line - completed ??
 
 **Objective:** Compute predictive uncertainties for all drug combinations on the target cell line to enable intelligent data selection.
 
