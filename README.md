@@ -37,7 +37,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Interpretation:** Captures inherent noise in the observations
 
 ### result for sample cell line: TARGET_CELL_LINE = "UACC-257"
-<img width="365.1" height="296.8" alt="图片" src="https://github.com/user-attachments/assets/a667ac26-5c19-42ad-ba46-e8fe99226616" />
+<img width="1825" height="1484" alt="图片" src="https://github.com/user-attachments/assets/a667ac26-5c19-42ad-ba46-e8fe99226616" />
 
 ### 3. Active Learning Drug Selection
 
