@@ -21,31 +21,32 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 ### ✅ 2. Uncertainty for the Target Cell Line (Completed)
 
-**Objective:** Goal: For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
+**Goal:** For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
 #### A. Epistemic Uncertainty (Model Uncertainty)
 - **Technique:** Monte Carlo Dropout (T = 50)
 - **Approach:** Perform **T** stochastic forward passes with **Dropout on** (BatchNorm in eval). Collect per-pass predictions $\mu_t$.
 - **Output:**
-  - **Mean prediction:** $\displaystyle \mu=\frac{1}{T}\sum_{t=1}^{T}\mu_t$
-  - **Epistemic variance:** $\displaystyle \mathrm{Var}_{\text{epi}}=\operatorname{Var}_t(\mu_t)$  
-    **Epistemic std:** $\sqrt{\mathrm{Var}_{\text{epi}}}$
-- **Interpretation:** Uncertainty from the **model/limited data**. **Reducible** with more labels → ideal for **active learning** ranking.
+  - **Mean prediction:** $\mu = \tfrac{1}{T}\sum_{t=1}^{T}\mu_t$
+  - **Epistemic variance:** $\mathrm{Var}_{\mathrm{epi}} = \mathrm{Var}_{t}\!\big(\mu_t\big)$  
+    **Epistemic std:** $\sqrt{\mathrm{Var}_{\mathrm{epi}}}$
+- **Interpretation:** Uncertainty from the **model / limited data**. **Reducible** with more labels → ideal for **active learning** ranking.
 
 #### B. Aleatoric Uncertainty (Data Uncertainty)
 - **Technique:** Mean–Variance (dual-head) network with **Gaussian NLL** (outputs $\mu$ and $\log\sigma^2$).
 - **Approach:** During inference we also run MC; for each pass get $\log\sigma_t^2$, convert to variance, then **average**:
-  $$\mathrm{Var}_{\text{ale}}=\frac{1}{T}\sum_{t=1}^{T}\exp\!\big(\log\sigma_t^2\big)$$
-- **Output:**  
-  **Aleatoric std:** $\sqrt{\mathrm{Var}_{\text{ale}}}$ — per-sample noise estimate
-- **Interpretation:** Uncertainty from **measurement/biological noise**. **Irreducible**; sets a floor on interval width.
+  
+  $$\mathrm{Var}_{\mathrm{ale}} = \tfrac{1}{T}\sum_{t=1}^{T}\exp\!\big(\log\sigma_t^2\big)$$
+  
+- **Output:** **Aleatoric std:** $\sqrt{\mathrm{Var}_{\mathrm{ale}}}$ — per-sample noise estimate
+- **Interpretation:** Uncertainty from **measurement / biological noise**. **Irreducible**; sets a floor on interval width.
 
 #### C. Combined Uncertainty & Intervals
-- **Total variance:** $\mathrm{Var}_{\text{tot}}=\mathrm{Var}_{\text{epi}}+\mathrm{Var}_{\text{ale}}$  
-- **Total std:** $\mathrm{Std}_{\text{tot}}=\sqrt{\mathrm{Var}_{\text{tot}}}$  
-- **95% CI:** $\mu \pm 1.96 \cdot \mathrm{Std}_{\text{tot}}$
+- **Total variance:** $\mathrm{Var}_{\mathrm{tot}} = \mathrm{Var}_{\mathrm{epi}} + \mathrm{Var}_{\mathrm{ale}}$  
+- **Total std:** $\mathrm{Std}_{\mathrm{tot}} = \sqrt{\mathrm{Var}_{\mathrm{tot}}}$  
+- **95% CI:** $\mu \pm 1.96\,\mathrm{Std}_{\mathrm{tot}}$
 - **(Optional) Calibration:** On the non-target validation set, estimate a scalar $c$ to match two-sided 95% coverage, then apply  
-  $\mathrm{Std}_{\text{tot}} \leftarrow c \cdot \mathrm{Std}_{\text{tot}}$ to target-cell intervals.
+  $\mathrm{Std}_{\mathrm{tot}} \leftarrow c \cdot \mathrm{Std}_{\mathrm{tot}}$ to target-cell intervals.
 
 **Implementation Notes:** Dropout $p=0.3$ for training & final inference (no forced amplification); seed $=42$; $T=50$.  
 **CSV columns:** `cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed`.
