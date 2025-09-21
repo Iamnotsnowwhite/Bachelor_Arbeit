@@ -19,35 +19,36 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - Evaluation: Report metrics on the non-target validation set and on the fully held-out target cell line.
 - Observation: Under LCO, target-cell performance is close to the non-target validation performance (e.g., R²≈0.55–0.58), indicating reasonable generalization while still leaving room for personalized adaptation via active learning + fine-tuning.
 
-### 2. Uncertainty for the Target Cell Line (Completed)
+### ✅ 2. Uncertainty for the Target Cell Line (Completed)
 
 **Objective:** Goal: For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
 #### A. Epistemic Uncertainty (Model Uncertainty)
 - **Technique:** Monte Carlo Dropout (T = 50)
-- **Approach:** Perform **T stochastic forward passes** with **Dropout active** (BatchNorm kept in eval). Collect per-pass predictions.
+- **Approach:** Perform **T** stochastic forward passes with **Dropout on** (BatchNorm in eval). Collect per-pass predictions $\mu_t$.
 - **Output:**
-  - **Mean prediction:** \( \mu=\mathbb{E}_t[\mu_t] \)
-  - **Epistemic variance:** \( \mathrm{Var}_{\text{epi}}=\mathrm{Var}_t[\mu_t] \) → **epistemic std** \(=\sqrt{\mathrm{Var}_{\text{epi}}}\)
-- **Interpretation:** Captures uncertainty due to **model parameters / limited data**. **Reducible** with more labels → ideal for **active learning** ranking.
+  - **Mean prediction:** $\displaystyle \mu=\frac{1}{T}\sum_{t=1}^{T}\mu_t$
+  - **Epistemic variance:** $\displaystyle \mathrm{Var}_{\text{epi}}=\operatorname{Var}_t(\mu_t)$  
+    **Epistemic std:** $\sqrt{\mathrm{Var}_{\text{epi}}}$
+- **Interpretation:** Uncertainty from the **model/limited data**. **Reducible** with more labels → ideal for **active learning** ranking.
 
 #### B. Aleatoric Uncertainty (Data Uncertainty)
-- **Technique:** **Mean–Variance (dual-head)** network trained with **Gaussian NLL** (outputs \( \mu, \log\sigma^2 \))
-- **Approach:** During inference we also run MC; for each pass get \( \log\sigma_t^2 \) and compute  
-  \( \mathrm{Var}_{\text{ale}}=\mathbb{E}_t\!\left[\exp(\log\sigma_t^2)\right] \)
-- **Output:** **Aleatoric std** \(=\sqrt{\mathrm{Var}_{\text{ale}}}\) — per-sample noise estimate
-- **Interpretation:** Captures **measurement/biological noise**. **Irreducible**; sets a floor on interval width.
+- **Technique:** Mean–Variance (dual-head) network with **Gaussian NLL** (outputs $\mu$ and $\log\sigma^2$).
+- **Approach:** During inference we also run MC; for each pass get $\log\sigma_t^2$, convert to variance, then **average**:
+  $$\mathrm{Var}_{\text{ale}}=\frac{1}{T}\sum_{t=1}^{T}\exp\!\big(\log\sigma_t^2\big)$$
+- **Output:**  
+  **Aleatoric std:** $\sqrt{\mathrm{Var}_{\text{ale}}}$ — per-sample noise estimate
+- **Interpretation:** Uncertainty from **measurement/biological noise**. **Irreducible**; sets a floor on interval width.
 
 #### C. Combined Uncertainty & Intervals
-- **Total variance:** \( \mathrm{Var}_{\text{tot}}=\mathrm{Var}_{\text{epi}}+\mathrm{Var}_{\text{ale}} \)  
-- **Total std:** \( \mathrm{Std}_{\text{tot}}=\sqrt{\mathrm{Var}_{\text{tot}}} \)  
-- **95% CI:** \( \mu \pm 1.96 \cdot \mathrm{Std}_{\text{tot}} \)  
-- **(Optional) Calibration:** On the **non-target validation set**, estimate a scalar \(c\) to match two-sided 95% coverage, then apply  
-  \( \mathrm{Std}_{\text{tot}} \leftarrow c\cdot \mathrm{Std}_{\text{tot}} \) to target-cell intervals.
+- **Total variance:** $\mathrm{Var}_{\text{tot}}=\mathrm{Var}_{\text{epi}}+\mathrm{Var}_{\text{ale}}$  
+- **Total std:** $\mathrm{Std}_{\text{tot}}=\sqrt{\mathrm{Var}_{\text{tot}}}$  
+- **95% CI:** $\mu \pm 1.96 \cdot \mathrm{Std}_{\text{tot}}$
+- **(Optional) Calibration:** On the non-target validation set, estimate a scalar $c$ to match two-sided 95% coverage, then apply  
+  $\mathrm{Std}_{\text{tot}} \leftarrow c \cdot \mathrm{Std}_{\text{tot}}$ to target-cell intervals.
 
-**Implementation Notes:** Dropout \(p=0.3\) for training & final inference (no forced amplification); seed = 42; T = 50.  
+**Implementation Notes:** Dropout $p=0.3$ for training & final inference (no forced amplification); seed $=42$; $T=50$.  
 **CSV columns:** `cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed`.
-
 ---
 
 ### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
