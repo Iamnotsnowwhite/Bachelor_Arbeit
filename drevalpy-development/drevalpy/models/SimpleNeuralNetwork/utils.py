@@ -136,6 +136,14 @@ class FeedForwardNetwork(pl.LightningModule):
         self.fully_connected_layers.append(nn.Linear(self.n_units_per_layer[-1], 1))
         if self.dropout_prob is not None:
             self.dropout_layer = nn.Dropout(p=self.dropout_prob)
+        #---------------我加的-------------------
+        # === PATCH: aleatoric 开关与 logvar 头（极小增量）
+        self.aleatoric: bool = bool(hyperparameters.get("aleatoric", True))
+        self.logvar_head: nn.Linear | None = None
+        if self.aleatoric:
+            self.logvar_head = nn.Linear(self.n_units_per_layer[-1], 1)
+            # 初始噪声偏保守（可按需调整）
+            nn.init.constant_(self.logvar_head.bias, -2.0)
 
     def fit(
         self,
@@ -256,38 +264,70 @@ class FeedForwardNetwork(pl.LightningModule):
         else:
             print("checkpoint_callback: No best model found, using the last model.")
 
+    # def forward(self, x) -> torch.Tensor:
+    #     """
+    #     Forward pass of the model.
+
+    #     :param x: input data
+    #     :returns: predicted response
+    #     """
+    #     for i in range(len(self.fully_connected_layers) - 2):
+    #         x = self.fully_connected_layers[i](x)
+    #         x = self.batch_norm_layers[i](x)
+    #         if self.dropout_layer is not None:
+    #             x = self.dropout_layer(x)
+    #         x = torch.relu(x)
+
+    #     x = torch.relu(self.fully_connected_layers[-2](x))
+    #     x = self.fully_connected_layers[-1](x)
+
+    #     return x.squeeze()
+
+#-----------------我加的-------------------
+
     def forward(self, x) -> torch.Tensor:
         """
         Forward pass of the model.
-
-        :param x: input data
-        :returns: predicted response
+        :returns: predicted response (mu)
         """
-        for i in range(len(self.fully_connected_layers) - 2):
-            x = self.fully_connected_layers[i](x)
-            x = self.batch_norm_layers[i](x)
-            if self.dropout_layer is not None:
-                x = self.dropout_layer(x)
-            x = torch.relu(x)
-
-        x = torch.relu(self.fully_connected_layers[-2](x))
-        x = self.fully_connected_layers[-1](x)
-
+        h = self._forward_hidden(x)
+        x = self.fully_connected_layers[-1](h)
         return x.squeeze()
+
+    # === PATCH: Gaussian NLL（对数方差更稳定）
+    @staticmethod
+    def _gaussian_nll(mu: torch.Tensor, log_var: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
+        log_var = torch.clamp(log_var, -10.0, 10.0)
+        inv_var = torch.exp(-log_var)
+        return 0.5 * (inv_var * (y - mu) ** 2 + log_var)
 
     def _forward_loss_and_log(self, x, y, log_as: str):
         """
-        Forward pass, calculates the loss, and logs the loss.
-
-        :param x: input data
-        :param y: response
-        :param log_as: either train_loss or val_loss
-        :returns: loss
+        Forward + loss + log
         """
-        y_pred = self.forward(x)
-        result = self.loss(y_pred, y)
-        self.log(log_as, result, on_step=True, on_epoch=True, prog_bar=True)
-        return result
+        if self.aleatoric:
+            mu, log_var = self.forward_meanvar(x)
+            loss = self._gaussian_nll(mu, log_var, y).mean()
+        else:
+            y_pred = self.forward(x)
+            loss = self.loss(y_pred, y)
+        self.log(log_as, loss, on_step=True, on_epoch=True, prog_bar=True)
+        return loss
+# -------------------------------------------
+
+    # def _forward_loss_and_log(self, x, y, log_as: str):
+    #     """
+    #     Forward pass, calculates the loss, and logs the loss.
+
+    #     :param x: input data
+    #     :param y: response
+    #     :param log_as: either train_loss or val_loss
+    #     :returns: loss
+    #     """
+    #     y_pred = self.forward(x)
+    #     result = self.loss(y_pred, y)
+    #     self.log(log_as, result, on_step=True, on_epoch=True, prog_bar=True)
+    #     return result
 
     def training_step(self, batch):
         """
@@ -325,6 +365,68 @@ class FeedForwardNetwork(pl.LightningModule):
         self.train(is_training)
         return y_pred.cpu().detach().numpy()
 
+#------------------- 我加的 -------------------
+# 因为上面 pridict的方法会强制 eval() → 会关闭 Dropout（这是我 MC Dropout 几乎无方差的根因）
+    def predict_mc(self, x: np.ndarray, T: int = 30, keep_bn_eval: bool = True) -> np.ndarray:
+        """
+        Monte Carlo Dropout prediction: returns [T, N] predictions without disabling dropout.
+        - keep_bn_eval=True: BN保持eval，避免统计量漂移；Dropout保持train态。
+        """
+        # 1) 准备张量
+        x_t = torch.from_numpy(x).float().to(self.device)
+
+        # 2) 设置模式：保持BN eval，打开Dropout
+        # 先全局eval，再局部改Dropout为train
+        self.eval()
+        for m in self.modules():
+            if isinstance(m, torch.nn.Dropout):
+                m.train()
+            elif keep_bn_eval and isinstance(m, torch.nn.BatchNorm1d):
+                m.eval()
+
+        preds = []
+        with torch.no_grad():
+            for _ in range(T):
+                preds.append(self.forward(x_t).detach().cpu().numpy())
+
+        return np.stack(preds, axis=0)  # [T, N]
+
+
+    # === PATCH: MC Dropout 同时取均值与 log_var（第二步需要）
+    @torch.no_grad()
+    def predict_mc_meanvar(self, x: np.ndarray, T: int = 30, keep_bn_eval: bool = True) -> tuple[np.ndarray, np.ndarray | None]:
+        """
+        Returns:
+            MU:      [T, N]  每次前向的均值
+            LOGVAR:  [T, N]  每次前向的 log_var（若 aleatoric=False 则返回 None）
+        """
+        x_t = torch.from_numpy(x).float().to(self.device)
+
+        # 冻结 BN 统计, 打开 Dropout
+        self.eval()
+        for m in self.modules():
+            if isinstance(m, torch.nn.Dropout):
+                m.train()
+            elif keep_bn_eval and isinstance(m, torch.nn.BatchNorm1d):
+                m.eval()
+
+        mu_list, logvar_list = [], []
+        for _ in range(T):
+            if self.aleatoric and (self.logvar_head is not None):
+                mu_t, logv_t = self.forward_meanvar(x_t)
+                logv_t = torch.clamp(logv_t, -10.0, 10.0)
+                mu_list.append(mu_t.detach().cpu().numpy())
+                logvar_list.append(logv_t.detach().cpu().numpy())
+            else:
+                mu_t = self.forward(x_t)
+                mu_list.append(mu_t.detach().cpu().numpy())
+
+        MU = np.stack(mu_list, axis=0)  # [T, N]
+        LOGVAR = np.stack(logvar_list, axis=0) if logvar_list else None
+        return MU, LOGVAR
+
+#-----------------------------------------------------------------------
+
     def configure_optimizers(self) -> torch.optim.Optimizer:
         """
         Overwrites the configure_optimizers from the LightningModule.
@@ -332,3 +434,27 @@ class FeedForwardNetwork(pl.LightningModule):
         :returns: Adam optimizer
         """
         return torch.optim.Adam(self.parameters())
+
+#------------------我加的----------------------
+        # === PATCH: 抽取隐向量（最后一层前的特征）
+    def _forward_hidden(self, x: torch.Tensor) -> torch.Tensor:
+        for i in range(len(self.fully_connected_layers) - 2):
+            x = self.fully_connected_layers[i](x)
+            x = self.batch_norm_layers[i](x)
+            if self.dropout_layer is not None:
+                x = self.dropout_layer(x)
+            x = torch.relu(x)
+        # 倒数第二层 + ReLU
+        x = torch.relu(self.fully_connected_layers[-2](x))
+        return x  # 隐向量
+
+    # === PATCH: 同时输出均值与 log variance（仅在需要 aleatoric 的训练/推理路径使用）
+    def forward_meanvar(self, x) -> tuple[torch.Tensor, torch.Tensor]:
+        h = self._forward_hidden(x)
+        mu = self.fully_connected_layers[-1](h).squeeze()
+        if self.logvar_head is None:
+            # 兼容：若未开启 aleatoric，返回常数 log_var
+            log_var = torch.full_like(mu, fill_value=-10.0)  # ~非常小的噪声
+        else:
+            log_var = self.logvar_head(h).squeeze()
+        return mu, log_var

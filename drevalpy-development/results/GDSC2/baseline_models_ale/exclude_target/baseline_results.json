@@ -1,0 +1,38 @@
+{
+  "target_cell": "UACC-257",
+  "val_metrics": {
+    "MSE": 3.2193018676897958,
+    "RMSE": 1.7942413069845973,
+    "MAE": 1.4347676288333895,
+    "R2": 0.5812717287216627,
+    "Pearson": 0.783640558878
+  },
+  "target_metrics": {
+    "MSE": 2.8941132323897287,
+    "RMSE": 1.7012093440813594,
+    "MAE": 1.2070196920767229,
+    "R2": 0.5464584845241158,
+    "Pearson": 0.7428136851959569
+  },
+  "train_size": 2583,
+  "val_size": 646,
+  "target_size": 16,
+  "hyperparams": {
+    "dropout_prob": 0.3,
+    "units_per_layer": [
+      32,
+      16,
+      8,
+      4
+    ],
+    "max_epochs": 50,
+    "batch_size": 32,
+    "patience": 5,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "input_dim_gex": null,
+    "input_dim_fp": null,
+    "aleatoric": true
+  },
+  "warm_start_from": "/home/mi/zhaow01/dokumente/BA/drevalpy-development/results/GDSC2/baseline_models/exclude_target"
+}

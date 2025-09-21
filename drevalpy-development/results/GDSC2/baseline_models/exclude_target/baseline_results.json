@@ -1,0 +1,36 @@
+{
+  "target_cell": "UACC-257",
+  "val_metrics": {
+    "MSE": 2.7451864751836412,
+    "RMSE": 1.6568604271886154,
+    "MAE": 1.3135746439705007,
+    "R2": 0.6429389866706714,
+    "Pearson": 0.8332365896833949
+  },
+  "target_metrics": {
+    "MSE": 2.8855092326023115,
+    "RMSE": 1.698678672557677,
+    "MAE": 1.2385417366611473,
+    "R2": 0.5478068322871084,
+    "Pearson": 0.7643706978005536
+  },
+  "train_size": 2583,
+  "val_size": 646,
+  "target_size": 16,
+  "hyperparams": {
+    "dropout_prob": 0.3,
+    "units_per_layer": [
+      32,
+      16,
+      8,
+      4
+    ],
+    "max_epochs": 50,
+    "batch_size": 32,
+    "patience": 5,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "input_dim_gex": null,
+    "input_dim_fp": null
+  }
+}

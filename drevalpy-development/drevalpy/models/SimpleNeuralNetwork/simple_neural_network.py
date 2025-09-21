@@ -53,6 +53,9 @@ class SimpleNeuralNetwork(DRPModel):
         self.hyperparameters = hyperparameters
         self.hyperparameters.setdefault("input_dim_gex", None)
         self.hyperparameters.setdefault("input_dim_fp", None)
+        # ----------------我加的-------------------
+        self.hyperparameters.setdefault("aleatoric", True)   # ← 建议默认开启
+        # -----------------------------------------
 
     def train(
         self,
@@ -61,6 +64,7 @@ class SimpleNeuralNetwork(DRPModel):
         drug_input: FeatureDataset | None = None,
         output_earlystopping: DrugResponseDataset | None = None,
         model_checkpoint_dir: str = "checkpoints",
+        warm_start_path: str | None = None,   # <-- 我加的，为了实现warmstart
     ) -> None:
         """
         First scales the gene expression data and trains the model.
@@ -96,6 +100,26 @@ class SimpleNeuralNetwork(DRPModel):
             hyperparameters=self.hyperparameters,
             input_dim=dim_gex + dim_fingerprint,
         )
+
+        # ----- PATCH: optional warm start，我加的 -----
+        if warm_start_path is not None:
+            import os, torch
+            model_pt = os.path.join(warm_start_path, "model.pt")
+            if os.path.exists(model_pt):
+                print(f"[WARM-START] Loading weights from: {model_pt}")
+                try:
+                    state_dict = torch.load(model_pt, map_location="cpu", weights_only=True)  # torch>=2.4
+                except TypeError:
+                    state_dict = torch.load(model_pt, map_location="cpu")  # 兼容老版本
+                load_res = self.model.load_state_dict(state_dict, strict=False)
+                missing = getattr(load_res, "missing_keys", [])
+                unexpected = getattr(load_res, "unexpected_keys", [])
+                if missing:   print("[WARM-START] missing_keys:", missing)
+                if unexpected:print("[WARM-START] unexpected_keys:", unexpected)
+            else:
+                print(f"[WARM-START] No model.pt under {warm_start_path}, skipping.")
+        # -------------------------------------
+
 
         with warnings.catch_warnings():
             warnings.filterwarnings(
@@ -243,8 +267,34 @@ class SimpleNeuralNetwork(DRPModel):
         dim_gex = instance.hyperparameters["input_dim_gex"]
         dim_fp = instance.hyperparameters["input_dim_fp"]
 
-        instance.model = FeedForwardNetwork(instance.hyperparameters, input_dim=dim_gex + dim_fp)
-        instance.model.load_state_dict(torch.load(model_file))  # noqa: S614
-        instance.model.eval()
+        # instance.model = FeedForwardNetwork(instance.hyperparameters, input_dim=dim_gex + dim_fp)
+        # instance.model.load_state_dict(torch.load(model_file))  # noqa: S614
+        # instance.model.eval()
+        
+        # 安全加载 & 查看是否包含 logvar_head.*
+        # ----------------我加的----------------
+        try:
+            state_dict = torch.load(model_file, map_location="cpu", weights_only=True)  # 安全 & 去掉 FutureWarning
+        except TypeError:
+            state_dict = torch.load(model_file, map_location="cpu")
 
+        has_logvar = any(k.startswith("logvar_head.") for k in state_dict.keys())
+
+        # 若超参没写 aleatoric，则按checkpoint决定；若写了True但权重没有，也自动关掉
+        if "aleatoric" not in instance.hyperparameters:
+            instance.hyperparameters["aleatoric"] = bool(has_logvar)
+        elif instance.hyperparameters["aleatoric"] and not has_logvar:
+            print("[WARN] Checkpoint has no logvar_head.*; disabling aleatoric for compatibility.")
+            instance.hyperparameters["aleatoric"] = False
+
+        # 构建模型（会根据 aleatoric 开关决定是否创建 logvar_head）
+        instance.model = FeedForwardNetwork(instance.hyperparameters, input_dim=dim_gex + dim_fp)
+
+        # 宽松加载，忽略缺失/多余键
+        res = instance.model.load_state_dict(state_dict, strict=False)
+        if getattr(res, "missing_keys", None):    print("[INFO] Ignored missing keys:", res.missing_keys)
+        if getattr(res, "unexpected_keys", None): print("[INFO] Ignored unexpected keys:", res.unexpected_keys)
+
+        instance.model.eval()
+        # ------------------------------------
         return instance
