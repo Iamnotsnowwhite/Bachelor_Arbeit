@@ -39,10 +39,11 @@ print("[LOAD] Using baseline dir:", BASELINE_DIR)
 
 # Output
 OUT_DIR       = BASE_DIR / "results" / DATASET_NAME / "uncertainty"
-OUT_CSV       = OUT_DIR / "mc_dropout+mean_variance_target.csv"
+OUT_CSV       = OUT_DIR / "SW1783_mc_dropout+mean_variance_target.csv"
 
 # Target cell line
-TARGET_CELL_LINE = "UACC-257"
+TARGET_CELL_LINE = "SW1783"
+#"UACC-257"
 
 # MC Dropout Configuration
 T               = 50      # Number of MC samples
