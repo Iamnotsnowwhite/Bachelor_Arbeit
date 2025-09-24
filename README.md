@@ -81,6 +81,19 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Evaluation Metrics:**
 - Prediction accuracy on target cell line drugs
-- Generalization capability to unseen drug combinations
-- Comparison against baseline model performance
-- Resource efficiency analysis (performance gain per additional data point)
+  -- Final R², RMSE, MAE, Pearson correlation on target cell line
+  -- Improvement Over Baseline: Percentage improvement for each metric
+- Generalization capability
+  -- New Drug Prediction: Accuracy on drugs not used in fine-tuning
+  -- Uncertainty Calibration: How well confidence matches actual errors
+  -- Performance Stability: Consistency across different scenarios
+- Resource Efficiency
+  -- Learning Speed: Data required to reach target performance
+  -- Cost-Effectiveness: Performance gain per additional data point
+- Uncertainty Quality
+  -- Interval Reliability: If 95% confidence intervals contain true values
+  -- Method Comparison: Which uncertainty estimation approach is more reliable
+- Robustness
+  -- Multiple Runs: Average over 5-10 independent runs
+  -- Confidence Intervals: 95% CIs for all performance metrics
+
