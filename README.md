@@ -82,7 +82,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 **Evaluation Metrics:**
 
 ### 1. Prediction Accuracy
-**Objective**: Measure the model's predictive performance on target cell line drugs.
+（Measure the model's predictive performance on target cell line drugs.）
 
 - **Final Performance Metrics**:
   - R² (Coefficient of Determination)
@@ -95,7 +95,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
   - Statistical significance testing (paired t-tests)
 
 ### 2. Generalization Capability
-**Objective**: Assess the model's ability to generalize to unseen data.
+（Assess the model's ability to generalize to unseen data.）
 
 - **New Drug Prediction**:
   - Accuracy on drugs not used during fine-tuning
@@ -110,7 +110,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
   - Robustness to data variations
 
 ### 3. Resource Efficiency
-**Objective**: Evaluate the efficiency of data utilization and cost-effectiveness.
+（Evaluate the efficiency of data utilization and cost-effectiveness.）
 
 - **Learning Speed**:
   - Number of data points required to reach target performance
@@ -121,7 +121,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
   - Optimal stopping point identification
 
 ### 4. Uncertainty Quality
-**Objective**: Validate the reliability of uncertainty estimates.
+（Validate the reliability of uncertainty estimates.）
 - **Interval Reliability**:
   - Coverage of 95% prediction intervals
   - Calibration of confidence estimates
@@ -131,7 +131,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
   - Ranking correlation analysis
     
 ### 5. Statistical Robustness
-**Objective**: Ensure results are statistically sound and reproducible.
+（Ensure results are statistically sound and reproducible.）
 
 - **Multiple Runs**:
   - Average results over 5-10 independent runs
