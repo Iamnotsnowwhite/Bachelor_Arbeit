@@ -80,20 +80,64 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 **Objective:** Assess performance improvement through personalized model adaptation.
 
 **Evaluation Metrics:**
-- Prediction accuracy on target cell line drugs
-  -- Final R², RMSE, MAE, Pearson correlation on target cell line
-  -- Improvement Over Baseline: Percentage improvement for each metric
-- Generalization capability
-  -- New Drug Prediction: Accuracy on drugs not used in fine-tuning
-  -- Uncertainty Calibration: How well confidence matches actual errors
-  -- Performance Stability: Consistency across different scenarios
-- Resource Efficiency
-  -- Learning Speed: Data required to reach target performance
-  -- Cost-Effectiveness: Performance gain per additional data point
-- Uncertainty Quality
-  -- Interval Reliability: If 95% confidence intervals contain true values
-  -- Method Comparison: Which uncertainty estimation approach is more reliable
-- Robustness
-  -- Multiple Runs: Average over 5-10 independent runs
-  -- Confidence Intervals: 95% CIs for all performance metrics
+
+### 1. Prediction Accuracy
+**Objective**: Measure the model's predictive performance on target cell line drugs.
+
+- **Final Performance Metrics**:
+  - R² (Coefficient of Determination)
+  - RMSE (Root Mean Square Error)
+  - MAE (Mean Absolute Error)
+  - Pearson Correlation Coefficient
+
+- **Improvement Analysis**:
+  - Percentage improvement over baseline for each metric
+  - Statistical significance testing (paired t-tests)
+
+### 2. Generalization Capability
+**Objective**: Assess the model's ability to generalize to unseen data.
+
+- **New Drug Prediction**:
+  - Accuracy on drugs not used during fine-tuning
+  - Cross-validation within target cell line
+
+- **Uncertainty Calibration**:
+  - Correlation between predicted confidence and actual errors
+  - Reliability of uncertainty estimates
+
+- **Performance Stability**:
+  - Consistency across different drug subsets
+  - Robustness to data variations
+
+### 3. Resource Efficiency
+**Objective**: Evaluate the efficiency of data utilization and cost-effectiveness.
+
+- **Learning Speed**:
+  - Number of data points required to reach target performance
+  - Learning curves analysis
+
+- **Cost-Effectiveness**:
+  - Performance gain per additional data point (ΔR²/sample)
+  - Optimal stopping point identification
+
+### 4. Uncertainty Quality
+**Objective**: Validate the reliability of uncertainty estimates.
+- **Interval Reliability**:
+  - Coverage of 95% prediction intervals
+  - Calibration of confidence estimates
+ 
+- **Method Comparison**:
+  - Epistemic vs. aleatoric uncertainty reliability
+  - Ranking correlation analysis
+    
+### 5. Statistical Robustness
+**Objective**: Ensure results are statistically sound and reproducible.
+
+- **Multiple Runs**:
+  - Average results over 5-10 independent runs
+  - Variance reduction through repeated experiments
+
+- **Confidence Intervals**:
+  - 95% confidence intervals for all performance metrics
+  - Multiple comparison correction (Bonferroni adjustment)
 
