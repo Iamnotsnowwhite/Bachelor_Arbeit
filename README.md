@@ -12,19 +12,20 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 **Implementation**
 
-- Split (LCO): Exclude target cell line (UACC-257) from training/validation. On the non-target data, use an 80/20 train/validation split.
-- Model: Simple Neural Network + Dropout + dual-head outputs (mean μ and log-variance logσ²).
+- Split dataset:
+  - test set - target cell line/ target cell lines
+  - training set - Exclude target cell line/ target cell lines
+- Model: Simple Neural Network + Dropout + dual-head (mean μ and log-variance logσ²).
 - Loss: Gaussian NLL when aleatoric is enabled (fallback to MSE if disabled).
-- Initialization: Optional warm start from a previous MSE baseline (only for initialization; LCO split is unchanged).
-- Evaluation: Report metrics on the non-target validation set and on the fully held-out target cell line.
-- Observation: Under LCO, target-cell performance is close to the non-target validation performance (e.g., R²≈0.55–0.58), indicating reasonable generalization while still leaving room for personalized adaptation via active learning + fine-tuning.
+- Initialization: Optional warm start from a previous MSE baseline.
+- Evaluation: Report metrics on the non-target training set and on the fully held-out target cell line.
 
 ### ✅ 2. Uncertainty for the Target Cell Line (Completed)
 
 **Goal:** For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
 ### A. Epistemic Uncertainty (Model Uncertainty)
-- **Technique:** Monte Carlo Dropout (T = 50)
+- **Technique:** Monte Carlo Dropout (T = 30/50)
 - **Approach:** Run the model T times with dropout **on** (BatchNorm kept in eval) and collect the T predictions.
 - **Output:**
   - **Mean prediction:** average of the T predictions.
@@ -33,25 +34,20 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Interpretation:** Uncertainty from the **model / limited data**. It is **reducible** by adding labels, so it’s probably ideal for **active learning** ranking.
 
 ### B. Aleatoric Uncertainty (Data Uncertainty)
-- **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**; the network outputs a mean and a log-variance.
+- **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**.
 - **Approach:** During inference I also run MC; for each pass I read the predicted log-variance, convert it to variance, then **average** these variances over T passes.
 - **Output:**
   - **Aleatoric variance:** average of the per-pass variances.
   - **Aleatoric std:** square root of the aleatoric variance.
 - **Interpretation:** Uncertainty from **measurement noise**. It is **irreducible** and sets a floor on interval width.
 
-### C. Combined Uncertainty & Intervals
-- **Total variance:** epistemic variance **plus** aleatoric variance.
-- **Total std:** square root of the total variance.
-- **95% confidence interval:** take the mean prediction and add/subtract **1.96 × total std**.
 
 ### Implementation Notes:
-#### Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 50**.  
-#### CSV columns: cell_line, drug_id, y_true, y_pred, var_epi, var_ale, var_total, std_total, ci95_low, ci95_high, abs_error, T, seed.
+#### Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 30**.  
+#### CSV columns: cell_line,drug_id,y_true,y_pred,sigma_epi,sigma_ale,sigma_tot,mc_T
 ---
 
 ### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
-- 95% CI coverage ≈ **94%**（final inference uses training-time dropout; no forced amplification）  
 - Source split: **Epistemic ≈ 55%**, **Aleatoric ≈ 45%**  
 - Epistemic shows higher spread → strong signal for **active sampling**
 
