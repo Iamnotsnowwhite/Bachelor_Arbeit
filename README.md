@@ -96,7 +96,6 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 - **New Drug Prediction**:
   - Accuracy on drugs not used during fine-tuning
-  - Cross-validation within target cell line
 
 - **Uncertainty Calibration**:
   - Correlation between predicted confidence and actual errors
@@ -119,10 +118,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 #### 4. Uncertainty Quality
 （Validate the reliability of uncertainty estimates.）
-- **Interval Reliability**:
-  - Coverage of 95% prediction intervals
-  - Calibration of confidence estimates
- 
+
 - **Method Comparison**:
   - Epistemic vs. aleatoric uncertainty reliability
   - Ranking correlation analysis
@@ -133,8 +129,3 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Multiple Runs**:
   - Average results over 5-10 independent runs
   - Variance reduction through repeated experiments
-
-- **Confidence Intervals**:
-  - 95% confidence intervals for all performance metrics
-  - Multiple comparison correction (Bonferroni adjustment)
-
