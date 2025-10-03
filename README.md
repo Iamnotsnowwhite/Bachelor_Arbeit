@@ -37,10 +37,11 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**.
 - **Approach:** During inference I also run MC; for each pass I read the predicted log-variance, convert it to variance, then **average** these variances over T passes.
 - **Output:**
-  - **Aleatoric variance:** average of the per-pass variances.
-  - **Aleatoric std:** square root of the aleatoric variance.
+  
+<!-- - **Aleatoric variance:** average of the per-pass variances.
+%%- **Aleatoric std:** square root of the aleatoric variance.%%
 - **Interpretation:** Uncertainty from **measurement noise**. It is **irreducible** and sets a floor on interval width.
-
+-->
 
 ### Implementation Notes:
 #### Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 30**.  
