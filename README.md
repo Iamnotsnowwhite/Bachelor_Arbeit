@@ -4,7 +4,7 @@
 
 The inherent biological heterogeneity of cancer leads to substantial variability in individual drug response, rendering conventional global prediction models often inadequate for personalized medicine. This work addresses the critical need for precise individualized drug efficacy predictions by leveraging cancer cell line data from the GDSC2 dataset. Given the substantial costs associated with experimental drug response measurement, I employ active learning to strategically select the most informative data points for model improvement. I systematically compare two uncertainty-based sampling strategies: aleatoric uncertainty estimation using mean-variance networks and epistemic uncertainty quantification via Monte Carlo dropout. Both approaches are evaluated against random sampling baselines using neural networks, with the ultimate goal of identifying the most effective uncertainty quantification method for maximizing model performance while minimizing data acquisition costs.
 
-<img width="866" height="562" alt="截屏2025-10-04 16 11 48" src="https://github.com/user-attachments/assets/1de7b1e8-270e-444f-874f-e80c260d51b4" />
+<img style="display: block; margin: 0 auto;" width="866" height="562" alt="截屏2025-10-04 16 11 48" src="https://github.com/user-attachments/assets/1de7b1e8-270e-444f-874f-e80c260d51b4" />
 
 ## Research Workflow
 
