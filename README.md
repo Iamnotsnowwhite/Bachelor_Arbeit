@@ -20,21 +20,19 @@ The inherent biological heterogeneity of cancer leads to substantial variability
   - training set - Exclude target cell line/ target cell lines
 - Model: Simple Neural Network + Dropout + dual-head (mean μ and log-variance logσ²).
 - Loss: Gaussian NLL when aleatoric is enabled (fallback to MSE if disabled).
-- Initialization: Optional warm start from a previous MSE baseline.
-- Evaluation: Report metrics on the non-target training set and on the fully held-out target cell line.
-
+- Initialization: warm start from a previous baseline.
+  
 ### ✅ 2. Uncertainty for the Target Cell Line (Completed)
 
 **Goal:** For the target cell line, compute predictions and per-drug uncertainties to support active sampling.
 
 ### A. Epistemic Uncertainty (Model Uncertainty)
-- **Technique:** Monte Carlo Dropout (T = 30/50)
+- **Technique:** Monte Carlo Dropout (T = 50)
 - **Approach:** Run the model T times with dropout **on** (BatchNorm kept in eval) and collect the T predictions.
 - **Output:**
   - **Mean prediction:** average of the T predictions.
   - **Epistemic variance:** variance across the T predictions.
-  - **Epistemic std:** square root of the epistemic variance.
-- **Interpretation:** Uncertainty from the **model / limited data**. It is **reducible** by adding labels, so it’s probably ideal for **active learning** ranking.
+  - **Interpretation:** Uncertainty from the **model / limited data**. It is **reducible** by adding labels.
 
 ### B. Aleatoric Uncertainty (Data Uncertainty)
 - **Technique:** Mean–Variance (dual-head) network trained with **Gaussian NLL**.
@@ -46,9 +44,8 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - **Interpretation:** Uncertainty from **measurement noise**. It is **irreducible** and sets a floor on interval width.
 -->
 
-### Implementation Notes:
-#### Dropout **p = 0.3** for training and final inference (no forced amplification); **seed = 42**; **T = 30**.  
-#### CSV columns: cell_line,drug_id,y_true,y_pred,sigma_epi,sigma_ale,sigma_tot,mc_T
+### Implementation Notes: 
+#### CSV columns(Baseline): cell_line,drug_id,y_true,y_pred,sigma_epi,sigma_ale,sigma_tot,mc_T
 ---
 
 ### Result for sample cell line: `TARGET_CELL_LINE = "UACC-257"`
@@ -57,7 +54,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 
 <img width="1800" height="1400" alt="图片" src="https://github.com/user-attachments/assets/a667ac26-5c19-42ad-ba46-e8fe99226616" />
 
-### 3. Active Learning Drug Selection
+### ✅ 3. Active Learning Drug Selection
 
 **Objective:** Select the most informative drug-cell line combinations for experimental validation based on uncertainty estimates.
 
@@ -66,7 +63,7 @@ The inherent biological heterogeneity of cancer leads to substantial variability
 - Random sampling baseline
 - Fixed budget of N drugs per active learning cycle
 
-### 4. Simulated Experimental Validation
+### ✅ 4. Simulated Experimental Validation
 
 **Objective:** Incorporate selected drug response measurements into training data through simulated "experimental" validation.
 
