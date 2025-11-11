@@ -7,3 +7,6 @@ Due to the pronounced biological heterogeneity of cancer, drug response varies s
 
 ## Modellsturktur
 <img width="842" height="406" alt="截屏2025-11-05 16 37 42" src="https://github.com/user-attachments/assets/157cb40d-1d3f-42c0-9744-4f37686b330f" />
+
+## Relevant folders/files
+
