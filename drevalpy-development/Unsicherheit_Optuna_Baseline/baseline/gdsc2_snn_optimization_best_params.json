@@ -1,0 +1,7 @@
+{
+    "lr": 8.969156826155355e-05,
+    "dropout_prob": 0.6,
+    "batch_size": 256,
+    "n_layers": 2,
+    "first_layer_units": 1024
+}

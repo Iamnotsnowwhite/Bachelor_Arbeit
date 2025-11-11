@@ -23,6 +23,8 @@ class RegressionDataset(Dataset):
         drug_input: FeatureDataset,
         cell_line_views: list[str],
         drug_views: list[str],
+        selected_drugs: dict[str, set[str]] | None = None,
+        # weight_factor: float = 1.0,  #>>>> NEU wegen den Weights
     ):
         """
         Initializes the regression dataset.
@@ -46,6 +48,17 @@ class RegressionDataset(Dataset):
         for d_view in self.drug_views:
             if d_view not in drug_input.view_names:
                 raise AssertionError(f"Drug view {d_view} not found in drug input")
+
+        #######################################################
+        # --- Gewichte initialisieren ---
+        #      es ändert die weights 
+        #######################################################        
+        # print(f"Gewichtsfaktor im Datensatz ist: {weight_factor}")
+        # self.weights = np.ones(len(output.response), dtype=np.float32)
+        # if selected_drugs is not None:
+        #     for i, (cl, drug) in enumerate(zip(output.cell_line_ids, output.drug_ids)):
+        #         if cl in selected_drugs and drug in selected_drugs[cl]:
+        #             self.weights[i] = weight_factor
 
     def __getitem__(self, idx):
         """
@@ -81,7 +94,8 @@ class RegressionDataset(Dataset):
         # cast to float32
         data = data.astype(np.float32)
         response = np.float32(response)
-        return data, response
+        #weight = self.weights[idx]   #Änderung
+        return data, response #weight
 
     def __len__(self):
         """
@@ -138,12 +152,24 @@ class FeedForwardNetwork(pl.LightningModule):
             self.dropout_layer = nn.Dropout(p=self.dropout_prob)
         #---------------我加的-------------------
         # === PATCH: aleatoric 开关与 logvar 头（极小增量）
-        self.aleatoric: bool = bool(hyperparameters.get("aleatoric", True))
+        self.aleatoric: bool = bool(hyperparameters.get("aleatoric", False))
         self.logvar_head: nn.Linear | None = None
+        self.LOGVAR_MIN = float(hyperparameters.get("logvar_min", -5.0))
+        self.LOGVAR_MAX = float(hyperparameters.get("logvar_max",  2.0))
+
         if self.aleatoric:
+            # create log-variance head：Input dimension = number of hidden units in the last layer
             self.logvar_head = nn.Linear(self.n_units_per_layer[-1], 1)
-            # 初始噪声偏保守（可按需调整）
-            nn.init.constant_(self.logvar_head.bias, -2.0)
+            # Initialization: 
+            # Give the bias a conservative negative value to avoid 
+            # excessively large or small variance in the early stages.
+            init_logvar = float(hyperparameters.get("logvar_init", -2.0))
+            nn.init.constant_(self.logvar_head.bias, init_logvar)
+            # Optional: Initialize weights with a small range to reduce 
+            # fluctuations in the early stages of training
+            # 可选：把权重小范围初始化，减小训练初期波动
+            nn.init.zeros_(self.logvar_head.weight)
+
 
     def fit(
         self,
@@ -158,6 +184,8 @@ class FeedForwardNetwork(pl.LightningModule):
         patience=5,
         num_workers: int = 2,
         model_checkpoint_dir: str = "checkpoints",
+        #selected_drugs: dict[str, set[str]] | None = None,   # <<< NEU weights 
+        #weight_factor: float = 1.0,            # <<< NEU weights
     ) -> None:
         """
         Fits the model.
@@ -179,7 +207,7 @@ class FeedForwardNetwork(pl.LightningModule):
         if trainer_params is None:
             trainer_params = {
                 "max_epochs": 100,
-                "progress_bar_refresh_rate": 500,
+                "progress_bar_refresh_rate": 50,
             }
         if drug_input is None:
             raise ValueError(
@@ -192,13 +220,15 @@ class FeedForwardNetwork(pl.LightningModule):
             drug_input=drug_input,
             cell_line_views=cell_line_views,
             drug_views=drug_views,
+            #selected_drugs=selected_drugs,        # <<< NEU weights
+            #weight_factor=weight_factor,  # <<< NEU weights
         )
         train_loader = DataLoader(
             train_dataset,
             batch_size=batch_size,
             shuffle=True,
             num_workers=num_workers,
-            persistent_workers=True,
+            persistent_workers=False, #True, ACHTUNG ÄNderung vom Original
             drop_last=True,  # to avoid batch norm errors, if last batch is smaller than batch_size, it is not processed
         )
 
@@ -257,64 +287,112 @@ class FeedForwardNetwork(pl.LightningModule):
         else:
             trainer.fit(self, train_loader, val_loader)
 
-        # load best model
+        # # load best model
         if self.checkpoint_callback.best_model_path is not None:
             checkpoint = torch.load(self.checkpoint_callback.best_model_path, weights_only=True)  # noqa: S614
             self.load_state_dict(checkpoint["state_dict"])
         else:
             print("checkpoint_callback: No best model found, using the last model.")
 
-    # def forward(self, x) -> torch.Tensor:
-    #     """
-    #     Forward pass of the model.
+        # # 我加的：von mir 
+        # ckpt_path = self.checkpoint_callback.best_model_path
+        # if ckpt_path and os.path.isfile(ckpt_path):
+        #     ckpt = torch.load(ckpt_path, map_location=self.device)
+        #     self.load_state_dict(ckpt.get("state_dict", ckpt), strict=False)
+        # else:
+        #     print("checkpoint_callback: No best model found, using the last model.")
 
-    #     :param x: input data
-    #     :returns: predicted response
-    #     """
-    #     for i in range(len(self.fully_connected_layers) - 2):
-    #         x = self.fully_connected_layers[i](x)
-    #         x = self.batch_norm_layers[i](x)
-    #         if self.dropout_layer is not None:
-    #             x = self.dropout_layer(x)
-    #         x = torch.relu(x)
-
-    #     x = torch.relu(self.fully_connected_layers[-2](x))
-    #     x = self.fully_connected_layers[-1](x)
-
-    #     return x.squeeze()
-
-#-----------------我加的-------------------
 
     def forward(self, x) -> torch.Tensor:
         """
         Forward pass of the model.
-        :returns: predicted response (mu)
+
+        :param x: input data
+        :returns: predicted response
         """
-        h = self._forward_hidden(x)
-        x = self.fully_connected_layers[-1](h)
+        for i in range(len(self.fully_connected_layers) - 2):
+            x = self.fully_connected_layers[i](x)
+            x = self.batch_norm_layers[i](x)
+            if self.dropout_layer is not None:
+                x = self.dropout_layer(x)
+            x = torch.relu(x)
+
+        x = torch.relu(self.fully_connected_layers[-2](x))
+        x = self.fully_connected_layers[-1](x)
+
         return x.squeeze()
 
-    # === PATCH: Gaussian NLL（对数方差更稳定）
-    @staticmethod
-    def _gaussian_nll(mu: torch.Tensor, log_var: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
-        log_var = torch.clamp(log_var, -10.0, 10.0)
-        inv_var = torch.exp(-log_var)
-        return 0.5 * (inv_var * (y - mu) ** 2 + log_var)
+#-----------------我加的-------------------
 
-    def _forward_loss_and_log(self, x, y, log_as: str):
-        """
-        Forward + loss + log
-        """
-        if self.aleatoric:
-            mu, log_var = self.forward_meanvar(x)
-            loss = self._gaussian_nll(mu, log_var, y).mean()
+    # def forward(self, x) -> torch.Tensor:
+    #     """
+    #     Forward pass of the model.
+    #     :returns: predicted response (mu)
+    #     """
+    #     h = self._forward_hidden(x)
+    #     x = self.fully_connected_layers[-1](h)
+    #     return x.squeeze()
+
+
+    # === PATCH: Gaussian NLL（for aleatoric noice)
+    def _forward_loss_and_log(self, x, y, log_as: str, w: torch.Tensor | None = None):
+        mu, logv = self._forward_mu_logvar(x)
+        if self.aleatoric and (logv is not None):
+            inv_var = torch.exp(-logv)
+            loss = 0.5 * (logv + (y - mu)**2 * inv_var)
+            # Normalisierung（Range: 1e-5~1e-4）
+            loss = loss + 1e-5 * (logv**2) # muss man nicht
+            loss = loss.mean()
         else:
-            y_pred = self.forward(x)
-            loss = self.loss(y_pred, y)
+            loss = self.loss(mu, y)
         self.log(log_as, loss, on_step=True, on_epoch=True, prog_bar=True)
         return loss
-# -------------------------------------------
 
+    # def _forward_loss_and_log(self, x, y, log_as: str, w: torch.Tensor | None = None):
+        # Änderung wegen weights
+        # mu, logv = self._forward_mu_logvar(x)
+        
+        # if self.aleatoric and (logv is not None):
+        #     # --- Aleatoric (NLL) Pfad ---
+        #     inv_var = torch.exp(-logv)
+            
+        #     # 1. Per-Sample-Loss berechnen (kein .mean() am Ende!)
+        #     loss_per_sample = 0.5 * (logv + (y - mu)**2 * inv_var)
+        #     loss_per_sample = loss_per_sample + 1e-5 * (logv**2) # Deine Normalisierung
+
+        #     # 2. Gewichtet oder ungewichtet mitteln
+        #     if w is not None:
+        #         # Sicherstellen, dass w die gleiche Form wie der Loss hat
+        #         w = w.view_as(loss_per_sample)
+        #         # Gewichteten Mittelwert berechnen: (Summe(loss * w)) / (Summe(w))
+        #         loss = (loss_per_sample * w).sum() / (w.sum() + 1e-8) # +1e-8 für numerische Stabilität
+        #     else:
+        #         # Standard-Mittelwert, falls keine Gewichte gegeben sind
+        #         loss = loss_per_sample.mean()
+
+        # else:
+        #     # --- Standard-Loss Pfad (z.B. MSE) ---
+            
+        #     # WICHTIGE ANNAHME:
+        #     # Damit dies funktioniert, muss self.loss im Konstruktor (__init__)
+        #     # mit reduction='none' initialisiert worden sein!
+        #     # z.B.: self.loss = torch.nn.MSELoss(reduction='none')
+            
+        #     # 1. Per-Sample-Loss berechnen (gibt einen Tensor zurück, keinen Skalar)
+        #     loss_per_sample = self.loss(mu, y)
+            
+        #     # 2. Gewichtet oder ungewichtet mitteln
+        #     if w is not None:
+        #         w = w.view_as(loss_per_sample)
+        #         loss = (loss_per_sample * w).sum() / (w.sum() + 1e-8)
+        #     else:
+        #         loss = loss_per_sample.mean()
+                
+        # self.log(log_as, loss, on_step=True, on_epoch=True, prog_bar=True)
+        # return loss
+        
+#------------------------
+    # original _forword_loss_and_log
     # def _forward_loss_and_log(self, x, y, log_as: str):
     #     """
     #     Forward pass, calculates the loss, and logs the loss.
@@ -339,6 +417,14 @@ class FeedForwardNetwork(pl.LightningModule):
         """
         x, y = batch
         return self._forward_loss_and_log(x, y, "train_loss")
+
+        # # Änderung wegen weights - weights muss noch übergeben werden 
+        # if len(batch) == 2:
+        #     x , y = batch
+        #     w = None
+        # else:
+        #     x, y ,w = batch
+        # return self._forward_loss_and_log(x, y, "train_loss", w)
 
     def validation_step(self, batch):
         """
@@ -365,68 +451,44 @@ class FeedForwardNetwork(pl.LightningModule):
         self.train(is_training)
         return y_pred.cpu().detach().numpy()
 
-#------------------- 我加的 -------------------
-# 因为上面 pridict的方法会强制 eval() → 会关闭 Dropout（这是我 MC Dropout 几乎无方差的根因）
-    def predict_mc(self, x: np.ndarray, T: int = 30, keep_bn_eval: bool = True) -> np.ndarray:
-        """
-        Monte Carlo Dropout prediction: returns [T, N] predictions without disabling dropout.
-        - keep_bn_eval=True: BN保持eval，避免统计量漂移；Dropout保持train态。
-        """
-        # 1) 准备张量
-        x_t = torch.from_numpy(x).float().to(self.device)
-
-        # 2) 设置模式：保持BN eval，打开Dropout
-        # 先全局eval，再局部改Dropout为train
-        self.eval()
-        for m in self.modules():
-            if isinstance(m, torch.nn.Dropout):
-                m.train()
-            elif keep_bn_eval and isinstance(m, torch.nn.BatchNorm1d):
-                m.eval()
-
-        preds = []
-        with torch.no_grad():
-            for _ in range(T):
-                preds.append(self.forward(x_t).detach().cpu().numpy())
-
-        return np.stack(preds, axis=0)  # [T, N]
-
-
-    # === PATCH: MC Dropout 同时取均值与 log_var（第二步需要）
+    # Habe ich ergänzt
     @torch.no_grad()
-    def predict_mc_meanvar(self, x: np.ndarray, T: int = 30, keep_bn_eval: bool = True) -> tuple[np.ndarray, np.ndarray | None]:
+    def predict_uncertainty(self, x_np: np.ndarray, T: int , keep_bn_eval: bool = True
+                        ) -> tuple[np.ndarray, np.ndarray | None, np.ndarray | None]:
         """
-        Returns:
-            MU:      [T, N]  每次前向的均值
-            LOGVAR:  [T, N]  每次前向的 log_var（若 aleatoric=False 则返回 None）
+        Returns (mean, sigma_epi, sigma_ale), all in the 'training-normalized space'.
+        does not add σ to μ; it is up to the caller to decide whether to save/use it for sorting/plotting intervals.
         """
-        x_t = torch.from_numpy(x).float().to(self.device)
-
-        # 冻结 BN 统计, 打开 Dropout
+        # Preparation (activate MC Dropout)
+        X = torch.from_numpy(x_np).float().to(self.device) #X_np -> features as numpy array 
+        # close dropout
         self.eval()
+        # falls module dropout wäre, wird es zu train zurück -> ermöglicht die loop
         for m in self.modules():
             if isinstance(m, torch.nn.Dropout):
                 m.train()
-            elif keep_bn_eval and isinstance(m, torch.nn.BatchNorm1d):
+            elif keep_bn_eval and isinstance(m, torch.nn.BatchNorm1d): # falls module batchnorm layer wäre, wäre eval() an.
                 m.eval()
-
-        mu_list, logvar_list = [], []
+        mus = [] #all prediction points
+        logvs = [] if self.aleatoric else None
         for _ in range(T):
-            if self.aleatoric and (self.logvar_head is not None):
-                mu_t, logv_t = self.forward_meanvar(x_t)
-                logv_t = torch.clamp(logv_t, -10.0, 10.0)
-                mu_list.append(mu_t.detach().cpu().numpy())
-                logvar_list.append(logv_t.detach().cpu().numpy())
-            else:
-                mu_t = self.forward(x_t)
-                mu_list.append(mu_t.detach().cpu().numpy())
-
-        MU = np.stack(mu_list, axis=0)  # [T, N]
-        LOGVAR = np.stack(logvar_list, axis=0) if logvar_list else None
-        return MU, LOGVAR
+            mu, logv = self._forward_mu_logvar(X)
+            mus.append(mu.detach().cpu().numpy())
+            if self.aleatoric:
+                logvs.append(logv.detach().cpu().numpy())
+        mu_T = np.stack(mus, axis=0)            # [T, N]
+        mean = mu_T.mean(axis=0)              # [N]
+        epi_std = mu_T.std(axis=0, ddof=1)    # [N]
+        sigma_ale = None
+        if self.aleatoric:
+            logv_bar = np.stack(logvs, axis=0).mean(axis=0)  # [N]
+            sigma_ale = np.sqrt(np.exp(logv_bar)) 
+            #print(f"Aleatoric wird aufgerufen, mit: logvbar:{logv_bar}, {sigma_ale}")
+        return mean, epi_std, sigma_ale
 
 #-----------------------------------------------------------------------
-
+    # original configure_configure_optimizers
+    
     def configure_optimizers(self) -> torch.optim.Optimizer:
         """
         Overwrites the configure_optimizers from the LightningModule.
@@ -435,26 +497,35 @@ class FeedForwardNetwork(pl.LightningModule):
         """
         return torch.optim.Adam(self.parameters())
 
+    # 改进：优化器要吃到 lr / weight_decay
+    # Improvement: The optimizer needs to incorporate learning rate (lr) and weight decay.
+    # def configure_optimizers(self):
+    #     hp = self.hparams["hyperparameters"]
+    #     lr = float(hp.get("lr", 1e-3))
+    #     wd = float(hp.get("weight_decay", 0.0))
+    #     return torch.optim.Adam(self.parameters(), lr=lr, weight_decay=wd)
+
 #------------------我加的----------------------
-        # === PATCH: 抽取隐向量（最后一层前的特征）
+        # === 抽取隐向量:
+        # Extract hidden vectors (features before the last layer)
     def _forward_hidden(self, x: torch.Tensor) -> torch.Tensor:
         for i in range(len(self.fully_connected_layers) - 2):
             x = self.fully_connected_layers[i](x)
             x = self.batch_norm_layers[i](x)
+            x = torch.relu(x)
             if self.dropout_layer is not None:
                 x = self.dropout_layer(x)
-            x = torch.relu(x)
-        # 倒数第二层 + ReLU
         x = torch.relu(self.fully_connected_layers[-2](x))
-        return x  # 隐向量
+        return x
 
-    # === PATCH: 同时输出均值与 log variance（仅在需要 aleatoric 的训练/推理路径使用）
-    def forward_meanvar(self, x) -> tuple[torch.Tensor, torch.Tensor]:
+    # === 提供一个统一取 (mu, logvar) 的函数，供预测/损失共用
+    # Provide a unified function to get (mu, logvar), for shared use by prediction and loss.
+    def _forward_mu_logvar(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor | None]:
         h = self._forward_hidden(x)
         mu = self.fully_connected_layers[-1](h).squeeze()
-        if self.logvar_head is None:
-            # 兼容：若未开启 aleatoric，返回常数 log_var
-            log_var = torch.full_like(mu, fill_value=-10.0)  # ~非常小的噪声
+        if self.aleatoric and (self.logvar_head is not None):
+            logv = self.logvar_head(h).squeeze()
+            logv = torch.clamp(logv, min=self.LOGVAR_MIN, max=self.LOGVAR_MAX)
+            return mu, logv
         else:
-            log_var = self.logvar_head(h).squeeze()
-        return mu, log_var
+            return mu, None

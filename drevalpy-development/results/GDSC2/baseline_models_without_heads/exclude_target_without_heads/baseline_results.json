@@ -1,0 +1,29 @@
+{
+  "target_cell": "OVISE",
+  "target_metrics": {
+    "MSE": 1.8216535667001246,
+    "RMSE": 1.3496864697773794,
+    "MAE": 1.0607463206864276,
+    "R2": 0.704596118981304,
+    "Pearson": 0.880168128734007
+  },
+  "train_size": 3223,
+  "target_size": 22,
+  "hyperparams": {
+    "dropout_prob": 0.3,
+    "units_per_layer": [
+      32,
+      16,
+      8,
+      4
+    ],
+    "max_epochs": 50,
+    "batch_size": 32,
+    "patience": 5,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "input_dim_gex": null,
+    "input_dim_fp": null,
+    "aleatoric": true
+  }
+}

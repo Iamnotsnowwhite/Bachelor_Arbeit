@@ -1,0 +1,14 @@
+hyperparameters:
+  aleatoric: true
+  batch_size: 256
+  dropout_prob: 0.5
+  input_dim_fp: 128
+  input_dim_gex: 867
+  lr: 0.004810684286120831
+  max_epochs: 100
+  mc_T: 50
+  units_per_layer:
+  - 512
+  - 256
+  - 128
+input_dim: 995

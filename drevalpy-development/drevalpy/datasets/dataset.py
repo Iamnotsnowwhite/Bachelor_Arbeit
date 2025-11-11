@@ -31,7 +31,6 @@ from .utils import CELL_LINE_IDENTIFIER, DRUG_IDENTIFIER, permute_features, rand
 
 np.set_printoptions(threshold=6)
 
-
 class DrugResponseDataset:
     """Drug response dataset."""
 
