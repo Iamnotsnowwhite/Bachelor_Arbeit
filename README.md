@@ -10,7 +10,7 @@ Due to the pronounced biological heterogeneity of cancer, drug response varies s
 
 ## Relevant folders/files
 - drevalpy-development/Unsicherheit_Auswertung
-- drevalpy-development/Unsicherheit_Hauptscript/
+- drevalpy-development/Unsicherheit_Hauptscript
 - drevalpy-development/Unsicherheit_Modell_Auswertung
 - drevalpy-development/Unsicherheit_Optuna_Baseline
 - drevalpy-development/results/GDSC2
